@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/icici" mode="merge"/>
+    <filter root="/content/icici" mode="merge"/>
+    <filter root="/content/dam/icici" mode="merge">
+        <exclude pattern="/content/dam/icici(/.*)?"/>
+        <include pattern="/content/dam/icici/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/icici/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/icici" mode="merge"/>
+</workspaceFilter>
