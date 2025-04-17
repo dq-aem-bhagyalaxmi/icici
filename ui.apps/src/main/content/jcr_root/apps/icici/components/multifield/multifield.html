@@ -1,0 +1,18 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+	 data-sly-use.model="com.aem.icici.core.models.HeaderModel">
+
+	<!-- Logo Image -->
+	<img src="${model.fileReference}" alt="Logo" />
+
+	<!-- Navigation Links -->
+
+	<ul data-sly-list.link="${model.links}">
+		<li>
+			<a href="${link.linkPath}">${link.label}</a>
+		</li>
+	</ul>
+
+	<!-- Placeholder if logo is empty -->
+	<sly data-sly-call="${template.placeholder @ isEmpty=!model.fileReference}"></sly>
+
+</sly>
