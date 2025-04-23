@@ -1,0 +1,413 @@
+.footer-main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f5f7fa;
+  border-radius: 20px;
+}
+
+
+
+.footer-left-column {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 200px;
+}
+
+
+.footer-right-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+}
+
+
+
+.footer_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #f5f7fa;
+    padding: 2rem;
+    border-radius: 20px;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsive behavior */
+}
+
+.footer_column {
+    flex: 1;
+    text-align: center;
+    min-width: 250px; /* for responsiveness */
+}
+
+/* from here footer_bank_registration component CSS */
+.footer_registration_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f8fb;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.footer_registration_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_registration_heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2b3240;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.footer_registration_logos {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.footer_registration_img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+
+/* from here footer_social_media component CSS */
+
+.footer_social_media_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f6f9; /* optional: light background for contrast */
+    padding: 20px 0;
+}
+
+.footer_social_media_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_social_media_heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50; /* optional dark tone */
+}
+
+.footer_social_media_buttons {
+    display: flex;
+    gap: 16px; /* space between icons */
+    flex-wrap: wrap; /* responsive */
+    justify-content: center;
+}
+
+.footer_social_media_img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #5b6c8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.footer_social_media_img img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* makes white logo on dark circle */
+}
+
+.footer_social_media_img:hover {
+    transform: scale(1.1);
+    background-color: #3d4e6b;
+}
+
+.footer_logo_socail {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* from here footer_install_mobileapp component CSS */
+
+.footer-mobile-img{
+	height:20px;
+    width:20px;
+}
+
+
+.footer_mobileapp_container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.footer_mobileapp_inner {
+    text-align: center;
+}
+
+.footer_mobileapp_heading {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #2a2a2a;
+}
+
+.footer_mobileapp_buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer_mobileapp_img img {
+    height: 35px;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.footer_mobileapp_img img:hover {
+    transform: scale(1.05);
+}
+
+
+/* from here footer_section component CSS */
+
+.bg{
+
+	display: grid;
+  	flex-wrap: wrap;
+      padding: 1rem;
+      background-color: #f5f7fa;
+      border-radius: 20px;
+
+
+}
+
+.footer_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+}
+
+.footer_head_align {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+.footer_flag_img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer_head_flag_but {
+  border-radius: 8px;
+  padding: 6px 10px;
+  background-color: #f4f5f7;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.footer_scroll_top_but {
+ 	height:40px;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #f15a24;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.footer_country_title{
+    font-size:13px;
+}
+
+/* Responsive tweaks for smaller screens */
+@media (max-width: 768px) {
+  .footer_box {
+    padding: 0.9rem 1rem;
+  }
+
+  .footer_flag_img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer_head_flag_but {
+    padding: 4px 6px;
+  }
+
+.footer_country_title {
+  display: none;
+}
+
+  .footer_scroll_top_but {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .footer_box img {
+    max-width: 100px;
+  }
+}
+
+/* from here account section component CSS */
+
+
+.account-box {
+  max-width: 12000px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.account-box h1 {
+  font-size: 3.4rem;
+  font-weight: 300;
+  color: #036ffc;   
+  margin-bottom: 1.5rem;
+}
+
+.account-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+.account-option {
+  background-color: #f3f6f9;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.account-option:hover {
+  background-color: #e3e9f1;
+}
+
+
+.account-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #00264d;
+  font-weight: 500;
+}
+
+
+.account-option span {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+
+.view-all a {
+  color: #FF8C00;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+
+/* from here footer_service component CSS */
+
+.footer-section {
+  margin-bottom: 2rem;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 13px;
+  color: #2d2d2d;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 8px;
+  color: #5a5a89;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.5;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+
+/* from here contact_us, dialnumber, locate_us component CSS */
+
+.footer-contactus{
+	font-size:13px;
+}
+
+.footer-dialnumber{
+	font-weight:300;
+}
+
+.footer-child {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+
+.footer-left-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	padding: 20px;
+    max-width: 300px;
+
+}
+
+
+.footer-text {
+    font-size: 13px;
+    color: #555;
+
+}

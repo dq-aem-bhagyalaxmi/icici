@@ -1,0 +1,22 @@
+
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.site'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.Footer_social_mediaModel">
+
+    <div class="footer_social_media_container">
+        <div class="footer_social_media_inner">
+            <h1 class="footer_social_media_heading">${model.title}</h1>
+
+            <div class="footer_social_media_buttons">
+                <sly data-sly-list.linkItem="${model.links}">
+                    <a href="${linkItem.link}" class="footer_social_media_img">
+                        <img class="footer_logo_socail" src="${linkItem.fileReference}" alt="App Icon"/>
+                    </a>
+                </sly>
+            </div>
+        </div>
+    </div>
+
+</sly>
