@@ -1,0 +1,138 @@
+/* === Main Home Banner === */
+.home-banner {
+    background: linear-gradient(to right, #f26b00, #ff8c1a); /* Slightly darker orange */
+    padding: 60px 0;
+}
+
+/* === Top Wrapper Styling === */
+.top-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* === Left and Right Columns === */
+.left-column,
+.right-column {
+    flex: 1 1 48%;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    background: linear-gradient(to right, #f26b00, #ff8c1a); /* Slightly darker orange */
+    color: #fff;
+}
+
+/* === Right Column === */
+.right-column {
+    flex: 1 1 48%;
+    min-height: 300px;
+    position: relative; /* Allows absolute positioning for child component content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Hero Image Component (offers-right) === */
+.offers-right {
+    width: 100%;
+    height: 100%;
+    background-size: cover; /* Ensures image covers the area */
+    background-position: center; /* Ensures the image is centered */
+    position: absolute; /* Position image to fill container */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column; /* Allows stacking of title and buttons */
+    justify-content: flex-end; /* Positions content (title + buttons) at the bottom */
+    padding: 20px;
+    color: white;
+}
+
+/* === Hero Title and Buttons (Inside .offers-right Component) === */
+.offers-right h1 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+}
+
+.offers-right .action-buttons {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.offers-right .action-buttons button {
+    padding: 10px 20px;
+    background-color: #f26b00; /* Darker orange color */
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.offers-right .action-buttons button:hover {
+    background-color: #ff8c1a; /* Lighter hover effect */
+}
+
+/* === Spacing Inside Columns === */
+.hero-section-title,
+.search-area,
+.feature-buttons-container,
+.offer-card-left {
+    margin: 0 20px;
+}
+
+/* === Feature Buttons 3x2 Grid === */
+.feature-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 20px 0;
+}
+
+.feature-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+    .feature-buttons-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .feature-buttons-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === Action Buttons Layout === */
+.action-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 0 220px;
+    padding: 16px 20px;
+    background-color: #ffffff;
+    border-radius: 40px; /* Increased rounded corners */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.6), /* soft white glow */
+                0 4px 12px rgba(0, 0, 0, 0.08); /* subtle gray shadow */
+}
+
+.right-column,
+.offers-right {
+    margin: 0 !important;
+    padding: 0 !important;
+}

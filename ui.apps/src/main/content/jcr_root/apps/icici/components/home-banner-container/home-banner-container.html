@@ -1,0 +1,47 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.herobanner'}"/>
+</sly>
+
+<div class="home-banner">
+    <div class="top-wrapper">
+        <!-- LEFT -->
+        <div class="left-column">
+
+            <!-- Hero Section Title -->
+            <div class="hero-section-title"
+                 data-sly-resource="${'heroSectionTitle' @ resourceType='core/wcm/components/title/v3/title'}"></div>
+
+            <!-- Search Bar -->
+            <div class="search-area"
+                 data-sly-resource="${'searchBar' @ resourceType='icici/components/customized-search-bar'}"></div>
+
+            <!-- Feature Buttons -->
+            <div class="feature-buttons-container"
+                 data-sly-list.button="${['button1', 'button2', 'button3', 'button4', 'button5', 'button6']}">
+                <div class="feature-button"
+                     data-sly-resource="${button @ resourceType='icici/components/featuresectionbutton'}">
+                </div>
+            </div>
+
+            <!-- Offer Card Left -->
+            <div class="offer-card-left"
+                 data-sly-resource="${'offerCard' @ resourceType='icici/components/offer-card'}"></div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right-column">
+            <!-- Hero Banner Image Component -->
+            <div class="offers-right"
+                 data-sly-resource="${'offersRight' @ resourceType='icici/components/herobannerimage'}"></div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-buttons-container"
+         data-sly-list.ab="${['action1', 'action2', 'action3', 'action4', 'action5']}">
+        <div class="action-button"
+             data-sly-resource="${ab @ resourceType='icici/components/action-button'}">
+        </div>
+    </div>
+</div>
