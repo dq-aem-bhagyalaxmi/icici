@@ -1,0 +1,41 @@
+
+
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.site'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.Footer_install_mobileappModel">
+
+<!-- Main footer wrapper -->
+<div class="footer_wrapper">
+
+    <!-- App download section -->
+    <div class="footer_column">
+        <div class="footer_mobileapp_container">
+            <div class="footer_mobileapp_inner">
+                <h1 class="footer_mobileapp_heading">${model.title}</h1>
+                <div class="footer_mobileapp_buttons">
+                    <sly data-sly-list.linkItem="${model.links}">
+                        <a href="${linkItem.link}" class="footer_mobileapp_img">
+                            <img src="${linkItem.fileReference}" alt="App Icon"/>
+                        </a>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="footer_column">
+        <div data-sly-resource="${'footersocialmedia' @ resourceType='icici/components/footer_social_media'}"></div>
+    </div>
+
+    <!-- Bank Registered Section -->
+    <div class="footer_column">
+        <div data-sly-resource="${'footerbankregistered' @ resourceType='icici/components/footer_bank_registered'}"></div>
+    </div>
+
+</div>
+
+</sly>
+

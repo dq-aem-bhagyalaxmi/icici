@@ -1,0 +1,17 @@
+
+
+    <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.css @ categories='icici.site'}"/>
+    </sly>
+
+    <sly data-sly-use.model="com.aem.icici.core.models.Footer_dialnumberModel">
+
+
+        <h1 class="footer-dialnumber"  >
+            <a href="${model.linkURL}">
+                <img class="footer-mobile-img" src="${model.fileReference}"/>
+                ${model.title  @context='html'}
+            </a>
+        </h1>
+
+    </sly>
