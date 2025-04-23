@@ -1,0 +1,43 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='icici.chooseyourcard'}"/>
+
+<div data-sly-use.model="com.aem.icici.core.models.ChooseYourCardModel"></div>
+<div class="choose-your-card">
+    <div class="container">
+        <!-- Section Title -->
+        <h2 class="section-title" data-sly-test="${model.sectionTitle }">${model.sectionTitle @context='html'}</h2>
+
+        <div class="card-list" data-sly-list.card="${model.links}">
+            <div class="card-box">
+                <!-- Card Image -->
+
+                <div class="card-image-wrapper">
+                    <div>
+                    <a href="${card.cardImagePath}" ><img src="${card.fileReference}" alt="${card.cardTitle @context='html'}" class="card-image"/></a>
+                    </div>
+                        <div>
+                        <span class="card-label">${card.cardTitle @context='html'}</span>
+                    </div>
+                </div>
+
+                <!-- Card Content -->
+                <div class="card-content">
+                    <div class="card-name">
+                        ${card.sapphiroText @context='html'}
+                    </div>
+
+                    <div class="card-benefit">${card.bestFor @context='html'}</div>
+
+                    <div class="card-description">${card.cardDescription @context='html'}</div>
+                    <div class="card-description">${card.applydetails @context='html'}</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="bottom-links">
+            <p class="explore-all">${model.exploreAll @context='html'}</p>
+            <p class="business">${model.business @context='html'}</p>
+        </div>
+    </div>
+</div>
