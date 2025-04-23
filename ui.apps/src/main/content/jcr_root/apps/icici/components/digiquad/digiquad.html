@@ -1,0 +1,81 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.digiquad'}"/>
+
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.model="com.aem.icici.core.models.DigiquadHeader">
+
+    <div class="header">
+
+        <!-- Logo -->
+        <div class="header__logo" data-sly-test.logo="${model.logo}">
+            <a href="https://www.icicibank.com/home"><img src="${logo}" alt="Logo" /></a>
+        </div>
+
+        <!-- Main Navigation -->
+        <nav class="header__main-nav" data-sly-test="${model.mainNav}">
+            <ul>
+                <sly data-sly-list.navItem="${model.mainNav}">
+                    <li>
+                        <a href="${navItem.linkPath}" target="${navItem.target}" data-sly-test="${navItem.label}">
+                            ${navItem.label}
+                        </a>
+                    </li>
+                </sly>
+            </ul>
+        </nav>
+
+        <!-- Second Navigation -->
+        <nav class="header__second-nav" data-sly-test="${model.secondNav}">
+            <ul>
+                <sly data-sly-list.navItem="${model.secondNav}">
+                    <li>
+                        <a href="${navItem.linkPath}" target="${navItem.target}" data-sly-test="${navItem.label}">
+                            ${navItem.label}
+                        </a>
+                    </li>
+                </sly>
+            </ul>
+        </nav>
+
+        <!-- Contact Number -->
+        <div class="header__contact" data-sly-test="${model.contactNumber}">
+			<img class="contact_img" src="/content/dam/icici/header-images/phone-svgrepo-com.png" width="24" height="24" alt="contact image"/>
+            <span>${model.contactNumber}</span>
+        </div>
+
+
+
+        <!-- Country Flag Selector -->
+        <div class="header__flags" data-sly-test="${model.flag}">
+            <div class="flag-selector">
+
+                <!-- Show the first flag as default -->
+                <sly data-sly-test.firstFlag="${model.flag[0]}">
+                    <img class="flag-selector__main" src="${firstFlag.file}" alt="${firstFlag.logotitle}" />
+                </sly>
+
+                <!-- Dropdown with other flags -->
+                <div class="flag-selector__dropdown">
+                    <ul>
+                        <sly data-sly-list.image="${model.flag}">
+                            <li>
+                                <a href="${image.logopath}">
+                                    <img src="${image.file}" alt="${image.logotitle}" />
+                                    <span>${image.logotitle}</span>
+                                </a>
+                            </li>
+                        </sly>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Login Path -->
+        <div class="header__login" data-sly-test="${model.login}">
+            <a href="${model.login}">Login</a>
+        </div>
+
+    </div>
+
+</sly>

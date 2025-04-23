@@ -1,0 +1,173 @@
+/* Header Container */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkorange;
+    border-bottom: 1px solid #ccc;
+    font-family: Arial, sans-serif;
+    padding: 16px 200px;
+}
+
+/* Logo */
+.header .logo img {
+    max-height: 40px;
+}
+
+/* Contact Image */
+.header .contact_img img {
+    margin-top: 5px;
+    padding-top: 15px;
+}
+
+/* Navigation */
+.header nav {
+    display: flex;
+    gap: 24px;
+}
+
+.header ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.header li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.header li a:hover {
+    color: #005BAC;
+    text-decoration: underline;
+}
+
+/* Contact Info */
+.header .header__contact {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Login Button Style — Link styled as Button */
+.header .header__login a {
+    display: inline-block;
+    background-color: white;
+    color: #000;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none !important;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header .header__login a:hover,
+.header .header__login a:focus,
+.header .header__login a:active {
+    text-decoration: none !important;
+    background-color: #f0f0f0;
+    color: #000;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Flag Selector Wrapper */
+.header__flags {
+    position: relative;
+    margin-right: 20px;
+}
+
+/* Flag Selector Container */
+.flag-selector {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Main Flag (current selection) */
+.flag-selector__main {
+    width: 42px;
+    height: 32px;
+    border-radius: 25%;
+    transition: transform 0.2s ease;
+
+}
+
+/* Dropdown Menu */
+.flag-selector__dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    min-width: 180px;
+    padding: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show Dropdown on Hover */
+.flag-selector:hover .flag-selector__dropdown {
+    display: block;
+}
+
+/* Dropdown List */
+.flag-selector__dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* Dropdown Link Items */
+.flag-selector__dropdown a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    text-decoration: none !important;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+/* Remove blue outline/focus */
+.flag-selector__dropdown a:hover,
+.flag-selector__dropdown a:focus,
+.flag-selector__dropdown a:active {
+    text-decoration: none !important;
+    background-color: #f5f5f5;
+    outline: none;
+    box-shadow: none;
+}
+
+.flag-selector__dropdown a:hover span {
+    color: orange;
+}
+
+.flag-selector__dropdown a:hover span {
+    color: orange;
+}
+
+/* Flag Image */
+.flag-selector__dropdown img {
+    width: 35px;
+    height: 24px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+/* Country Name */
+.flag-selector__dropdown span {
+    white-space: nowrap;
+}

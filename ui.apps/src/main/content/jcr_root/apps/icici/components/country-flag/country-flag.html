@@ -1,0 +1,100 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.model="com.aem.icici.core.models.CountryModel">
+
+    <div class="custom-country-dropdown">
+        <div class="selected-country" id="selectedCountry">
+            <img class="country-flag" src="${model.links[0].flag}" alt="${model.links[0].logotitle}" />
+
+            <span class="dropdown-arrow">&#x25BC;</span>
+        </div>
+
+        <ul class="country-options" id="countryList" data-sly-list.item="${model.links}">
+            <li class="country-option" data-flag="${item.flag}" data-name="${item.logotitle}" data-link="${item.logopath}">
+                <img class="country-flag" src="${item.flag}" alt="${item.logotitle}" />
+                <span class="country-name">${item.logotitle}</span>
+            </li>
+        </ul>
+    </div>
+</sly>
+
+
+<style>
+    .custom-country-dropdown {
+        position: relative;
+		width: 70px;
+        
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Show dropdown on hover */
+    .custom-country-dropdown:hover .country-options {
+        display: block;
+    }
+
+    .selected-country {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 10px 12px;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        border: 1px solid #ddd;
+
+    }
+
+    .country-flag {
+        width: 24px;
+        height: 16px;
+        margin-right: 10px;
+        object-fit: contain;
+    }
+
+    .country-name {
+        flex-grow: 1;
+        color: #333;
+        font-size: 14px;
+    }
+
+    .dropdown-arrow {
+        font-size: 14px;
+        color: #555;
+    }
+
+    .country-options {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+        width: 130px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        margin-top: 5px;
+        z-index: 99;
+        list-style: none;
+        padding: 0;
+    }
+
+    .country-option {
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        border-bottom: 1px solid #eee;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .country-option:last-child {
+        border-bottom: none;
+    }
+
+    /* Hover effect for dropdown options */
+    .country-option:hover {
+        background-color: #ffece0; /* Soft ICICI orange */
+    }
+</style>
+
+
+
