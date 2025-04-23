@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-04-18T16:16:15.197+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/icici/settings/wcm/templates/page-content"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="welcome to ICICI Bank "
+        sling:resourceType="icici/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/container"
+                layout="responsiveGrid">
+                <title
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/title"/>
+                <container
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/container"
+                    layout="responsiveGrid">
+                    <chooseyourcard
+                        jcr:created="{Date}2025-04-18T16:05:20.498+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2025-04-18T16:16:15.193+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/chooseYourCard"
+                        business="&lt;p>Looking for a Business card? &lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/commercial-cards/business-credit-card.html?ITM=nli_home_na_productSuggestionsWidget_2CTA_CMS_chooseYourCreditCard_view_NLI&quot;>VIEW&lt;/a>&lt;/p>&#xd;&#xa;"
+                        exploreAll="&lt;p>&lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card.html?ITM=nli_home_na_productSuggestionsWidget_1CTA_CMS_chooseYourCreditCard_exploreAllCreditCards_NLI&quot;>EXPLORE ALL CREDIT CARDS&lt;/a>&lt;/p>&#xd;&#xa;"
+                        sectionTitle="Choose Your Credit Card"
+                        textIsRich="[true,true,true,true,true,true]">
+                        <links jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                cardImagePath="https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-card?ITM=nli_home_na_productSuggestionsWidget_1_CMS_sapphiro_details_NLI"
+                                cardTitle="Hot Selling"
+                                fileReference="/content/dam/icici/sapphiro.jpg"
+                                sapphiroText="&lt;p>&lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-card?ITM=nli_home_na_productSuggestionsWidget_1_CMS_sapphiro_details_NLI&quot;>Sapphiro&lt;/a>&lt;/p>&#xd;&#xa;"/>
+                        </links>
+                    </chooseyourcard>
+                </container>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

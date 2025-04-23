@@ -1,0 +1,154 @@
+  .choose-your-card {
+        font-family: 'Poppins', sans-serif;
+        background-color: #fff;
+        padding: 60px 0;
+        position: relative;
+    }
+
+    .choose-your-card .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .section-title {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        color: #2d3748;
+    }
+
+    .card-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 32px;
+    }
+
+    .card-box {
+        background-color: #f7f9fc;
+        border-radius: 20px;
+        padding: 24px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s ease;
+    }
+
+    .card-box:hover {
+        transform: translateY(-6px);
+    }
+
+    .card-image-wrapper {
+        position: relative;
+        width: 100%;
+        max-width: 240px; /* Slightly smaller for neat layout */
+        height: 140px;
+        margin: 0 auto 16px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); /* Visible shadow */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    /* Image Styling */
+    .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    /* Positioned badge (like offer card badge) */
+    .card-label {
+        position: absolute;
+        top: -2px;
+        Left: 9px;
+        background-color:#e75e23;
+        color: #fff;
+        font-size: 10px;
+        padding: 4px 8px;
+        border-radius: 3px;
+        font-weight: 200;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+
+    .card-name {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 12px 0 8px;
+        color: #2d2d2d;
+       text-decoration:none;
+
+
+
+    }
+
+    .card-name i {
+        font-size: 14px;
+        color: #2d2d2d;
+    }
+
+    .card-benefit {
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #c1f0cb;
+        color: #057a55;
+        padding: 2px 5px;
+        border-radius: 2px;
+        width: fit-content;
+
+    }
+
+    .card-description {
+        font-size: 15px;
+        color: #2b2b2b;
+        margin-top: 10px;
+        line-height: 1.6;
+    }
+
+    .card-description .card-tags {
+        font-size: 13px;
+        color: #667;
+    }
+
+    .card-description a {
+        color: #e75e23;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .card-links {
+        display: flex;
+        gap: 20px;
+        margin-top: auto;
+        padding-top: 20px;
+    }
+
+    .card-links a {
+        font-size: 13px;
+        font-weight: 600;
+        color: #e75e23;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .bottom-links {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+
+    .bottom-links a{
+        color: #e75e23 !important;
+        text-decoration:none;
+    }
+
