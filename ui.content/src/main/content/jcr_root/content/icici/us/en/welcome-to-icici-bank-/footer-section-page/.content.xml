@@ -2,11 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-24T13:01:24.753+05:30"
+        cq:lastModified="{Date}2025-04-24T14:04:23.327+05:30"
         cq:lastModifiedBy="admin"
-        cq:template="/conf/icici/settings/wcm/templates/icici-"
+        cq:template="/conf/icici/settings/wcm/templates/icici-bank-"
         jcr:primaryType="cq:PageContent"
-        jcr:title="ICICI Home Page "
+        jcr:title="Footer section Page"
         sling:resourceType="icici/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -17,287 +17,280 @@
                 sling:resourceType="icici/components/container"
                 layout="responsiveGrid">
                 <footer_section
-                    jcr:created="{Date}2025-04-23T14:50:58.923+05:30"
+                    jcr:created="{Date}2025-04-24T11:57:10.864+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-23T16:38:01.631+05:30"
+                    jcr:lastModified="{Date}2025-04-24T11:58:41.176+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/footer section"
                     fileReference="/content/dam/test/icici-footer-logo.jpg"
                     fileReference1="/content/dam/test/FlagIndia.jpg"
-                    icon="&amp;#8594; "
-                    linkURL="https://www.google.com"
-                    text="&lt;p>&lt;a href=&quot;https://google.com&quot;>SCROLL TO TOP&lt;/a>&lt;a href=&quot;https://www.google.com&quot;>&lt;/a>&lt;/p>&#xd;&#xa;"
+                    linkURL="https://google.com"
+                    text="&lt;p>SCROLL TO TOP&lt;/p>&#xd;&#xa;"
                     textIsRich="true"
                     title="ICICI Bank Country Websites">
                     <footer_contactus
-                        jcr:lastModified="{Date}2025-04-23T14:55:21.517+05:30"
+                        jcr:lastModified="{Date}2025-04-24T11:59:02.696+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_contactus"
-                        icon="k"
-                        linkURL="https://www.google.com"
-                        title="Contact US"/>
+                        linkURL="https://google.com"
+                        title="Contact Us"/>
                     <footer_dialnumber
-                        jcr:lastModified="{Date}2025-04-23T14:53:51.291+05:30"
+                        jcr:lastModified="{Date}2025-04-24T11:59:27.692+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_dialnumber"
                         fileReference="/content/dam/test/phone-solid.svg"
-                        linkURL="https://www.google.com"
+                        linkURL="https://google.com"
                         title="1800 1080"/>
                     <footer_locate_us
-                        jcr:lastModified="{Date}2025-04-23T14:54:15.654+05:30"
+                        jcr:lastModified="{Date}2025-04-24T11:59:37.071+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_contactus"
-                        icon="tt"
-                        linkURL="https://www.google.com"
-                        title="Locate US"/>
+                        linkURL="https://google.com"
+                        title="LOCATE US"/>
                     <footer_service
-                        jcr:lastModified="{Date}2025-04-23T16:09:15.738+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:00:56.264+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_service"
-                        title="Customer Servive">
+                        title="Customer Service">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Contact us"/>
+                                link="https://google.com"
+                                text="Contact Us"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Contact us"/>
+                                link="https://google.com"
+                                text="Customer Care"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Contact us"/>
-                            <item3
-                                jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Contact us"/>
+                                link="https://google.com"
+                                text="Form Center"/>
                         </links>
                     </footer_service>
                     <ICICI_bank-Group
-                        jcr:lastModified="{Date}2025-04-23T14:57:30.394+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:01:52.283+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_service"
-                        title="ICICI Bank Group Websites">
+                        title="ICICI Bank Group Websitres">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="ICICI Foundation"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="ICICI Venture"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="ICICI Direct"/>
                         </links>
                     </ICICI_bank-Group>
                     <Regulatory_information
-                        jcr:lastModified="{Date}2025-04-23T14:58:30.947+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:02:43.331+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_service"
-                        title="Regulatory Information">
+                        title="Regulatory Information ">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Safe Bankingn "/>
+                                link="https://google.com"
+                                text="Safe Banking "/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="RBI Awareness"/>
+                                link="https://google.com"
+                                text="RBI Awareness "/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="RBI Regul"/>
+                                link="https://google.com"
+                                text="BBI Regulations"/>
                         </links>
                     </Regulatory_information>
                     <Additional_product_information_pages
-                        jcr:lastModified="{Date}2025-04-23T14:59:24.081+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:03:49.643+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_service"
-                        title="Additinal Product Information Page">
+                        title="Additional Product Information Pages">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="Interset Rates"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="Forex Rates"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="terms and conditions"/>
+                                link="https://google.com"
+                                text="Fees &amp; Charges"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                link="https://google.com"
+                                text="Terms &amp; Conditions"/>
                         </links>
                     </Additional_product_information_pages>
                     <Others
-                        jcr:lastModified="{Date}2025-04-23T15:00:17.105+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:04:52.740+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_service"
-                        title="Others">
+                        title="Other">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Career Opertunities"/>
+                                link="https://google.com"
+                                text="Career Opportunities"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Do not Call"/>
+                                link="https://google.com"
+                                text="Do Not Call "/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Business Conducrt "/>
+                                link="https://google.com"
+                                text="Site map"/>
                         </links>
                     </Others>
                     <footer_way_to_bank
-                        jcr:lastModified="{Date}2025-04-23T15:01:15.458+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:05:46.500+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_way_to_bank"
-                        link1="https://www.google.com"
+                        link1="https://google.com"
                         title="WAYS TO BANK">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="Digital Banking "/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Mobilr Banking"/>
+                                link="https://google.com"
+                                text="Mobile Banking "/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                link="https://google.com"
+                                text="Internet Banking "/>
                         </links>
                     </footer_way_to_bank>
                     <Investor_center
-                        jcr:lastModified="{Date}2025-04-23T15:02:03.134+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:06:48.287+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_way_to_bank"
-                        link1="https://www.google.com"
-                        title="Investor CENTER">
+                        link1="https://google.com"
+                        title="Investor Center ">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Annual Reports"/>
+                                link="https://google.com"
+                                text="AnnualReport"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Investor"/>
-                            <item2
-                                jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
+                                link="https://google.com"
                                 text="Notice"/>
                         </links>
                     </Investor_center>
                     <About_us
-                        jcr:lastModified="{Date}2025-04-23T15:02:53.422+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:07:32.976+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_way_to_bank"
-                        link1="https://www.google.com"
-                        title="About US">
+                        link1="https://google.com"
+                        title="ABOUT US">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Board of Diretors"/>
+                                link="https://google.com"
+                                text="Board of Directors"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Media Centre"/>
-                            <item2
-                                jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Notices"/>
+                                link="https://google.com"
+                                text="Media Center"/>
                         </links>
                     </About_us>
                     <Calculator
-                        jcr:lastModified="{Date}2025-04-23T15:03:51.227+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:08:37.251+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_way_to_bank"
-                        link1="https://www.google.com"
-                        title="Calculators">
+                        link1="https://google.com"
+                        title="CALCULATORS">
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Fixed Deposite"/>
+                                link="https://google.com"
+                                text="Fixed Deposite Cal"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Personal Loan"/>
+                                link="https://google.com"
+                                text="Home Loan"/>
                             <item2
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Home Loan"/>
+                                link="https://google.com"
+                                text="Car Loan"/>
                             <item3
                                 jcr:primaryType="nt:unstructured"
-                                link="https://www.google.com"
-                                text="Car Loan"/>
+                                link="https://google.com"
+                                text="SIP"/>
                         </links>
                     </Calculator>
                     <install_mobile_app
-                        jcr:lastModified="{Date}2025-04-23T15:07:35.243+05:30"
+                        jcr:lastModified="{Date}2025-04-24T12:10:28.082+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="icici/components/footer_install_mobileapp"
-                        title="Mobile app">
+                        title="Install IMobile App">
                         <footersocialmedia
-                            jcr:lastModified="{Date}2025-04-24T13:01:24.746+05:30"
+                            jcr:lastModified="{Date}2025-04-24T13:02:46.808+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="icici/components/footer_social_media"
-                            title="Social Media">
+                            title="Get Social">
                             <links jcr:primaryType="nt:unstructured">
                                 <item0
                                     jcr:primaryType="nt:unstructured"
                                     fileReference="/content/dam/icici/facebook-brands.svg"
-                                    link="https://www.google.com"/>
+                                    link="https://google.com"/>
                                 <item1
                                     jcr:primaryType="nt:unstructured"
                                     fileReference="/content/dam/icici/linkedin-brands.svg"
-                                    link="https://www.google.com"/>
+                                    link="https://google.com"/>
                                 <item2
                                     jcr:primaryType="nt:unstructured"
-                                    fileReference="/content/dam/icici/linkedin-brands.svg"
-                                    link="https://www.google.com"/>
+                                    fileReference="/content/dam/icici/square-x-twitter-brands.svg"
+                                    link="https://google.com"/>
                                 <item3
                                     jcr:primaryType="nt:unstructured"
-                                    fileReference="/content/dam/icici/square-x-twitter-brands.svg"
-                                    link="https://www.google.com"/>
+                                    fileReference="/content/dam/icici/square-youtube-brands.svg"
+                                    link="https://google.com"/>
                                 <item4
                                     jcr:primaryType="nt:unstructured"
-                                    fileReference="/content/dam/icici/square-youtube-brands.svg"
-                                    link="https://www.google.com"/>
+                                    fileReference="/content/dam/icici/linkedin-brands.svg"
+                                    link="https://google.com"/>
                             </links>
                         </footersocialmedia>
                         <links jcr:primaryType="nt:unstructured">
                             <item0
                                 jcr:primaryType="nt:unstructured"
                                 fileReference="/content/dam/test/app-store.jpg"
-                                link="https://www.google.com"/>
+                                link="https://google.com"/>
                             <item1
                                 jcr:primaryType="nt:unstructured"
                                 fileReference="/content/dam/test/google-play.jpg"
-                                link="https://www.google.com"/>
+                                link="https://google.com"/>
                         </links>
                         <footerbankregistered
-                            jcr:lastModified="{Date}2025-04-23T15:08:08.034+05:30"
+                            jcr:lastModified="{Date}2025-04-24T12:10:57.212+05:30"
                             jcr:lastModifiedBy="admin"
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="icici/components/footer_bank_registered"
@@ -312,9 +305,22 @@
                             </links>
                         </footerbankregistered>
                     </install_mobile_app>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
                 </footer_section>
+                <footer_contactus
+                    jcr:created="{Date}2025-04-24T14:03:31.324+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-24T14:04:23.321+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_contactus"
+                    title="contact us"/>
             </container>
         </root>
     </jcr:content>
-    <test-page/>
 </jcr:root>
