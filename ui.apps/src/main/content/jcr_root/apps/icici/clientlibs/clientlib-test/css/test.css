@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
   gap: 1rem;
   padding: 1rem;
-  background-color: #f5f7fa;
+  background-color:white;
   border-radius: 20px;
 }
 
@@ -34,13 +34,14 @@
     padding: 2rem;
     border-radius: 20px;
     gap: 2rem;
-    flex-wrap: wrap; /* Ensures responsive behavior */
+    flex-wrap: wrap; /* Ensures responsive behavior   #f5f7fa*/
 }
 
-.footer_column {
+.footer-column {
     flex: 1;
     text-align: center;
     min-width: 250px; /* for responsiveness */
+
 }
 
 /* from here footer_bank_registration component CSS */
@@ -185,14 +186,14 @@
 }
 
 
-/* from here footer_section component CSS */
+/* from here footer_section component CSS #f5f7fa #f5f8fb*/
 
 .bg{
 
 	display: grid;
   	flex-wrap: wrap;
       padding: 1rem;
-      background-color: #f5f8fb;  #f5f7fa #f5f8fb
+      background-color: #f5f6fa;  
       border-radius: 20px;
 
 
@@ -381,12 +382,6 @@
 
 /* from here contact_us, dialnumber, locate_us component CSS */
 
-.footer-contactus a{
-	font-size:13px;
-    color: #454543;
-    text-decoration: none;
-
-}
 
 .footer-dialnumber a {
     color:  #454543;
@@ -410,8 +405,13 @@
     max-width: 300px;
 }
 
-
 .footer-text {
     font-size: 13px;
+    padding-top: 0px;
+}
 
+.footer-text a {
+    font-size: 13px;
+    color: #2d2d2d; /* black color */
+    text-decoration: none;
 }
