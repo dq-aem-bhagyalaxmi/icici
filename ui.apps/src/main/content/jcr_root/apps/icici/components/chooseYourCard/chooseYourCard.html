@@ -28,8 +28,18 @@
 
                     <div class="card-benefit">${card.bestFor @context='html'}</div>
 
-                    <div class="card-description">${card.cardDescription @context='html'}</div>
+                    <div class="card-description">
+                        ${card.cardDescription @context='html'}<input type="checkbox" id="toggle-${card.cardTitle}" class="more-toggle"/><label for="toggle-${card.cardTitle @context='html'}" class="more-link">more</label>
+
+                        <div class="more-content">
+                            ${card.cardExtraDetails @context='html'}
+                        </div>
+                    </div>
+
                     <div class="card-description">${card.applydetails @context='html'}</div>
+
+                    <!-- <div class="card-description">${card.cardDescription @context='html'}</div>
+                     <div class="card-description">${card.applydetails @context='html'}</div>-->
                 </div>
             </div>
         </div>
