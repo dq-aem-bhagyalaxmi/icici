@@ -91,4 +91,5 @@
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
     <icici-home-page-/>
+    <footer-page/>
 </jcr:root>

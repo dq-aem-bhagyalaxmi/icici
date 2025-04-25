@@ -4,7 +4,7 @@
 
 <div data-sly-use.model="com.aem.icici.core.models.FooterSection">
 
-    <div class="bg">
+    <div class="bg" style="background-color: white;">
         <div class="footer_box">
             <div>
                 <a href="${model.linkURL}">
@@ -26,22 +26,21 @@
 
         </div>
 
-        <div class="footer-main-grid">
+        <div class="footer-main-grid"   style="background-color: white;">
 
             <div class="footer-child ">
-                <div>
-                    <div class="footer-block">
+                <div class="footer-column"> 
+
                         <div  data-sly-resource="${'footer_contactus' @ resourceType='icici/components/footer_contactus'}"></div>
-                    </div>
 
-                    <div class="footer-block">
+
+
                         <div  data-sly-resource="${'footer_dialnumber' @ resourceType='icici/components/footer_dialnumber'}"></div>
-                    </div>
 
-                    <div class="footer-block">
+
                         <div  data-sly-resource="${'footer_locate_us' @ resourceType='icici/components/footer_contactus'}"></div>
                         <p class="footer-text" >Find Branches & ATMs near you</p>
-                    </div>
+
                 </div>
 
                 <div class="footer-column" data-sly-resource="${'footer_service' @ resourceType='icici/components/footer_service'}"></div>
