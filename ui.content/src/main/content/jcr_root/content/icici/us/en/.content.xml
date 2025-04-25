@@ -88,5 +88,6 @@
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
     <welcome-to-icici-bank-/>
+    <home-page/>
     <icici-home-page/>
 </jcr:root>

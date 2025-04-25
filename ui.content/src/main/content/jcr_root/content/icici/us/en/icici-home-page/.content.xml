@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-25T11:32:47.878+05:30"
+        cq:lastModified="{Date}2025-04-25T14:27:43.308+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
         jcr:primaryType="cq:PageContent"
@@ -15,7 +15,230 @@
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/container"
-                layout="responsiveGrid"/>
+                layout="responsiveGrid">
+                <home_banner_containe
+                    jcr:created="{Date}2025-04-25T12:07:06.879+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-25T12:07:06.879+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/home-banner-container">
+                    <heroSectionTitle
+                        jcr:lastModified="{Date}2025-04-25T12:09:33.084+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Truth, Trust, Transparency"
+                        sling:resourceType="core/wcm/components/title/v3/title"
+                        linkTarget="_self"
+                        type="h1"/>
+                    <searchBar
+                        jcr:lastModified="{Date}2025-04-25T12:10:03.115+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/customized-search-bar"
+                        leftIconRef="/content/dam/icici/search_bar_icons/search icon.png"
+                        rightIconRef="/content/dam/icici/search_bar_icons/mic icon.png"
+                        searchText="Search for Products, Services..."/>
+                    <button1
+                        jcr:lastModified="{Date}2025-04-25T12:10:25.017+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/featuresectionbutton"
+                        buttonText="Accounts"
+                        iconPath="/content/dam/icici/service_button_icons/accounts.svg"/>
+                    <button2
+                        jcr:lastModified="{Date}2025-04-25T12:16:51.416+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/featuresectionbutton"
+                        buttonText="Cards"
+                        iconPath="/content/dam/icici/service_button_icons/cards.svg"/>
+                    <button3
+                        jcr:lastModified="{Date}2025-04-25T12:17:35.094+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/featuresectionbutton"
+                        buttonText="Loans"
+                        iconPath="/content/dam/icici/service_button_icons/loan.svg"/>
+                    <button4
+                        jcr:lastModified="{Date}2025-04-25T12:17:54.285+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/featuresectionbutton"
+                        buttonText="Deposits"
+                        iconPath="/content/dam/icici/service_button_icons/deposit.svg"/>
+                    <button5
+                        jcr:lastModified="{Date}2025-04-25T12:18:09.203+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/featuresectionbutton"
+                        buttonText="Investments"
+                        iconPath="/content/dam/icici/service_button_icons/investment.svg"/>
+                    <button6
+                        jcr:lastModified="{Date}2025-04-25T12:19:22.047+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/featuresectionbutton"
+                        buttonText="1800 1080"
+                        iconPath="/content/dam/icici/service_button_icons/deposit.svg"/>
+                    <offersRight
+                        jcr:lastModified="{Date}2025-04-25T12:19:58.324+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/herobannerimage"
+                        details="Get your RuPay Credit Card instantly. T&amp;Cs"
+                        image="/content/dam/icici/home-banner-image.jpeg"
+                        title="Dine with UPI on Credit Cards!">
+                        <offersRightButton
+                            jcr:lastModified="{Date}2025-04-25T12:20:13.951+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="icici/components/featuresectionbutton"
+                            buttonText="Apply Now"
+                            iconPath="/content/dam/icici/home-banner-image.jpeg"/>
+                    </offersRight>
+                    <offerCard
+                        jcr:lastModified="{Date}2025-04-25T12:25:09.164+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/offer-card"
+                        cardBadge="Special Offer"
+                        fileReference="/content/dam/icici/sapphiro-home-offer.jpg"
+                        linkText1="Apply"
+                        linkText2="Details"
+                        offerSectionTitle="Offers for you!"
+                        title="ICICI Bank Credit card"/>
+                    <action1
+                        jcr:lastModified="{Date}2025-04-25T12:25:35.293+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/action-button"
+                        iconPath="/content/dam/icici/action_button_icons/Group.svg"
+                        label="Service Request"/>
+                    <action2
+                        jcr:lastModified="{Date}2025-04-25T12:25:50.014+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/action-button"
+                        iconPath="/content/dam/icici/action_button_icons/password.svg"
+                        label="track Applications/ Service Request"/>
+                    <action3
+                        jcr:lastModified="{Date}2025-04-25T12:26:09.246+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/action-button"
+                        iconPath="/content/dam/icici/action_button_icons/check.svg"
+                        label="Smart Lock"/>
+                    <action4
+                        jcr:lastModified="{Date}2025-04-25T12:26:32.387+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/action-button"
+                        iconPath="/content/dam/icici/action_button_icons/block-card.svg"
+                        label="Block Card"/>
+                    <action5
+                        jcr:lastModified="{Date}2025-04-25T12:27:04.768+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/action-button"
+                        iconPath="/content/dam/icici/action_button_icons/Group.svg"
+                        label="Report Fraud"/>
+                </home_banner_containe>
+                <account_section
+                    jcr:created="{Date}2025-04-25T12:59:44.377+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-25T13:05:49.478+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/account section"
+                    link1="https://www.google.com"
+                    title="Open an Account"
+                    title1="View All">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://www.icicibank.com/personal-banking/accounts/savings-account?ITM=nli_home_na_entryPoints_1_CMS_savings_NLI"
+                            text="Savings"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://www.google.com"
+                            text="Salary"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://www.google.com"
+                            text="NRI"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://www.google.com"
+                            text="Business"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://www.google.com"
+                            text="Investments"/>
+                    </links>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </account_section>
+                <chooseyourcard
+                    jcr:created="{Date}2025-04-25T12:32:09.123+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-25T13:06:28.916+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/chooseYourCard"
+                    business="&lt;p>Looking for a Business card? &lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/commercial-cards/business-credit-card?ITM=nli_home_na_productSuggestionsWidget_2CTA_CMS_chooseYourCreditCard_view_NLI&quot;>VIEW&lt;/a>&lt;/p>&#xd;&#xa;"
+                    exploreAll="&lt;p>&lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card?ITM=nli_home_na_productSuggestionsWidget_1CTA_CMS_chooseYourCreditCard_exploreAllCreditCards_NLI&quot;>EXPLORE ALL CREDIT CARDS&lt;/a>&lt;/p>&#xd;&#xa;"
+                    sectionTitle="Choose Your Credit Card"
+                    textIsRich="[true,true,true,true,true,true,true,true,true,true,true,true,true,true]">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            applydetails="&lt;p>&lt;a href=&quot;https://buy.icicibank.com/cap-v2/getting-started&quot;>APPLY &lt;/a> &lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-card?ITM=nli_creditCard_cards_creditCard_tabCardListWidget_4_CMS_all_premiumLifestyleOffers_sapphiroCreditCard_NLI&quot;>DETAILS &lt;/a>&lt;/p>&#xd;&#xa;"
+                            bestFor="&lt;p>BEST FOR&lt;/p>&#xd;&#xa;"
+                            cardDescription="&lt;h4>Premium Lifestyle Offers&lt;/h4>&#xd;&#xa;&lt;p>Lounge Access | Golf Rounds | BookMyShow Offers &lt;/p>&#xd;&#xa;"
+                            cardExtraDetails="BookMyShow Offers&#xd;&#xa;Fuel waivers&#xd;&#xa;Milestone rewards&#xd;&#xa;Personal Accident Insurance"
+                            cardImagePath="https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-card?ITM=nli_creditCard_cards_creditCard_tabCardListWidget_4_CMS_all_premiumLifestyleOffers_sapphiroCreditCard_NLI"
+                            cardTitle="Hot Selling"
+                            fileReference="/content/dam/icici/sapphiro-home-offer.jpg"
+                            sapphiroText="&lt;p>&lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/sapphiro-card?ITM=nli_creditCard_cards_creditCard_tabCardListWidget_4_CMS_all_premiumLifestyleOffers_sapphiroCreditCard_NLI&quot;>Sapphiro&lt;/a> ↗&lt;/p>&#xd;&#xa;"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            applydetails="&lt;p>&lt;a href=&quot;https://buy.icicibank.com/cap-v2/getting-started&quot;>APPLY &lt;/a> &lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/rubyx-credit-card?ITM=nli_creditCard_cards_creditCard_tabCardListWidget_5_CMS_all_highEndLifestylePerks_rubyxcreditCard_NLI&quot;>DETAILS&lt;/a>&lt;/p>&#xd;&#xa;"
+                            bestFor="&lt;p>BEST FOR &lt;/p>&#xd;&#xa;"
+                            cardDescription="&lt;h4>High-End Lifestyle Perks&lt;/h4>&#xd;&#xa;&lt;p>welcome vouchers | complimentary Golf rounds | Lounge access&lt;/p>&#xd;&#xa;"
+                            cardExtraDetails="Welcome Vouchers&#xd;&#xa;Airport &amp; Railway Lounge accesses&#xd;&#xa;BookMyShow Offers&#xd;&#xa;24/7 Concierge services"
+                            cardImagePath="https://www.icicibank.com/personal-banking/cards/credit-card/rubyx-credit-card?ITM=nli_cards_cards_productSuggestionsWidget_2_CMS_iciciBankRubyxCreditCard_NLI"
+                            cardTitle="Exclusive Rewards"
+                            fileReference="/content/dam/icici/card-section-images/rubyx.jpg"
+                            sapphiroText="&lt;p>&lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/rubyx-credit-card?ITM=nli_creditCard_cards_creditCard_tabCardListWidget_5_CMS_all_highEndLifestylePerks_rubyxcreditCard_NLI&quot;>Rubyx&lt;/a>  ↗&lt;/p>&#xd;&#xa;"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            applydetails="&lt;p>&lt;a href=&quot;https://buy.icicibank.com/cap-v2/getting-started&quot;>APPLY &lt;/a> &lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/coral-credit-card?ITM=nli_cards_cards_productSuggestionsWidget_3_CMS_iciciBankCoralCreditCard_NLI&quot;>DETAILS&lt;/a>&lt;/p>&#xd;&#xa;"
+                            bestFor="&lt;p>BEST FOR &lt;/p>&#xd;&#xa;"
+                            cardDescription="&lt;h4>Everyday or On-The-Go Spends&lt;/h4>&#xd;&#xa;&lt;p>Lounge access | BookMyShow Offers | INOX Offers&lt;/p>&#xd;&#xa;"
+                            cardExtraDetails="BookMyShow Offers&#xd;&#xa;Fuel waivers&#xd;&#xa;Milestone rewards&#xd;&#xa;Personal Accident Insurance"
+                            cardImagePath="https://www.icicibank.com/personal-banking/cards/credit-card/coral-credit-card?ITM=nli_creditCard_cards_creditCard_productSuggestionsWidget_3_CMS_iciciBankCoralCreditCard_NLI"
+                            cardTitle="Popular"
+                            fileReference="/content/dam/icici/card-section-images/coral.jpg"
+                            sapphiroText="&lt;p>&lt;a href=&quot;https://www.icicibank.com/personal-banking/cards/credit-card/coral-credit-card?ITM=nli_creditCard_cards_creditCard_productSuggestionsWidget_3_CMS_iciciBankCoralCreditCard_NLI&quot;>Coral&lt;/a> ↗&lt;/p>&#xd;&#xa;"/>
+                    </links>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </chooseyourcard>
+            </container>
         </root>
     </jcr:content>
 </jcr:root>
