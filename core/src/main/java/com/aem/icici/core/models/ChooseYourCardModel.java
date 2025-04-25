@@ -77,7 +77,6 @@ public class ChooseYourCardModel {
         @ValueMapValue
         private String applydetails;
 
-
         public String getCardTitle() {
             return cardTitle;
         }
