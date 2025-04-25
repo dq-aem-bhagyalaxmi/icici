@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Multifield"
+    jcr:title="Credit Card Section"
     sling:resourceType="cq/gui/components/authoring/dialog"
     extraClientlibs="[cq.authoring.dialog.all]">
     <content
@@ -15,7 +15,7 @@
                     <sectionTitle
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Label for Multifield component"
+                        fieldLabel="Section Title"
                         name="./sectionTitle"
                         required="{Boolean}true"/>
                     <links
@@ -38,7 +38,7 @@
                                         <cardTitle
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                            fieldLabel="Title1"
+                                            fieldLabel="Card Title"
                                             name="./cardTitle"
                                             required="{Boolean}true"/>
                                         <cardImagePath
@@ -46,7 +46,7 @@
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="cq/gui/components/coral/common/form/pagefield"
                                             fieldDescription="Links the title. Path to a content page, external URL or page anchor."
-                                            fieldLabel="Link1"
+                                            fieldLabel="Image Link Path"
                                             name="./cardImagePath"
                                             rootPath="/content">
                                             <granite:rendercondition
@@ -302,6 +302,12 @@
                                                 </cui>
                                             </uiSettings>
                                         </bestFor>
+                                        <cardExtraDetails
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                            fieldLabel="Card Extra Details"
+                                            name="./cardExtraDetails"
+                                            useFixedInlineToolbar="{Boolean}true"/>
                                         <cardDescription
                                             jcr:primaryType="nt:unstructured"
                                             sling:resourceType="cq/gui/components/authoring/dialog/richtext"
@@ -550,7 +556,7 @@
                     <exploreAll
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                        fieldLabel="why"
+                        fieldLabel="Explore All Credit Cards"
                         name="./exploreAll"
                         useFixedInlineToolbar="{Boolean}true">
                         <rtePlugins jcr:primaryType="nt:unstructured">
@@ -671,7 +677,7 @@
                     <business
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                        fieldLabel="why"
+                        fieldLabel="Looking for a Business card?"
                         name="./business"
                         useFixedInlineToolbar="{Boolean}true">
                         <rtePlugins jcr:primaryType="nt:unstructured">

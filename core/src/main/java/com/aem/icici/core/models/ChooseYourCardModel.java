@@ -72,7 +72,11 @@ public class ChooseYourCardModel {
         private String cardDescription;
 
         @ValueMapValue
+        private String cardExtraDetails;
+
+        @ValueMapValue
         private String applydetails;
+
 
         public String getCardTitle() {
             return cardTitle;
@@ -100,6 +104,10 @@ public class ChooseYourCardModel {
 
         public String getApplydetails() {
             return applydetails;
+        }
+
+        public String getCardExtraDetails() {
+            return cardExtraDetails;
         }
     }
 }
