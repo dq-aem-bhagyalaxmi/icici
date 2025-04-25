@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-24T17:36:06.950+05:30"
+        cq:lastModified="{Date}2025-04-25T10:41:26.673+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/footer-template"
         jcr:primaryType="cq:PageContent"
@@ -16,41 +16,50 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/container"
                 layout="responsiveGrid">
-                <footer_section
-                    jcr:created="{Date}2025-04-24T17:33:14.069+05:30"
+                <account_section
+                    jcr:created="{Date}2025-04-25T09:57:41.999+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-24T17:33:14.069+05:30"
+                    jcr:lastModified="{Date}2025-04-25T10:33:17.525+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="icici/components/footer section">
-                    <footer_contactus
-                        jcr:lastModified="{Date}2025-04-24T17:35:26.792+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="icici/components/footer_contactus"
-                        linkURL="https://google.com"
-                        title="Contact Us"/>
-                    <footer_dialnumber
-                        jcr:lastModified="{Date}2025-04-24T17:35:40.383+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="icici/components/footer_dialnumber"
-                        linkURL="https://google.com"
-                        title="1800 1080"/>
-                    <footer_locate_us
-                        jcr:lastModified="{Date}2025-04-24T17:35:56.637+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="icici/components/footer_contactus"
-                        linkURL="https://google.com"
-                        title="Locate Us"/>
-                    <footer_service
-                        jcr:lastModified="{Date}2025-04-24T17:36:06.948+05:30"
-                        jcr:lastModifiedBy="admin"
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="icici/components/footer_service"
-                        title="Service"/>
-                </footer_section>
+                    sling:resourceType="icici/components/account section"
+                    link1="https://google.com"
+                    title="Open an Account"
+                    title1="VIEW ALL">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://google.com"
+                            text="Savings"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://google.com"
+                            text="Salary"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://google.com"
+                            text="NRI "/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://google.com"
+                            text="Business"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            icon="&amp;#8594;"
+                            link="https://google.com"
+                            text="Investmets"/>
+                    </links>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </account_section>
             </container>
         </root>
     </jcr:content>
