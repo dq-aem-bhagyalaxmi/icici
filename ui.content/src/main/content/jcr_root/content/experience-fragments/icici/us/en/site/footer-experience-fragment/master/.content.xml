@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-04-26T10:03:55.001+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/icici/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer Experience Fragment"
+        sling:resourceType="icici/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <footer_section
+                jcr:created="{Date}2025-04-25T12:05:32.307+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-04-25T13:09:12.879+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/footer section"
+                fileReference="/content/dam/icici/footer-images/icici-footer-logo.jpg"
+                fileReference1="/content/dam/icici/footer-images/Flag_of_India.svg.jpg"
+                icon="&amp;#8594;"
+                linkURL="https://www.google.com"
+                text="&lt;p>&lt;a href=&quot;https://www.google.com&quot;>SCROLL&amp;nbsp; TO TOP&lt;/a>&lt;/p>&#xd;&#xa;"
+                textIsRich="true"
+                title="ICICI Bank Country Websites">
+                <footer_contactus
+                    jcr:lastModified="{Date}2025-04-25T13:09:48.612+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_contactus"
+                    icon="&amp;#8594;"
+                    linkURL="https://www.google.com"
+                    title="CONTACT US"/>
+                <footer_dialnumber
+                    jcr:lastModified="{Date}2025-04-25T13:10:28.078+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_dialnumber"
+                    fileReference="/content/dam/icici/footer-images/phone-solid.svg"
+                    linkURL="https://www.google.com"
+                    title="1800 1080"/>
+                <footer_locate_us
+                    jcr:lastModified="{Date}2025-04-25T13:10:55.929+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_contactus"
+                    icon="&amp;#8594;"
+                    linkURL="https://www.google.com"
+                    title="LOCATE US "/>
+                <footer_service
+                    jcr:lastModified="{Date}2025-04-25T13:15:58.466+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_service"
+                    title="Customer Service">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Contact Us"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Customer Care"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Report Unauthorized Transaction"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Form Center"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Raise a service Request"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Report Suspicious Request"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Complaints and Grievance redressal"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Complaint Form"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Central Know Your Customer (CKYC)"/>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="List of Unclaimed Accounts"/>
+                        <item10
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Inoperative/Dormant Accounts"/>
+                    </links>
+                </footer_service>
+                <ICICI_bank-Group
+                    jcr:lastModified="{Date}2025-04-25T13:20:08.235+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_service"
+                    title="ICICI Bank Group Websites">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Foundation"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Lombard General Insurance"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Prudential Life Insurance"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Prudential AMC"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Venture"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Direct"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Securities Primary Dealership Ltd"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Home Finance"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ICICI Investment Management Company Limited"/>
+                    </links>
+                </ICICI_bank-Group>
+                <Regulatory_information
+                    jcr:lastModified="{Date}2025-04-25T14:13:20.521+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_service"
+                    title="Regulatory Information">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Safe Banking"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="RBI Awareness Campaign"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="RBI Beware of ficticious offers"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="RBI Kehta hai"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Regulatory Disclosure Section"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Customer Literature"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Complaints and Grievance redressal"/>
+                    </links>
+                </Regulatory_information>
+                <install_mobile_app
+                    jcr:lastModified="{Date}2025-04-25T13:23:47.417+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_install_mobileapp"
+                    title="Install iMobile App">
+                    <footersocialmedia
+                        jcr:lastModified="{Date}2025-04-25T13:22:48.022+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/footer_social_media"
+                        title="Get Social">
+                        <links jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/facebook-brands.svg"
+                                link="https://www.google.com"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/linkedin-brands.svg"
+                                link="https://www.google.com"/>
+                            <item2
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/square-x-twitter-brands.svg"
+                                link="https://www.google.com"/>
+                            <item3
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/square-instagram-brands.svg"
+                                link="https://www.google.com"/>
+                            <item4
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/square-youtube-brands.svg"
+                                link="https://www.google.com"/>
+                        </links>
+                    </footersocialmedia>
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            fileReference="/content/dam/icici/footer-images/app-store.png"
+                            link="https://www.google.com"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            fileReference="/content/dam/icici/footer-images/google-play.png"
+                            link="https://www.google.com"/>
+                    </links>
+                    <footerbankregistered
+                        jcr:lastModified="{Date}2025-04-25T13:25:08.966+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="icici/components/footer_bank_registered"
+                        title="ICICI Bank Ltd is registered with DICGC">
+                        <links jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/DICGC.png"/>
+                            <item1
+                                jcr:primaryType="nt:unstructured"
+                                fileReference="/content/dam/icici/footer-images/QR-DICGC.svg"/>
+                        </links>
+                    </footerbankregistered>
+                </install_mobile_app>
+                <Additional_product_information_pages
+                    jcr:lastModified="{Date}2025-04-25T14:14:44.706+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_service"
+                    title="Additional Product InformationPages">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/core-components-examples"
+                            text="Interest Rates"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/campaigns"
+                            text="Fores Rates"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="/content/core-components-examples"
+                            text="Fees &amp; Charges"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Terms &amp; Conditions"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="FAQs"/>
+                    </links>
+                </Additional_product_information_pages>
+                <Others
+                    jcr:lastModified="{Date}2025-04-25T14:16:54.253+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_service"
+                    title="Other">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Career Oppertunities"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Do Not Call Registry"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Customer Service Policies"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Business Conduct and Ethics"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Use of Unparliamentary Language By Customers"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Sitemap"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Offers"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Nearby offers"/>
+                    </links>
+                </Others>
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="1"
+                        width="10"/>
+                </cq:responsive>
+                <footer_way_to_bank
+                    jcr:lastModified="{Date}2025-04-25T14:19:43.888+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_way_to_bank"
+                    link1="/content/campaigns"
+                    title="WAYS TO BANK ">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Digital Banking"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Mobile Banking"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Internet Banking"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="iMobile"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Whatsapp Banking"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Pockets"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Ask iPal"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="ATMs and Branches"/>
+                    </links>
+                </footer_way_to_bank>
+                <Investor_center
+                    jcr:lastModified="{Date}2025-04-25T14:20:58.086+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_way_to_bank"
+                    link1="https://www.google.com"
+                    title="INVESTER CENTER">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Annual Reports"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Invester Presentation"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Quarterly Results"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Notice"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Invester Contact"/>
+                    </links>
+                </Investor_center>
+                <About_us
+                    jcr:lastModified="{Date}2025-04-25T14:21:41.901+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_way_to_bank"
+                    link1="/content/campaigns"
+                    title="ABOUT US">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Board Of Directors"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Media Center"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Awards and Recognization"/>
+                    </links>
+                </About_us>
+                <Calculator
+                    jcr:lastModified="{Date}2025-04-25T14:22:27.637+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/footer_way_to_bank"
+                    link1="https://www.google.com"
+                    title="CALCULATORS">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Fixed Deposit"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Personal Loan"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Home Loan"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            link="https://www.google.com"
+                            text="Car Loan"/>
+                    </links>
+                </Calculator>
+            </footer_section>
+        </root>
+    </jcr:content>
+</jcr:root>

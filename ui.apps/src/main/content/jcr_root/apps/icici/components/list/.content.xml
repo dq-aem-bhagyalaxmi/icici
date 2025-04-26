@@ -3,5 +3,5 @@
     jcr:primaryType="cq:Component"
     jcr:title="List"
     sling:resourceSuperType="core/wcm/components/list/v3/list"
-    teaserDelegate="icici/components/teaser"
-    componentGroup="ICICI Project - Content"/>
+    componentGroup="ICICI Project - Content"
+    teaserDelegate="icici/components/teaser"/>

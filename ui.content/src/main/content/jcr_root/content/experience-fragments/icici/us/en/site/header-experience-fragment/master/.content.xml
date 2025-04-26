@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-04-25T14:26:29.670+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/icici/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Header Experience Fragment"
+        sling:resourceType="icici/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <digiquad
+                jcr:created="{Date}2025-04-25T12:04:39.541+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2025-04-25T14:26:29.663+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/digiquad"
+                contactNumber="18001080"
+                login="https://www.google.com"
+                logo="/content/dam/icici/herder-images/icici_header_logo-140x100.png">
+                <mainNav jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        label="Personal"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        label="NRI"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        label="Business"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                </mainNav>
+                <secondNav jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        label="Resources"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        label="About"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        label="Help"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                    <item3
+                        jcr:primaryType="nt:unstructured"
+                        label="Complaints"
+                        linkPath="https://www.google.com"
+                        target="_self"/>
+                </secondNav>
+                <links jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        file="/content/core-components-examples"
+                        logopath="/content/icici/us/en/icici-home-page"
+                        logotitle="India"/>
+                </links>
+            </digiquad>
+        </root>
+    </jcr:content>
+</jcr:root>
