@@ -1,0 +1,38 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.headernavigation'}"/>
+
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.model="com.aem.icici.core.models.HeaderNavigation">
+
+   <div class="header-nav">
+      <div class="logo">
+         <img src="${model.logo}" alt="Logo"/>
+      </div>
+
+      <nav class="main-navigation">
+         <ul>
+            <sly data-sly-list.navItem="${model.mainNav}">
+               <li>
+                  <a href="${navItem.linkPath}" target="${navItem.target}">${navItem.label}</a>
+               </li>
+            </sly>
+         </ul>
+      </nav>
+
+      <nav class="second-navigation">
+         <ul>
+            <sly data-sly-list.secondItem="${model.secondNav}">
+               <li>
+                  <a href="${secondItem.linkPath}" target="${secondItem.target}">${secondItem.label}</a>
+               </li>
+            </sly>
+         </ul>
+      </nav>
+
+      <div class="contact-login">
+         <span class="contact-number">${model.contactNumber}</span>
+         <a class="login-link" href="${model.login}">Login</a>
+      </div>
+   </div>
+
+</sly>
