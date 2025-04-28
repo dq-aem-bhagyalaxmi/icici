@@ -29,6 +29,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/search"
                 searchRoot="/content/icici/en"/>
+            <logo/>
         </root>
     </jcr:content>
 </jcr:root>
