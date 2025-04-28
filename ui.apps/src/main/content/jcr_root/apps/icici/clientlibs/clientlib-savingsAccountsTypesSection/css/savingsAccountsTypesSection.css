@@ -1,0 +1,44 @@
+
+.savings-accounts-section {
+   background-color: #fff0e6;
+    padding: 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin: 0px 0px 40px;
+    color:#333333;
+    font-family:Muli,sans-serif;
+
+}
+
+.accounts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.account-card {
+	width:150px;
+    padding: 40px 25px 28px;
+    text-align:center;
+
+}
+.account-card a{
+    text-decoration:none;
+    }
+
+.account-image {
+    max-width: 100%;
+    display: block; 
+    margin: 0 auto 8px; 
+
+}
+
+.account-title {
+    font-size: 20px;
+    color: #000000;
+    font-family:Muli,sans-serif;
+}
