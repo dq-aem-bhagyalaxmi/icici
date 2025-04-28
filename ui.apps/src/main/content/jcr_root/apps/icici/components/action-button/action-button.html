@@ -1,0 +1,14 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.actionbutton'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.ActionButtonModel" />
+
+<div class="action-button-wrapper">
+    <a href="${model.link}" class="action-button-link">
+        <div class="icon-wrapper">
+            <img src="${model.iconPath}" alt="icon" />
+        </div>
+        <span class="label-text">${model.label}</span>
+    </a>
+</div>

@@ -7,5 +7,7 @@
         jcr:primaryType="nt:unstructured"
         jcr:title="ICICI Project Blueprint"
         sling:resourceType="wcm/msm/components/blueprint"
-        sitePath="/content/icici/language-masters"/>
+        sitePath="/content/icici/language-masters">
+        <dialog/>
+    </jcr:content>
 </jcr:root>

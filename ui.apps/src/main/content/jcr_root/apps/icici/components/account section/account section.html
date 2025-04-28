@@ -1,0 +1,29 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.site'}"/>
+</sly>
+
+
+<sly data-sly-use.model="com.aem.icici.core.models.AccountSectionModel" />
+
+<div class="account-box ">
+    <h1>${model.title}</h1>
+
+    <div class="account-grid">
+        <sly data-sly-list.linkItem="${model.links}">
+            <button class="account-option">
+                <a href="${linkItem.link}"  class="account-link">
+                    <span >  ${linkItem.text @context='html'} </span>
+                    <span >${linkItem.icon @ context='html'}</span>
+                </a>
+            </button>
+        </sly>
+
+    </div>
+
+
+    <p class="view-all">
+        <a href="${model.link1}">${model.title1}</a>
+    </p>
+
+</div>
+

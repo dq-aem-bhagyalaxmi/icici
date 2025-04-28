@@ -1,0 +1,79 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.site'}"/>
+</sly>
+
+<div data-sly-use.model="com.aem.icici.core.models.FooterSection">
+
+    <div class="bg" style="background-color: white;">
+        <div class="footer_box">
+            <div>
+                <a href="${model.linkURL}">
+                    <img src="${model.fileReference}" alt="icici logo" />
+                </a>
+            </div>
+
+            <div class="footer_head_align">
+                <h1 class="footer_country_title">${model.title @ context='html'}</h1>
+
+                <button class="footer_head_flag_but">
+                    <img class="footer_flag_img" src="${model.fileReference1}" alt="indian flag"/>
+                    <span>${model.icon @ context='html'}</span>
+                </button>
+
+                <button class="footer_scroll_top_but">${model.text @ context='html'}</button>
+            </div>
+
+
+        </div>
+
+        <div class="footer-main-grid"   style="background-color: white;">
+
+            <div class="footer-child ">
+                <div class="footer-column"> 
+
+                        <div  data-sly-resource="${'footer_contactus' @ resourceType='icici/components/footer_contactus'}"></div>
+
+
+
+                        <div  data-sly-resource="${'footer_dialnumber' @ resourceType='icici/components/footer_dialnumber'}"></div>
+
+
+                        <div  data-sly-resource="${'footer_locate_us' @ resourceType='icici/components/footer_contactus'}"></div>
+                        <p class="footer-text" >Find Branches & ATMs near you</p>
+
+                </div>
+
+                <div class="footer-column" data-sly-resource="${'footer_service' @ resourceType='icici/components/footer_service'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'ICICI_bank-Group' @ resourceType='icici/components/footer_service'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'Regulatory_information' @ resourceType='icici/components/footer_service'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'Additional_product_information_pages' @ resourceType='icici/components/footer_service'}"></div>
+
+            </div>
+
+            <div class="footer-child">
+
+                <div class="footer-column" data-sly-resource="${'Others' @ resourceType='icici/components/footer_service'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'footer_way_to_bank' @ resourceType='icici/components/footer_way_to_bank'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'Investor_center' @ resourceType='icici/components/footer_way_to_bank'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'About_us' @ resourceType='icici/components/footer_way_to_bank'}"></div>
+
+                <div class="footer-column" data-sly-resource="${'Calculator' @ resourceType='icici/components/footer_way_to_bank'}"></div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-column" data-sly-resource="${'install_mobile_app' @ resourceType='icici/components/footer_install_mobileapp'}"></div>
+
+    </div>
+
+</div>
+
+
+
