@@ -1,0 +1,21 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.site'}"/>
+</sly>
+
+
+
+<sly data-sly-use.model="com.aem.icici.core.models.Footer_way_to_bankModel">
+
+    <div class="footer-section">
+        <h4 class="footer-title">
+			<a class="footer-link" href="${model.link1}">${model.title}  <span >&#8599;</span></a>
+		</h4>
+
+        <ul class="footer-links" data-sly-list.item="${model.links}">
+            <li>
+                <a href="${item.link}" class="footer-link">${item.text}</a>
+            </li>
+        </ul>
+    </div>
+
+</sly>
