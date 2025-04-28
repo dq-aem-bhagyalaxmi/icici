@@ -3,15 +3,22 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+<<<<<<<< HEAD:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/common-feature-page-template/structure/.content.xml
         cq:lastModified="{Date}2025-04-25T12:07:50.793+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
+========
+        cq:lastModified="{Date}2025-04-24T14:28:21.498+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/icici/settings/wcm/templates/icici-bank-"
+>>>>>>>> 496467109d346d1e81afec1105e598e6de793b1a:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/icici-bank-/structure/.content.xml
         jcr:primaryType="cq:PageContent"
         sling:resourceType="icici/components/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="icici/components/container"
             layout="responsiveGrid">
+<<<<<<<< HEAD:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/common-feature-page-template/structure/.content.xml
             <experiencefragment
                 jcr:created="{Date}2025-04-25T11:31:28.218+05:30"
                 jcr:createdBy="admin"
@@ -20,19 +27,30 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/experiencefragment"
                 fragmentVariationPath="/content/experience-fragments/icici/us/en/site/header-experience-fragment/master"/>
+========
+>>>>>>>> 496467109d346d1e81afec1105e598e6de793b1a:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/icici-bank-/structure/.content.xml
             <container
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/container"
                 editable="{Boolean}true"
                 layout="responsiveGrid"/>
+<<<<<<<< HEAD:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/common-feature-page-template/structure/.content.xml
             <experiencefragment_1944432583
                 jcr:created="{Date}2025-04-25T11:35:27.042+05:30"
+========
+            <footer_section
+                jcr:created="{Date}2025-04-24T14:28:21.497+05:30"
+>>>>>>>> 496467109d346d1e81afec1105e598e6de793b1a:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/icici-bank-/structure/.content.xml
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2025-04-25T11:35:54.242+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
+<<<<<<<< HEAD:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/common-feature-page-template/structure/.content.xml
                 sling:resourceType="icici/components/experiencefragment"
                 fragmentVariationPath="/content/experience-fragments/icici/us/en/site/footer-experience-fragment/master"/>
+========
+                sling:resourceType="icici/components/footer section"/>
+>>>>>>>> 496467109d346d1e81afec1105e598e6de793b1a:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/icici-bank-/structure/.content.xml
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
