@@ -1,0 +1,20 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.herobannerimage'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.HerobannerImageDetailsModel" />
+
+<div class="herobanner-wrapper">
+    <div class="herobanner-bg"
+         data-sly-test="${model.image}"
+         style="background-image: url('${model.image @ context='uri'}');">
+    </div>
+
+    <div class="herobanner-content">
+        <h2 class="herobanner-title">${model.title}</h2>
+        <p class="herobanner-details">${model.details}</p>
+        <div class="herobanner-button"
+             data-sly-resource="${'offersRightButton' @ resourceType='icici/components/featuresectionbutton'}">
+        </div>
+    </div>
+</div>
