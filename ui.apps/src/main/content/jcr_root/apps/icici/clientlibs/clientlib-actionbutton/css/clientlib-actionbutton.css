@@ -1,0 +1,50 @@
+/* === Action Button Component Scoped Styles === */
+.action-button-wrapper {
+    display: inline-block;
+}
+
+.action-button-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #ffffff;
+    border: none; /* Remove the outer border */
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black; /* Change text color to black */
+    font-weight: 500;
+    min-width: 180px;         /* 👈 Slightly larger base */
+    max-width: 220px;         /* 👈 Prevent it from growing too much */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: none; /* Remove the shadow */
+    transition: all 0.3s ease;
+}
+
+.action-button-link:hover {
+    background-color: #f37c21;
+    color: #fff;
+}
+
+.icon-wrapper {
+    flex-shrink: 0;
+}
+
+.icon-wrapper img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; /* Fully round border for the image */
+    object-fit: cover;
+    background-color: #fff;
+    padding: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* Keep the shadow on the image */
+}
+
+.label-text {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

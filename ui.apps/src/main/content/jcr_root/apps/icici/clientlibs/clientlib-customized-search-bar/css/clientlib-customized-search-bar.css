@@ -1,0 +1,43 @@
+.search-bar {
+  background-color: white;
+  border-radius: 30px; /* fully rounded ends */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  max-width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.search-bar img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.search-bar .left-icon {
+  margin-right: 12px;
+}
+
+.search-bar .right-icon {
+  margin-left: 12px;
+}
+
+/* Adding vertical line between input and mic icon */
+.search-bar .vertical-line {
+  width: 1px;
+  height: 24px;
+  background-color: #ccc; /* Light gray color */
+  margin: 0 10px; /* Space between search input and mic icon */
+}
+
+.search-bar .search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+}

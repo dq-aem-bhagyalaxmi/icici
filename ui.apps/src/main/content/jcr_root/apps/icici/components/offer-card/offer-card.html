@@ -1,0 +1,23 @@
+<sly data-sly-use.model="com.aem.icici.core.models.OfferCardDetailsModel">
+    <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+        <sly data-sly-call="${clientlib.css @ categories='icici.offercard'}"/>
+    </sly>
+
+    <p class="offer-section-title">${model.offerSectionTitle}</p>
+
+    <div class="offer-card">
+        <div class="offer-card__content">
+            <h3 class="offer-card__title">${model.title}</h3>
+            <p class="offer-card__text">${model.textContent}</p>
+            <div class="offer-card__links">
+                <a href="${model.link1 @ context='uri'}" class="offer-card__link">${model.linkText1}</a>
+                <a href="${model.link2 @ context='uri'}" class="offer-card__link">${model.linkText2}</a>
+            </div>
+        </div>
+
+        <div class="offer-card__image-wrapper">
+            <span class="offer-card__badge">${model.cardBadge}</span>
+            <img class="offer-card__image" src="${model.fileReference}" alt="${model.title}" />
+        </div>
+    </div>
+</sly>
