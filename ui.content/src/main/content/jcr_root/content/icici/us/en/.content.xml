@@ -87,14 +87,9 @@
             cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
-    <welcome-to-icici-bank-/>
-    <Home_Page/>
-    <savings-account-page/>
-    <icici-home-page/>
     <cici-bank-/>
-    <footer-page/>
+    <welcome-to-icici-bank-/>
     <cards-section/>
-    <icici-home-page-/>
-    <savings-account-page0/>
-    <savings-account-page1/>
+    <savingsaccount/>
+    <premiumaccountscard/>
 </jcr:root>
