@@ -1,0 +1,44 @@
+
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='icici.premiumAccountsCard'}"/>
+
+<sly data-sly-use.model="com.aem.icici.core.models.PremiumAccountsCardModel" />
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="component-wrapper component-${model.componentType}" style="background-color: ${model.backgroundColor @context='html'}">
+    <div class="premium-account-card">
+        <div class="premium-account-card__content">
+            <h2 class="premium-account-card__title">${model.title}</h2>
+
+            <div class="premium-account-card__icon-text">
+                <div class="premium-account-card__icon">
+                    <img src="${model.iconImageReference}" alt="Icon" />
+                </div>
+                <div class="premium-account-card__icon-description">
+                    <p>${model.iconText @context='html'}</p>
+                </div>
+            </div>
+
+            <div class="premium-account-body-section">
+                <div class="premium-account-description">
+                    <p class="premium-account-card__description">${model.description @context='html'}</p>
+
+                    <div class="premium-account-card__buttons">
+                        <ul class="premium-account-card__button-list" data-sly-list.item="${model.buttonItems}">
+                            <li>
+                                <a href="${item.buttonLink}" class="premium-account-card__button-link">
+                                    ${item.buttonText @context='html'}
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="premium-account-card__image">
+                    <img src="${model.imageReference}" alt="Family 360° Banking" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
