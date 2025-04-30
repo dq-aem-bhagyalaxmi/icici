@@ -9,5 +9,6 @@
         sling:resourceType="wcm/msm/components/blueprint"
         sitePath="/content/icici/language-masters">
         <dialog/>
+        <components/>
     </jcr:content>
 </jcr:root>

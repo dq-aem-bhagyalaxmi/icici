@@ -1,0 +1,45 @@
+/* Container for the two-field card component */
+.twofieldcard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Individual card styling */
+.twofieldcard .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 230px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Image styling */
+.twofieldcard .card img {
+    width: 120px; /* Reduced width */
+    height: 50%; /* Adjusted height */
+    object-fit: cover;
+    display: block; /* Ensures the margin works */
+    margin: 10px auto; /* Centers the image horizontally */
+}
+
+/* Text styling */
+.twofieldcard .card .text {
+    padding: 0px 5px 5px 5px; /* Adjusted padding */
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 700;
+}
