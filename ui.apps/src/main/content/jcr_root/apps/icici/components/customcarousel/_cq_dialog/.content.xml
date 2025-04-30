@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:dialogMode="floating"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Carousel Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <carouselTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Carousel Title"
+                                name="./carouselTitle"/>
+                            <autoplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldLabel="Autoplay"
+                                name="./autoplay"
+                                text="Enable Autoplay"/>
+                            <autoplaySpeed
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Autoplay Speed (ms)"
+                                name="./autoplaySpeed"/>
+                            <slides
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="true"
+                                fieldLabel="Slides">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                    name="./slides">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <slideImage
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Slide Image"
+                                            name="./slideImage"
+                                            required="true"
+                                            rootPath="/content/dam/icici/sprint-2"
+                                            showTitles="true"/>
+                                        <title
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Slide Title"
+                                            name="./slideTitle"
+                                            required="true"/>
+                                        <text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Slide Text"
+                                            name="./slideText"
+                                            required="true"/>
+                                        <socialicon
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Socia Icon"
+                                            name="./socialIcon"
+                                            required="true"
+                                            rootPath="/content/dam/icici/sprint-2"
+                                            showTitles="true"/>
+                                    </items>
+                                </field>
+                            </slides>
+                            <showNav
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldLabel="Show Navigation Buttons"
+                                name="./showNav"
+                                text="Display Forward/Backward Buttons"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <showdots
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldLabel="Show Navigation Dots"
+                                name="./showDots"
+                                text="Display corousel dots"
+                                uncheckedValue="false"
+                                value="true"/>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
