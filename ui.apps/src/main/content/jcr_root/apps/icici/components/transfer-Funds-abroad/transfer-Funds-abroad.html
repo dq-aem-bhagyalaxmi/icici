@@ -1,0 +1,25 @@
+<sly data-sly-use.model="com.aem.icici.core.models.TransferFundsAbroadModel">
+    <div class="transfer-funds-abroad-container">
+        <h2 class="section-title">${model.title}</h2>
+
+        <div class="card-list">
+            <sly data-sly-list.cardItem="${model.CardItems}">
+                <div class="card">
+                    <div class="card-icon">
+                        <img src="${cardItem.fileReference}" alt="icon ${cardItemList.index}"/>
+                    </div>
+
+                    <div class="card-description">
+                        ${cardItem.cardDescription @ context='html'}
+                    </div>
+
+                    <div class="card-cta">
+                        <a href="${cardItem.ctaLink}" class="cta-link" rel="noopener">
+                            ${cardItem.ctaText}
+                        </a>
+                    </div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>
