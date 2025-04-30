@@ -2,6 +2,7 @@
 <sly data-sly-call="${clientlib.all @ categories='icici.savings.faq'}"/>
 
 <h2 class="faq-heading">Savings Account FAQs</h2>
+
 <div class="faq-section" id="${resource.id}">
     <div class="faq-controls">
         <button type="button" class="faq-toggle-btn" onclick="expandAllFaqs()">Expand All</button>
@@ -9,33 +10,6 @@
         <button type="button" class="faq-toggle-btn" onclick="collapseAllFaqs()">Collapse All</button>
     </div>
 
-    <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-            What is a savings account?
-        </div>
-        <div class="faq-answer">
-            A savings account is a bank account that earns interest on the balance.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-            What is a savings account?
-        </div>
-        <div class="faq-answer">
-            A savings account is a bank account that earns interest on the balance.
-        </div>
-    </div>
-
-    <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-            What is a savings account?
-        </div>
-        <div class="faq-answer">
-            A savings account is a bank account that earns interest on the balance.
-        </div>
-    </div>
+    <sly data-sly-resource="${resource @ resourceType='core/wcm/components/accordion/v1/accordion'}"></sly>
 
 </div>
-
-

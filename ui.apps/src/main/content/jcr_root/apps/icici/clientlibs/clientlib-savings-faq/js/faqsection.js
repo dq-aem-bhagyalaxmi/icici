@@ -20,21 +20,17 @@ function toggleFaq(element) {
 }
 
 function expandAllFaqs() {
-    document.querySelectorAll('.faq-item').forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        question.classList.add('active');
-        answer.classList.add('open');
-        answer.style.maxHeight = answer.scrollHeight + "px";
+    document.querySelectorAll('.cmp-accordion__button').forEach(btn => {
+        if (btn.getAttribute('aria-expanded') === 'false') {
+            btn.click();
+        }
     });
 }
 
 function collapseAllFaqs() {
-    document.querySelectorAll('.faq-item').forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-        question.classList.remove('active');
-        answer.classList.remove('open');
-        answer.style.maxHeight = null;
+    document.querySelectorAll('.cmp-accordion__button').forEach(btn => {
+        if (btn.getAttribute('aria-expanded') === 'true') {
+            btn.click();
+        }
     });
 }
