@@ -1,24 +1,29 @@
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
 <sly data-sly-call="${clientlib.all @ categories='icici.savings.eligibilityaccordion'}"/>
 
+<sly data-sly-use.model="com.aem.icici.core.models.SavingsPageEligibilityAccordionModel" />
+
 <div class="custom-accordion">
+    <!-- Main Heading -->
     <div class="accordion-header">
-        <h2>Eligibility and Documents Required for Opening a Savings Account Online</h2>
+        <h2>${model.mainHeading}</h2>
     </div>
 
     <div class="accordion-body">
+        <!-- First Section -->
         <section class="documentation">
-            <h3>Documentation & Eligibility</h3>
-            <ul>
-                <li>PAN Card and Aadhaar Card for the account opening process</li>
-                <li>Indian resident of any age group</li>
-            </ul>
+            <h3>${model.firstSectionTitle}</h3>
+            <div data-sly-unwrap>${model.firstSectionContent @ context="html"}</div>
         </section>
+
         <div class="arrow"></div>
+
+        <!-- Second Section -->
         <section class="charges">
-            <h3>Schedule of Charges</h3>
-            <p>Learn in detail about <a href="#">Service Charges for Savings Account</a></p>
+            <h3>${model.secondSectionTitle}</h3>
+            <div data-sly-unwrap>${model.secondSectionContent @ context="html"}</div>
         </section>
     </div>
+
     <button class="toggle-button">READ MORE</button>
 </div>
