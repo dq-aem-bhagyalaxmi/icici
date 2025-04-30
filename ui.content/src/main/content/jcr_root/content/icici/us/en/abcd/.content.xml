@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2025-04-18T16:52:49.471+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/icici/settings/wcm/templates/page-content1"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="header page"
+        sling:resourceType="icici/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/container"
+                layout="responsiveGrid">
+                <multifield
+                    jcr:created="{Date}2025-04-16T16:19:35.447+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-16T18:23:21.106+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/multifield"
+                    fileReference="/content/dam/icici/header-images/icici_header_logo.png"
+                    mainLabel="this is header">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            label="Personal"
+                            linkPath="https://google.com"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            label="NRI"
+                            linkPath="https://linkedin.com"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            label="Business"
+                            linkPath="https://microsoft.com"/>
+                    </links>
+                </multifield>
+                <header
+                    jcr:created="{Date}2025-04-16T16:19:50.749+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-16T16:19:50.749+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/header"/>
+                <headernavigation
+                    jcr:created="{Date}2025-04-18T16:44:53.446+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-18T16:44:53.446+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/headernavigation"/>
+                <image
+                    jcr:created="{Date}2025-04-18T16:52:49.467+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-18T16:52:49.467+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/image"/>
+            </container>
+        </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2025-04-16T18:26:56.095+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
+    </jcr:content>
+</jcr:root>

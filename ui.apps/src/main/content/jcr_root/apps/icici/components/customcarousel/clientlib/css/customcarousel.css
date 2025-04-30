@@ -1,0 +1,110 @@
+.carousel {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+   
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.carousel-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+   
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-btn {
+    background-color: rgba(255, 102, 0, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.carousel-prev {
+    margin-right: 10px;
+}
+
+.carousel-next {
+    margin-left: 10px;
+}
+
+.carousel-track-container {
+    width: 100%; /* Ensure the container spans the full width */
+    overflow: hidden;
+
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+    will-change: transform;
+   
+}
+
+.carousel-slide {
+    flex: 0 0 calc(90% / 3);
+}
+
+.carousel-slide img.slide-image {
+    width: 60%;
+    height: 180px; /* Reduce height slightly */
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.carousel-slide .slide-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0px;
+    color: #333;
+}
+
+.carousel-slide .carousel-caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.carousel-slide img.social-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    margin-top: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dots .dot.active {
+    background-color: #333;
+}

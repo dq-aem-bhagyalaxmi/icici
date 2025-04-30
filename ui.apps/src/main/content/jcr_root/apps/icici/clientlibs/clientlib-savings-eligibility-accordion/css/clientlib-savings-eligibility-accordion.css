@@ -1,0 +1,58 @@
+.custom-accordion {
+  border-radius: 20px;
+  padding: 20px;
+  background: linear-gradient(90deg, #f87b1d, #de4720);
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.accordion-header {
+  text-align: center;
+}
+
+.toggle-button {
+  display: block;
+  background: white;
+  color: #f87b1d;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto 0 auto;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s ease, padding 0.6s ease;
+  padding: 0 20px;
+}
+
+.accordion-body.active {
+  max-height: 500px; /* Adjust if needed */
+  padding: 20px;
+}
+
+
+section {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  position: relative;
+  border-radius: 20px;  /* Apply border radius to all corners initially */
+  overflow: hidden; /* Ensure the h3 doesn't overflow */
+}
+
+/* Style only the h3 inside the sections (Documentation, Charges) */
+section h3 {
+  background-color: #aa1f1f;
+  color: white;
+  padding: 10px 16px;
+  font-size: 18px;
+  margin: -20px -20px 20px -20px; /* Pull the h3 out to extend full width */
+  width: calc(100% + 40px);  /* Adjust width to cover the full section width */
+  box-sizing: border-box;  /* Ensure padding is included in the width calculation */
+}
