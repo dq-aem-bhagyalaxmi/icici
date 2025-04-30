@@ -1,0 +1,35 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.all @ categories='icici.customcarousel'}"/>
+
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+<sly data-sly-use.carouselModel="com.aem.icici.core.models.CarouselModel">
+
+<div class="carousel">
+    <h2 class="carousel-title">${carouselModel.carouselTitle}</h2>
+
+    <div class="carousel-container">
+        <button class="carousel-btn carousel-prev" aria-label="Previous">←</button>
+        <div class="carousel-track-container">
+            <ul class="carousel-track">
+                <sly data-sly-list.card="${carouselModel.slideList}">
+                    <li class="carousel-slide">
+                        <img src="${card.slideImage}" alt="${card.slideTitle || 'Slide Image'}">
+                        <h3 class="slide-title">${card.slideTitle}</h3>
+                        <p class="carousel-caption">${card.slideText}</p>
+                        <img class="social-icon" src="${card.socialIcon}" alt="Social Icon">
+                    </li>
+                </sly>
+            </ul>
+        </div>
+        <button class="carousel-btn carousel-next" aria-label="Next">→</button>
+    </div>
+
+    <div class="carousel-dots" data-sly-test="${carouselModel.showDots}">
+        <sly data-sly-list.dot="${carouselModel.slideList}">
+            <button class="dot"></button>
+        </sly>
+    </div>
+</div>
+
+</sly>
+</sly>

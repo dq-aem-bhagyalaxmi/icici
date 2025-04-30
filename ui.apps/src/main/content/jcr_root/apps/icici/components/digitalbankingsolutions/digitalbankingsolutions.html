@@ -1,0 +1,64 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='icici.digitalbanking'}"/>
+</sly>
+
+
+
+<div class="digital-banking-component" data-sly-use.model="com.aem.icici.core.models.DigitalBankingSolutionsModel">
+    <h2 class="main-title">${model.title}</h2>
+
+
+
+
+    <div class="tab-container">
+        <div class="tab-image-section">
+            <img id="actorImageTab1" class="tab-image" src="${model.actorImageTab1}" alt="Tab1 Image" />
+            <img id="actorImageTab2" class="tab-image" src="${model.actorImageTab2}" alt="Tab2 Image" style="display:none;" />
+        </div>
+
+        <div>
+            <div class="tabs">
+                <button class="tab active" data-tab="tab1">${model.tab1Title}</button>
+                <button class="tab" data-tab="tab2">${model.tab2Title}</button>
+            </div>
+    
+        
+            <div class="sub-tab">
+                <div class="tab-content-section">
+                    <ul id="features-tab1" class="features-list" data-sly-list.feature="${model.featuresTab1}">
+                     <div class="vertical-line"></div>
+                        <li class="feature-item">
+                            <div class="dot">
+                                <span class="c2"></span>
+                            </div>
+                            <span class="feature-text">${feature.featureText}</span>
+                        </li>
+                    </ul>
+        
+                    <ul id="features-tab2" class="features-list" data-sly-list.feature1="${model.featuresTab2}" style="display:none;" >
+                     <div class="vertical-line"></div>
+                        <li class="feature-item">
+                            <div class="dot">
+                            
+
+                                <span class="c2"></span>
+                            
+
+                            </div>
+                            <span class="feature-text">${feature1.featureText}</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div id="appImageTab1"  data-sly-list.images="${model.uploadimg}">
+                    <a href="${images.link}">
+                        <img  class="image-app" src="${images.image}" alt="App Image" />
+                    </a>    
+                </div>
+            </div>     
+    
+        </div>
+    </div>
+</div>
+
+
