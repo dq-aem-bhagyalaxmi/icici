@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-25T10:41:26.673+05:30"
+        cq:lastModified="{Date}2025-04-29T11:52:37.793+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/footer-template"
         jcr:primaryType="cq:PageContent"
@@ -60,6 +60,64 @@
                             width="8"/>
                     </cq:responsive>
                 </account_section>
+                <digitalbankingsoluti
+                    jcr:created="{Date}2025-04-29T11:24:44.227+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-29T11:52:37.786+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/digitalbankingsolutions"
+                    actorImageTab1="/content/dam/icici/digital-banking-/digital-banking-solutions-imobile-pay.jpg"
+                    actorImageTab2="/content/dam/icici/digital-banking-/internet-banking.jpg"
+                    tab1Title="iMobile"
+                    tab2Title="Internet "
+                    title="Digital Banking Solutions">
+                    <featuresTab1 jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Seamless transfer of money anytime, anywhere"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Pay bills from the comfort of your home"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Manage Credit Card limits, block/unblock cards, change PIN and more"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Check your exclusive loan offers and get instant sanctions"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Apply, track and manage your investments"/>
+                    </featuresTab1>
+                    <featuresTab2 jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Real-time access to all your accounts"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Feature-rich dashboard with a seamless user interface for convenient banking"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Track and manage all your finances anytime, anywhere"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Customisable dashboard for setting up shortcuts for frequently used features"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Targeted features for your unique requirements"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Set your own transaction limit and experience an added level of security"/>
+                    </featuresTab2>
+                    <uploadimg jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/test/app-store.jpg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/test/google-play.jpg"/>
+                    </uploadimg>
+                </digitalbankingsoluti>
             </container>
         </root>
     </jcr:content>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Digital Banking Solutions Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <mainTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Digital Banking Solutions"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Main Title"
+                                name="./title"/>
+                            <actorImageTab1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Actor Image - Tab 1"
+                                name="./actorImageTab1"
+                                rootPath="/content/dam"/>
+                            <actorImageTab2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Actor Image - Tab 2"
+                                name="./actorImageTab2"
+                                rootPath="/content/dam"/>
+                            <tab1Title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Tab 1 Title"
+                                name="./tab1Title"/>
+                            <tab2Title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Tab 2 Title"
+                                name="./tab2Title"/>
+                            <featuresTab1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Features List - Tab 1">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./featuresTab1">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <featureText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Feature Text"
+                                            name="./featureText"/>
+                                    </items>
+                                </field>
+                            </featuresTab1>
+                            <featuresTab2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Features List - Tab 2">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./featuresTab2">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <featureText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Feature Text"
+                                            name="./featureText"/>
+                                    </items>
+                                </field>
+                            </featuresTab2>
+                            <buttonImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="upload image ">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./uploadimg">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <link
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                            fieldDescription="Link to a content page, external URL or page anchor."
+                                            fieldLabel="Link"
+                                            name="./link"/>
+                                        <file
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                            class="cq-droptarget"
+                                            fileNameParameter="./fileName"
+                                            fileReferenceParameter="./image"
+                                            mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                            name="./file"/>
+                                    </items>
+                                </field>
+                            </buttonImage>
+                        </items>
+                    </mainTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
