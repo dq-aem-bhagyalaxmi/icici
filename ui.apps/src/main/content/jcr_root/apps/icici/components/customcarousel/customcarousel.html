@@ -1,38 +1,46 @@
 <sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
-<sly data-sly-call="${clientLib.all @ categories='icici.customcarouselcmp'}"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.customcarousel'}"/>
+<sly data-sly-call="${clientLib.js @ categories='icici.customcarousel'}"/>
 
 <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html">
-<sly data-sly-use.carouselModel="com.aem.icici.core.models.customCarousel.CarouselModel">
+<sly data-sly-use.model="com.aem.icici.core.models.customCarousel.CarouselModel" />
 
-<div class="carousel">
-    <h2 class="carousel-title">${carouselModel.carouselTitle}</h2>
+<div class="carousel-container" aria-label="Card Carousel">
+    <!-- Carousel Title -->
+    <h2 class="carousel-title" data-sly-test="${model.carouselTitle}">${model.carouselTitle}</h2>
 
-    <div class="carousel-container">
-        <button class="carousel-btn carousel-prev" aria-label="Previous">←</button>
-        <div class="carousel-track-container">
-            <ul class="carousel-track">
-                <sly data-sly-list.card="${carouselModel.slideList}">
-                    <li class="carousel-slide">
-                        <img class="slide-image" src="${card.slideImage}" alt="${card.slideTitle || 'Slide Image'}">
-                        <h3 class="slide-title">${card.slideTitle}</h3>
-                        <p class="carousel-caption">${card.slideText}</p>
-                        <img class="social-icon" src="${card.socialIcon}" alt="Social Icon">
-                    </li>
-                </sly>
-            </ul>
+    <!-- Navigation Buttons -->
+    <button class="carousel-button prev-button" aria-label="Previous Slide" data-sly-test="${model.showNav}">&#10094;</button>
+
+    <div class="carousel-wrapper">
+        <div class="carousel-track">
+            <!-- Render Slides Dynamically -->
+            <sly data-sly-list.slide="${model.slideList}">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="${slide.slideImage @ context='uri'}" alt="${slide.slideTitle}" class="card-image" />
+                        <h3 class="card-title">${slide.slideTitle}</h3>
+                        <div class="card-footer">
+                        <p class="card-text">${slide.slideText}</p>
+                            <button class="share-button" aria-label="Share ${slide.slideTitle}">
+                                <img src="${slide.socialIcon @ context='uri'}" alt="Share Icon" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </sly>
         </div>
-        <button class="carousel-btn carousel-next" aria-label="Next">→</button>
     </div>
-    
 
-    <div class="carousel-dots" data-sly-test="${carouselModel.showDots}">
-        <sly data-sly-list.dot="${carouselModel.slideList}">
-            <button class="dot"></button>
+    <!-- Navigation Buttons -->
+    <button class="carousel-button next-button" aria-label="Next Slide" data-sly-test="${model.showNav}">&#10095;</button>
+
+    <!-- Dots -->
+    <div class="dots-container" role="tablist" aria-label="Carousel Navigation Dots" >
+        <sly data-sly-list.dot="${model.slideList}">
+            <span class="dot" data-slide-index="${dotList.index}"></span>
         </sly>
     </div>
 </div>
-
-
-
 </sly>
 </sly>

@@ -1,110 +1,130 @@
-.carousel {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-    position: relative;
-   
-}
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.carousel-title {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-   
-}
-
 .carousel-container {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+
+    padding: 20px 80px; /* increased horizontal padding for gap */
+    border-radius: 8px;
+  }
+  .carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  .carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+  }
+  .card {
+    flex: 0 0 calc(100% / 3);
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .card-content {
+    color: black;
+    border-radius: 8px;
+    padding: 0;
+    text-align: left;
+    font-size: 1rem;
+    user-select: none;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.15); */
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  .card-image {
+    width: 100%;
+    height: 140px;
+    object-fit: fill;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 12px;
+  }
+  .card-title {
+    margin: 0 16px 8px 16px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    padding: 10px 0px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .card-text{
+    font-weight: 300;
+    color: #4a4a4a;
+    font-size: small;
+  }
+  .card-footer {
+    margin: auto 16px 16px 16px;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-year {
+    font-size: 0.9rem;
+    color: #d1d1d1;
+  }
+    .share-button {
+    background: transparent url('share-bg.svg') no-repeat center center;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-}
-
-.carousel-btn {
-    background-color: rgba(255, 102, 0, 0.8);
-    color: white;
+    width: 24px;
+    height: 24px;
+  }
+  .share-button svg {
+    display: none;
+  }
+  .share-button:hover {
+    filter: brightness(1.2);
+  }
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     border: none;
-    border-radius: 50%;
+    color: orange;
     width: 40px;
     height: 40px;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.carousel-prev {
-    margin-right: 10px;
-}
-
-.carousel-next {
-    margin-left: 10px;
-}
-
-.carousel-track-container {
-    width: 100%; /* Ensure the container spans the full width */
-    overflow: hidden;
-
-}
-
-.carousel-track {
-    display: flex;
-    transition: transform 0.4s ease;
-    will-change: transform;
-   
-}
-
-.carousel-slide {
-    flex: 0 0 calc(90% / 3);
-}
-
-.carousel-slide img.slide-image {
-    width: 60%;
-    height: 180px; /* Reduce height slightly */
-    object-fit: cover;
-    border-radius: 10px;
-    
-}
-
-.carousel-slide .slide-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 0px;
-    color: #333;
-}
-
-.carousel-slide .carousel-caption {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.carousel-slide img.social-icon {
-    width: 30px;
-    height: 30px;
-    object-fit: contain;
-    margin-top: 10px;
-}
-
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.carousel-dots .dot {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
     border-radius: 50%;
-    margin: 0 5px;
     cursor: pointer;
-}
-
-.carousel-dots .dot.active {
-    background-color: #333;
-}
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .carousel-button:hover {
+    background: #dcdee0;
+  }
+  .prev-button {
+    left: 20px; /* moved further left */
+  }
+  .next-button {
+    right: 20px; /* moved further right */
+  }
+  .dots-container {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+  }
+  .dot.active {
+    background-color: orange;
+  }
