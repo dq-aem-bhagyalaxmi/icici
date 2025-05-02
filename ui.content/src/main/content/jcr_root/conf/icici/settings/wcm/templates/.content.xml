@@ -5,7 +5,8 @@
     <rep:policy/>
     <page-content/>
     <xf-web-variation/>
+    <footer-template/>
     <common-feature-page-template/>
-    <common-service-page-template/>
-    <sample-template/>
+    <my-template/>
+    <icici-bank-/>
 </jcr:root>

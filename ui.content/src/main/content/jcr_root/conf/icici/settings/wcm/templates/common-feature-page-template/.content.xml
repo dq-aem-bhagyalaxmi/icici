@@ -2,14 +2,10 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-<<<<<<<< HEAD:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/common-feature-page-template/.content.xml
-        cq:lastModified="{Date}2025-04-25T12:07:50.793+05:30"
-========
-        cq:lastModified="{Date}2025-04-24T14:28:21.499+05:30"
->>>>>>>> 496467109d346d1e81afec1105e598e6de793b1a:ui.content/src/main/content/jcr_root/conf/icici/settings/wcm/templates/icici-bank-/.content.xml
+        cq:lastModified="{Date}2025-04-26T09:07:13.574+05:30"
         cq:lastModifiedBy="admin"
         cq:templateType="/conf/icici/settings/wcm/template-types/page"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Common Feature Page Template"
+        jcr:title="ICICI Bank "
         status="enabled"/>
 </jcr:root>

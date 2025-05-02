@@ -2,11 +2,15 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/icici" mode="merge"/>
     <filter root="/content/icici" mode="merge"/>
+
+    <!-- Include experience fragments -->
+    <filter root="/content/experience-fragments/icici" mode="merge"/>
+
+    <!-- DAM content -->
     <filter root="/content/dam/icici" mode="merge">
         <exclude pattern="/content/dam/icici(/.*)?"/>
         <include pattern="/content/dam/icici/jcr:content(/.*)?"/>
     </filter>
     <filter root="/content/dam/icici/asset.jpg" mode="merge"/>
     <filter root="/content/dam/icici/images/sapphiro.jpg" mode="merge"/>
-
 </workspaceFilter>
