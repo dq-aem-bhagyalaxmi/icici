@@ -1,25 +1,101 @@
-<sly data-sly-use.model="com.aem.icici.core.models.TransferFundsAbroadModel">
-    <div class="transfer-funds-abroad-container">
-        <h2 class="section-title">${model.title}</h2>
 
-        <div class="card-list">
-            <sly data-sly-list.cardItem="${model.CardItems}">
-                <div class="card">
-                    <div class="card-icon">
-                        <img src="${cardItem.fileReference}" alt="icon ${cardItemList.index}"/>
-                    </div>
+<sly data-sly-use.model="com.aem.icici.core.models.TransferFundsAbroadModel" />
 
-                    <div class="card-description">
-                        ${cardItem.cardDescription @ context='html'}
-                    </div>
+  <div class="transfer-funds-section">
+      <div class="Main-title">
+      	<h2>${model.title}</h2>
+      </div>
+      <div class="card-items" data-sly-list.cardItem="${model.CardItems}">
+        <div class="card-item">
+          <div class="icon">
+            <img src="${cardItem.fileReference}" alt="Icon" />
+          </div>
 
-                    <div class="card-cta">
-                        <a href="${cardItem.ctaLink}" class="cta-link" rel="noopener">
-                            ${cardItem.ctaText}
-                        </a>
-                    </div>
-                </div>
-            </sly>
+          <div class="description">
+            ${cardItem.cardDescription @ context='html'}
+          </div>
+
+          <div class="cta-section">
+            <a href="${cardItem.ctaLink}" class="cta-link">${cardItem.ctaText}</a>
+          </div>
         </div>
-    </div>
+  	 </div>
+  </div>
+
 </sly>
+
+
+<style>
+
+.transfer-funds-section {
+  padding: 40px 20px;
+  background-color: #f7f9fc;
+}
+
+.transfer-funds-section h2 {
+  text-align: center;
+  font-family:Muli,sans-serif;
+  font-size: 36px;;
+  color: #3D3D3D;
+
+}
+.Main-title{
+	color:#333333;
+    padding:0px 0px 30px !important;
+    font:16px;
+    font-family:Muli,sans-serif;
+}
+
+.card-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:5px;
+}
+
+.card-item {
+  background-color: #FFFFFF;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  min-height:1px;
+  width: 200px;
+  padding: 40px 27px;
+  margin:0px 15px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.05);
+}
+
+.card-item .icon img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.card-item .description {
+  font: 16px;
+  color: #000000;
+  margin-bottom: 15px;
+  font-family:Muli,sans-serif;
+}
+.cta-section{
+	padding : 0px 20px 0px 0px;
+	Margin:84px 0px 0px;
+}
+
+.card-item .cta-section .cta-link {
+  color: #F37E20;
+  font:14px;
+  font-family:Muli,sans-serif;
+
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  text-align:left;
+}
+
+.card-item .cta-section .cta-link:hover {
+  color: #005a9e;
+}
+
+</style>

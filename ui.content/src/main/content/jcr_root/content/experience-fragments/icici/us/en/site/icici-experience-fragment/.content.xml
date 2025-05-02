@@ -9,5 +9,4 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="ICICI Experience Fragment"
         sling:resourceType="cq/experience-fragments/components/experiencefragment"/>
-    <master/>
 </jcr:root>

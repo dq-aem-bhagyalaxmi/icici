@@ -10,24 +10,26 @@ import java.util.List;
 @Model(adaptables = Resource.class , defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class TransferFundsAbroadModel {
 
+    @ValueMapValue
     private String title;
 
     @ChildResource(name = "CardItems")
-    private List<CardItem> CardItems;
+    private List<CardItem> cardItems;
 
     public String getTitle() {
+
         return title;
     }
 
     public List<CardItem> getCardItems() {
-        return CardItems;
+        return cardItems;
     }
 
     @Model(adaptables = Resource.class)
     public static class CardItem{
 
         @ValueMapValue
-        private String iconImage;
+        private String fileReference;
 
         @ValueMapValue
         private String cardDescription;
@@ -38,19 +40,23 @@ public class TransferFundsAbroadModel {
         @ValueMapValue
         private String ctaLink;
 
-        public String getIconImage() {
-            return iconImage;
+        public String getFileReference() {
+
+            return fileReference;
         }
 
         public String getCardDescription() {
+
             return cardDescription;
         }
 
         public String getCtaText() {
+
             return ctaText;
         }
 
         public String getCtaLink() {
+
             return ctaLink;
 
         }
