@@ -34,8 +34,7 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
                                                 composite="true"
-                                                fieldLabel="Card Items"
-                                                >
+                                                fieldLabel="Card Items">
                                                 <field
                                                     jcr:primaryType="nt:unstructured"
                                                     sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
@@ -44,9 +43,9 @@
                                                         <imagePath
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                            rootPath="/content/dam/icici"
                                                             fieldLabel="Card Image"
-                                                            name="./image"/>
+                                                            name="./image"
+                                                            rootPath="/content/dam/icici"/>
                                                         <text
                                                             jcr:primaryType="nt:unstructured"
                                                             sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -66,4 +65,3 @@
         </items>
     </content>
 </jcr:root>
-

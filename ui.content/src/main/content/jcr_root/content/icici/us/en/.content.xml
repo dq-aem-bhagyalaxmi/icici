@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
+    <icici-homepage/>
+    <transferfundsabroad/>
+    <test/>
+    <savingsaccount/>
+    <premiumaccountscard/>
+    <testing/>
+    <abcd/>
+    <savingAccount/>
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
@@ -88,13 +96,11 @@
             jcr:primaryType="cq:LiveCopy"/>
     </jcr:content>
     <welcome-to-icici-bank-/>
-    <Home_Page/>
-    <savings-account-page/>
     <icici-home-page/>
     <cici-bank-/>
     <footer-page/>
     <cards-section/>
     <icici-home-page-/>
-    <savings-account-page0/>
     <savings-account-page1/>
+    <transferfundsabroad0/>
 </jcr:root>

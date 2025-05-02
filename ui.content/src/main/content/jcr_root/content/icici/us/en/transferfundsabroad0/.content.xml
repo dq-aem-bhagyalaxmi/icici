@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-05-02T09:50:21.444+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="TransferFundsAbroad"
+        sling:resourceType="icici/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/container"
+                layout="responsiveGrid">
+                <transfer_funds_abroa
+                    jcr:created="{Date}2025-05-02T09:09:54.866+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-05-02T09:50:21.438+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/transfer-Funds-abroad"
+                    textIsRich="[true,true,true,true]"
+                    title="Transfer Funds abroad">
+                    <CardItems jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            cardDescription="&lt;h3>Money2India&lt;/h3>&#xd;&#xa;&lt;p>Easy and secure online service to send money from Overseas to India&lt;/p>&#xd;&#xa;"
+                            ctaLink="https://www.icicibank.com/nri-banking/money-transfer/money2india-overview?ITM=nli_cms_FT_fund_transfer_index_Money2India_clickhere_btn"
+                            ctaText="KNOW MORE"
+                            fileReference="/content/dam/icici/icici-images/Money2indian.jpg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            cardDescription="&lt;h3>Money2World&lt;/h3>&#xd;&#xa;&lt;p>Easy and convenient online service to send money online from India to overseas accounts.&lt;/p>&#xd;&#xa;"
+                            ctaLink="https://www.icicibank.com/internet-banking/fund-transfer/outward-remittance/money2world?ITM=nli_cms_FT_fund_transfer_index_Money2World_clickhere_btn"
+                            ctaText="KNOW MORE"
+                            fileReference="/content/dam/icici/icici-images/money-to-world.jpg"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            cardDescription="&lt;h3>Branch-based Fund Transfer&lt;/h3>&#xd;&#xa;&lt;p>The forex-enabled ICICI Bank Branch can assist in transferring money using the Wire Transfer facility or foreign currency Demand Drafts.&lt;/p>&#xd;&#xa;"
+                            ctaLink="https://www.icicibank.com/personal-banking/online-services/funds-transfer/outward-remittance/branch-transfer?ITM=nli_cms_FT_fund_transfer_index_Branch_based_Fund_Transfer_clickhere_btn#toptitle"
+                            ctaText="KNOW MORE"
+                            fileReference="/content/dam/icici/icici-images/branch-based-fund-transfer.jpg"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            cardDescription="&lt;h3>Internet Banking&lt;/h3>&#xd;&#xa;&lt;p>Convenient Overseas Fund Transfer with facilities like ‘Rate Alert’ and ‘Set-up a Transaction.&lt;/p>&#xd;&#xa;"
+                            ctaLink="https://www.icicibank.com/personal-banking/online-services/funds-transfer/outward-remittance/online-transfer/internet-banking?ITM=nli_cms_FT_fund_transfer_index_ib_clickhere_btn#toptitle"
+                            ctaText="KNOW MORE"
+                            fileReference="/content/dam/icici/icici-images/internet-banking.jpg"/>
+                    </CardItems>
+                </transfer_funds_abroa>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
