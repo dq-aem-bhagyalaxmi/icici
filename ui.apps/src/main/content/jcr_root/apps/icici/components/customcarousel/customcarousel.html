@@ -36,7 +36,7 @@
     <button class="carousel-button next-button" aria-label="Next Slide" data-sly-test="${model.showNav}">&#10095;</button>
 
     <!-- Dots -->
-    <div class="dots-container" role="tablist" aria-label="Carousel Navigation Dots" >
+    <div class="dots-container" role="tablist" aria-label="Carousel Navigation Dots" data-sly-test="${model.showDots}">
         <sly data-sly-list.dot="${model.slideList}">
             <span class="dot" data-slide-index="${dotList.index}"></span>
         </sly>
