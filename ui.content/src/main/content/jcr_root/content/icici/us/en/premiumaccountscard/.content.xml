@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-29T16:48:43.946+05:30"
+        cq:lastModified="{Date}2025-05-02T11:51:18.267+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/icici-bank-"
         jcr:primaryType="cq:PageContent"
@@ -21,16 +21,16 @@
                 <premiumaccountscard
                     jcr:created="{Date}2025-04-26T17:16:35.349+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-29T16:46:45.420+05:30"
+                    jcr:lastModified="{Date}2025-05-02T11:48:55.188+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/premiumAccountsCard"
                     backgroundColor="#FFFFFF"
                     description="&lt;p>&lt;b>            Your family’s lifelong banking companion!&lt;/b>&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Flexibility to maintain balance collectively across Personal, Business and Family Accounts&lt;/li>&#xd;&#xa;&lt;li>Extend programme benefits to your family members.&lt;/li>&#xd;&#xa;&lt;li>Premium Credit Card, Travel Card &amp;amp; Debit Card&lt;/li>&#xd;&#xa;&lt;li>Special pricing benefits on Loans, Remittances and Demat Accounts&lt;/li>&#xd;&#xa;&lt;li>Single Relationship Manager for all banking requirements&lt;/li>&#xd;&#xa;&lt;li>Tailored solutions for kids and senior citizens&lt;/li>&#xd;&#xa;&lt;li>Air Accidental Death Insurance of ₹40 lakh and Personal Accidental Death Insurance of ₹10 lakh&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
-                    iconImageReference="/content/dam/icici/golden-deposit2-blue.jpg"
+                    iconImageReference="/content/dam/icici/icici-images/golden-deposit2-blue.jpg"
                     iconText="&lt;p>Family 360° Banking&lt;/p>&#xd;&#xa;"
                     imagePath="https://youtube.com"
-                    imageReference="/content/dam/icici/family-360-deg.jpg"
+                    imageReference="/content/dam/icici/icici-images/family-360-deg.jpg"
                     textIsRich="[true,true,true,true]"
                     title="Family 360° Banking">
                     <buttonItems jcr:primaryType="nt:unstructured">
@@ -45,15 +45,15 @@
                     </buttonItems>
                 </premiumaccountscard>
                 <premiumaccountscard_1584392693
-                    jcr:lastModified="{Date}2025-04-28T18:24:16.405+05:30"
+                    jcr:lastModified="{Date}2025-05-02T11:51:18.262+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/premiumAccountsCard"
                     backgroundColor="#FFF0E6"
                     description="&lt;ul>&#xd;&#xa;&lt;li>&lt;p>Dedicated Relationship Manager and Service Relationship Manager supported by a team of experts for investments and Business Banking&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Mastercard World Debit Card with 2 complimentary airport lounge accesses&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Air Accident Insurance of ₹1 crore and Personal Accident Insurance of ₹12 lakh&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>No minimum balance requirement.&lt;/p>&#xd;&#xa;&lt;p>&lt;b style=&quot;&quot;>Customers maintaining a ‘Customer Relationship Value’ of minimum ₹50 lakh are eligible for this Account.&lt;/b>&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
-                    iconImageReference="/content/dam/icici/golden-deposit2-blue.jpg"
+                    iconImageReference="/content/dam/icici/icici-images/golden-deposit2-blue.jpg"
                     iconText="&lt;p>Wealth Savings Account&lt;/p>&#xd;&#xa;"
-                    imageReference="/content/dam/icici/wealth-savings-account-new.jpg"
+                    imageReference="/content/dam/icici/icici-images/wealth-savings-account-new.jpg"
                     textIsRich="[true,true,true,true]"
                     title="Wealth Management Savings Account">
                     <buttonItems jcr:primaryType="nt:unstructured">
@@ -70,15 +70,15 @@
                 <premiumaccountscard_1414207968
                     jcr:created="{Date}2025-04-28T16:26:01.794+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-29T16:48:43.941+05:30"
+                    jcr:lastModified="{Date}2025-05-02T09:08:33.752+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/premiumAccountsCard"
                     backgroundColor="#FFF0E6"
                     description="&lt;ul>&#xd;&#xa;&lt;li>&lt;p>Complimentary Visa Infinite Debit Card with 6 airport lounge accesses per quarter&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Dedicated team of Relationship Manager, Service Manager and Product Specialist&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Priority assistance through our Customer Care number - 1800 1080&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Emeralde Credit Card with unlimited airport spa &amp;amp; lounge access, golf rounds and much more&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Air Accidental Death Insurance of ₹3 Cr and Personal Accidental Death Insurance of ₹15 lakh&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;li>&lt;p>Extend benefits to your family with &lt;a href=&quot;https://www.icicibank.com/personal-banking/family-banking2?ITM=nli_cms_savings-account_index-page_family-banking_textbtn&quot;>Family Banking&lt;/a>&lt;/p>&#xd;&#xa;&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
-                    iconImageReference="/content/dam/icici/golden-deposit2-blue.jpg"
+                    iconImageReference="/content/dam/icici/icici-images/golden-deposit2-blue.jpg"
                     iconText="&lt;p>Private Banking Savings Account&lt;/p>&#xd;&#xa;"
-                    imageReference="/content/dam/icici/Website-Thumbnails 570x369-1.jpg"
+                    imageReference="/content/dam/icici/icici-images/Website-Thumbnails 570x369-1.jpg"
                     textIsRich="[true,true,true]"
                     title="Private Banking Savings Account">
                     <buttonItems jcr:primaryType="nt:unstructured">

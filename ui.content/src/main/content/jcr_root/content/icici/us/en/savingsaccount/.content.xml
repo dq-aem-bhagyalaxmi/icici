@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-26T15:57:05.016+05:30"
+        cq:lastModified="{Date}2025-05-02T09:01:07.834+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/icici-bank-"
         jcr:primaryType="cq:PageContent"
@@ -19,7 +19,7 @@
                 <savingsaccountstypes
                     jcr:created="{Date}2025-04-25T18:01:57.957+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-26T15:57:05.010+05:30"
+                    jcr:lastModified="{Date}2025-05-02T09:01:07.828+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/savingsAccountsTypesSection"
@@ -36,22 +36,22 @@
                             jcr:primaryType="nt:unstructured"
                             accountImagePath="https://www.icicibank.com/personal-banking/family-banking?ITM=nli_CMS_savingsaccount_topicon_family-banking-family-bankingiconbtn.html"
                             accountTitle="Family 360° banking"
-                            fileReference="/content/dam/icici/premium-banking.jpg"/>
+                            fileReference="/content/dam/icici/icici-images/premium-banking.jpg"/>
                         <item1
                             jcr:primaryType="nt:unstructured"
                             accountImagePath="https://www.icicibank.com/personal-banking/accounts/kids-savings-account?ITM=nli_CMS_savingsaccount_topicon_kids-savings-account-kidsiconbtn.html"
                             accountTitle="Kids"
-                            fileReference="/content/dam/icici/others.jpg"/>
+                            fileReference="/content/dam/icici/icici-images/others.jpg"/>
                         <item2
                             jcr:primaryType="nt:unstructured"
                             accountImagePath="https://www.icicibank.com/personal-banking/accounts/campus-power-account?ITM=nli_CMS_savingsaccount_topicon_campus-power-account_studenticonbtn.html"
                             accountTitle="Student"
-                            fileReference="/content/dam/icici/students-and-kids.jpg"/>
+                            fileReference="/content/dam/icici/icici-images/students-and-kids.jpg"/>
                         <item3
                             jcr:primaryType="nt:unstructured"
                             accountImagePath="https://www.icicibank.com/personal-banking/accounts/senior-citizen-solutions?ITM=nli_CMS_savingsaccount_topicon_senior-citizen-sol_senior-citizeniconbtn.html"
                             accountTitle="Senior Citizens"
-                            fileReference="/content/dam/icici/senior-citizens-2.jpg"/>
+                            fileReference="/content/dam/icici/icici-images/senior-citizens-2.jpg"/>
                     </accountItems>
                 </savingsaccountstypes>
             </container>

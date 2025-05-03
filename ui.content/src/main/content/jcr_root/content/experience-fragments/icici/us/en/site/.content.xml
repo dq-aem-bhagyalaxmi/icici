@@ -3,6 +3,7 @@
     cq:adobeTargetExportFormat="html"
     jcr:primaryType="sling:OrderedFolder"
     jcr:title="Site">
+    <icici-experience-fragment/>
     <header/>
     <footer/>
     <header-experience-fragment/>

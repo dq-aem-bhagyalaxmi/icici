@@ -1,0 +1,7 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='icici.carouselComponent'}" />
+<sly data-sly-call="${clientLib.js @ categories='icici.carouselComponent'}" />
+
+<div class="custom-carousel">
+    <sly data-sly-resource="${resource @ resourceType='core/wcm/components/carousel/v1/carousel'}"></sly>
+</div>
