@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
-    <icici-homepage/>
-    <test/>
+    <Home_Page/>
+    <savings-account-page/>
+    <savings-account-page0/>
     <savingsaccount/>
     <premiumaccountscard/>
-    <testing/>
-    <abcd/>
-    <savingAccount/>
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
@@ -102,5 +100,9 @@
     <icici-home-page-/>
     <savings-account-page1/>
     <transferfundsabroad0/>
-    <fundtransfer-page/>
+    <icici-homepage/>
+    <test/>
+    <testing/>
+    <abcd/>
+    <savingAccount/>
 </jcr:root>
