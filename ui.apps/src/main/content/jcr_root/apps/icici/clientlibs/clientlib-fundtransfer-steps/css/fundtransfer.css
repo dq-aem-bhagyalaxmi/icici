@@ -1,0 +1,95 @@
+.funds-container {
+    background: linear-gradient(180deg, #ffffff 0, #fff0e5 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 40px;
+         color: #000000;
+}
+
+.features-wrapper {
+    position: relative;
+}
+
+.features-list {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+    position: relative;
+    --line-height: 0px;
+}
+
+.features-list::before {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 31px;
+    width: 2px;
+    height: 90%;
+    background: #f1f1f1;
+    z-index: 0;
+}
+
+
+
+.features-list .vertical-line {
+    position: absolute;
+    top: 21px;
+    left: 31px;
+    width: 2px;
+    background: #f26f21;
+    height: var(--line-height);
+    transition: height 1.5s ease;
+    z-index: 0;
+}
+
+
+.feature-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: border-color 0.3s ease;
+    background: white;
+     z-index: 1;
+}
+
+.c2 {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.feature-item.active .dot {
+    border-color: #f26f21;
+}
+
+.feature-item.active .c2 {
+    background-color: #f26f21;
+}
+
+.feature-text {
+    font-size: 13px;
+    color: #000000;
+    transition: font-weight 0.3s ease;
+}
+
+.feature-item.active .feature-text {
+    font-weight: bold;
+}
