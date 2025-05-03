@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-05-03T11:45:52.848+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Domestic Fund Transfer "
+        sling:resourceType="icici/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/container"
+                layout="responsiveGrid">
+                <domestic_fund_transf
+                    jcr:created="{Date}2025-05-03T10:24:10.124+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-05-03T11:45:52.842+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/domestic-Fund-Transfer"
+                    sectionTitle="Domestic Fund Transfer modes"
+                    textIsRich="[true,true,true,true]">
+                    <cardItems jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            backgroundColor="#FF851B"
+                            backgroundImageReference="/content/dam/icici/icici-images/card-vector.jpg"
+                            cardTitle="Mobile Banking"
+                            hoverDescription="&lt;p>Log in to iMobile and click on ‘Send Money’&lt;/p>&#xd;&#xa;"
+                            hoverTitle="Mobile Banking"
+                            iconImageReference="/content/dam/icici/icici-images/mobile-banking.jpg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            backgroundColor="#FF851B"
+                            backgroundImageReference="/content/dam/icici/icici-images/card-vector.jpg"
+                            cardTitle="Internet Banking"
+                            hoverDescription="&lt;p>Log in to ICICI Bank Internet Banking and click on ‘Payments and Transfer’.&lt;/p>&#xd;&#xa;"
+                            hoverTitle="Internet Banking"
+                            iconImageReference="/content/dam/icici/icici-images/internet-bankig-2.jpg"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            backgroundColor="#FF851B"
+                            backgroundImageReference="/content/dam/icici/icici-images/card-vector.jpg"
+                            cardTitle="Branch visit"
+                            hoverDescription="&lt;p>Visit any ICICI Bank Branch and fill up the form with all the payment details&lt;/p>&#xd;&#xa;"
+                            hoverTitle="Branch visit"
+                            iconImageReference="/content/dam/icici/icici-images/branch-visit.jpg"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            backgroundColor="#FF851B"
+                            backgroundImageReference="/content/dam/icici/icici-images/card-vector.jpg"
+                            cardTitle="Pockets"
+                            hoverDescription="&lt;p>With Pockets e-Wallet, you can transfer money to bank accounts and mobile numbers.&lt;/p>&#xd;&#xa;"
+                            hoverTitle="Pockets"
+                            iconImageReference="/content/dam/icici/icici-images/pockets-hover.jpg"/>
+                    </cardItems>
+                </domestic_fund_transf>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>

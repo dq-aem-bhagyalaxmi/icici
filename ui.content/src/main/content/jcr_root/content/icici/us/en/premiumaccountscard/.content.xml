@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-05-02T11:51:18.267+05:30"
+        cq:lastModified="{Date}2025-05-03T10:06:50.031+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/icici-bank-"
         jcr:primaryType="cq:PageContent"
@@ -21,12 +21,12 @@
                 <premiumaccountscard
                     jcr:created="{Date}2025-04-26T17:16:35.349+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-05-02T11:48:55.188+05:30"
+                    jcr:lastModified="{Date}2025-05-03T10:06:50.026+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/premiumAccountsCard"
                     backgroundColor="#FFFFFF"
-                    description="&lt;p>&lt;b>            Your family’s lifelong banking companion!&lt;/b>&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Flexibility to maintain balance collectively across Personal, Business and Family Accounts&lt;/li>&#xd;&#xa;&lt;li>Extend programme benefits to your family members.&lt;/li>&#xd;&#xa;&lt;li>Premium Credit Card, Travel Card &amp;amp; Debit Card&lt;/li>&#xd;&#xa;&lt;li>Special pricing benefits on Loans, Remittances and Demat Accounts&lt;/li>&#xd;&#xa;&lt;li>Single Relationship Manager for all banking requirements&lt;/li>&#xd;&#xa;&lt;li>Tailored solutions for kids and senior citizens&lt;/li>&#xd;&#xa;&lt;li>Air Accidental Death Insurance of ₹40 lakh and Personal Accidental Death Insurance of ₹10 lakh&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
+                    description="&lt;p>&lt;b>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Your family’s lifelong banking companion!&lt;/b>&lt;/p>&#xd;&#xa;&lt;ul>&#xd;&#xa;&lt;li>Flexibility to maintain balance collectively across Personal, Business and Family Accounts&lt;/li>&#xd;&#xa;&lt;li>Extend programme benefits to your family members.&lt;/li>&#xd;&#xa;&lt;li>Premium Credit Card, Travel Card &amp;amp; Debit Card&lt;/li>&#xd;&#xa;&lt;li>Special pricing benefits on Loans, Remittances and Demat Accounts&lt;/li>&#xd;&#xa;&lt;li>Single Relationship Manager for all banking requirements&lt;/li>&#xd;&#xa;&lt;li>Tailored solutions for kids and senior citizens&lt;/li>&#xd;&#xa;&lt;li>Air Accidental Death Insurance of ₹40 lakh and Personal Accidental Death Insurance of ₹10 lakh&lt;/li>&#xd;&#xa;&lt;/ul>&#xd;&#xa;"
                     iconImageReference="/content/dam/icici/icici-images/golden-deposit2-blue.jpg"
                     iconText="&lt;p>Family 360° Banking&lt;/p>&#xd;&#xa;"
                     imagePath="https://youtube.com"
