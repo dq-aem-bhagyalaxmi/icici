@@ -1,0 +1,31 @@
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='icici.TransferFundsAbroad'}"/>
+
+<sly data-sly-use.model="com.aem.icici.core.models.TransferFundsAbroadModel" />
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="transfer-funds-section">
+  <div class="Main-title">
+    <h2>${model.title}</h2>
+  </div>
+  <div class="card-items" data-sly-list.cardItem="${model.CardItems}">
+    <div class="card-item">
+      <div class="icon">
+        <img src="${cardItem.fileReference}" alt="Icon" />
+      </div>
+
+      <div class="description">
+        ${cardItem.cardDescription @ context='html'}
+      </div>
+
+      <div class="cta-section">
+        <a href="${cardItem.ctaLink}" class="cta-link"><span class="link-text">${cardItem.ctaText}</span></a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</sly>
+
