@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2025-05-03T11:20:17.096+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/icici/settings/wcm/templates/icici-bank-"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="fundtransfer page"
+        sling:resourceType="icici/components/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="icici/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="icici/components/container"
+                layout="responsiveGrid">
+                <fundtransfer_steps
+                    jcr:created="{Date}2025-05-03T10:51:32.977+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-05-03T11:20:17.093+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/fundtransfer-steps"
+                    featureText="[as,as,as]"
+                    fileReference="/content/dam/icici/transfer-funds-steps/steps-d.jpg"
+                    image="/content/dam/icici/transfer-funds-steps/steps-d.jpg"
+                    title="Steps for Fund Transfer">
+                    <steps jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            featureText="rewet"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            featureText="w4tt4"/>
+                    </steps>
+                </fundtransfer_steps>
+            </container>
+        </root>
+    </jcr:content>
+</jcr:root>
