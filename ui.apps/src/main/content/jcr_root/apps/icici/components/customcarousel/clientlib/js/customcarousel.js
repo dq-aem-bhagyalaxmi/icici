@@ -1,37 +1,83 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener("DOMContentLoaded", function () {
     const track = document.querySelector('.carousel-track');
-    const slides = Array.from(track.children);
-    const nextButton = document.querySelector('.carousel-next');
-    const prevButton = document.querySelector('.carousel-prev');
+    const cards = Array.from(track?.children || []);
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const dotsContainer = document.querySelector('.dots-container');
 
+    if (!track || cards.length === 0) {
+        console.error("Carousel track or cards not found!");
+        return;
+    }
+
+    const cardsToShow = 3; // Number of cards visible at a time
+    const totalCards = cards.length;
+    const maxIndex = totalCards - cardsToShow;
     let currentIndex = 0;
 
-    const updateSlidePosition = () => {
-        const containerWidth = document.querySelector('.carousel').offsetWidth;
-        const slideWidth = containerWidth / 3; // 3 slides per view
+    // Create dots based on the number of slides
+    const dotsCount = maxIndex + 1;
+    const dots = [];
 
-        slides.forEach(slide => {
-            slide.style.flex = `0 0 ${slideWidth}px`;
-        });
-
-        const offset = currentIndex * slideWidth;
-        track.style.transform = `translateX(-${offset}px)`;
-    };
-
-    nextButton.addEventListener('click', () => {
-        if (currentIndex < slides.length - 3) { // show 3 slides
-            currentIndex++;
-            updateSlidePosition();
+    function createDots() {
+        if (!dotsContainer) {
+            console.error("Dots container not found!");
+            return;
         }
-    });
 
-    prevButton.addEventListener('click', () => {
+        dotsContainer.innerHTML = ""; // Clear existing dots
+        for (let i = 0; i < dotsCount; i++) {
+            const dot = document.createElement('button');
+            dot.classList.add('dot');
+            dot.setAttribute('aria-label', `Slide ${i + 1}`);
+            dot.setAttribute('role', 'tab');
+            dot.addEventListener('click', () => {
+                currentIndex = i;
+                updateCarousel();
+            });
+            dotsContainer.appendChild(dot);
+            dots.push(dot);
+        }
+    }
+
+    function updateCarousel() {
+        const cardWidth = cards[0].getBoundingClientRect().width;
+        const moveX = cardWidth * currentIndex;
+        track.style.transform = `translateX(-${moveX}px)`;
+        updateDots();
+        updateButtons();
+    }
+
+    function updateDots() {
+        dots.forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentIndex);
+        });
+    }
+
+    function updateButtons() {
+        prevButton.disabled = currentIndex === 0;
+        nextButton.disabled = currentIndex === maxIndex;
+        prevButton.style.opacity = prevButton.disabled ? '0.3' : '1';
+        nextButton.style.opacity = nextButton.disabled ? '0.3' : '1';
+        prevButton.style.cursor = prevButton.disabled ? 'default' : 'pointer';
+        nextButton.style.cursor = nextButton.disabled ? 'default' : 'pointer';
+    }
+
+    prevButton?.addEventListener('click', () => {
         if (currentIndex > 0) {
             currentIndex--;
-            updateSlidePosition();
+            updateCarousel();
         }
     });
 
-    window.addEventListener('resize', updateSlidePosition);
-    updateSlidePosition();
+    nextButton?.addEventListener('click', () => {
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    // Initialize
+    createDots();
+    updateCarousel();
 });

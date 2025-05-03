@@ -1,7 +1,12 @@
-<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html" />
-<sly data-sly-call="${clientLib.css @ categories='icici.carouselComponent'}" />
-<sly data-sly-call="${clientLib.js @ categories='icici.carouselComponent'}" />
+<sly data-sly-use.carousel="com.adobe.cq.wcm.core.components.models.Carousel"/>
+<sly data-sly-test="${carousel}">
 
-<div class="custom-carousel">
-    <sly data-sly-resource="${resource @ resourceType='core/wcm/components/carousel/v1/carousel'}"></sly>
+<div class="custom-carousel-wrapper">
+    <h2 class="carousel-title">${properties.jcr:title}</h2>
+
+    <div class="custom-carousel" data-sly-resource="${@path='carousel', resourceType='core/wcm/components/carousel/v1/carousel'}">
+        <!-- Core carousel rendered here -->
+    </div>
 </div>
+
+</sly>
