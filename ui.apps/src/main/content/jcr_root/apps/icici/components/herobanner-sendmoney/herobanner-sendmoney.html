@@ -1,5 +1,5 @@
 <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
-    <sly data-sly-call="${clientlib.css @ categories='icici.sendmoney'}"/>
+    <sly data-sly-call="${clientlib.all @ categories='icici.sendmoney'}"/>
 </sly>
 
 <sly data-sly-use.model="com.aem.icici.core.models.Herobanner_sendmoneyModel"/>
@@ -18,27 +18,10 @@
 
     <div id="rotating-image">
         <sly data-sly-list.imagelist="${model.imagelists}">
-            <img src="${imagelist.image}" class="rotating-img" style="${imagelistList.index == 0 ? 'display:block;' : 'display:none;'}"/>
+            <img src="${imagelist.image}" class="rotating-img" style="${imagelistList.index == 0 ? 'display:block;' : 'display:none;' @ context='styleString'}"/>
         </sly>
     </div>
 </div>
 
 
 
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-    const images = document.querySelectorAll("#rotating-image .rotating-img");
-
-
-    let current = 0;
-    if (images.length > 1) {
-        setInterval(() => {
-            images[current].style.display = "none";
-            current = (current + 1) % images.length;
-            images[current].style.display = "block";
-        }, 1000);
-    }
-});
-</script>
