@@ -1,0 +1,52 @@
+.left-curve, .right-curve, .tab-joiner, .active-joiner {
+  display: inline-block;
+  width: 24px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.left-curve {
+  background-image: url('/etc.clientlibs/icicibank/clientlibs/clientlib-base/resources/images/icons/active-left.png');
+}
+
+.right-curve {
+  background-image: url('/etc.clientlibs/icicibank/clientlibs/clientlib-base/resources/images/icons/active-right.png');
+}
+
+.tab-joiner {
+  background-image: url('/etc.clientlibs/icicibank/clientlibs/clientlib-base/resources/images/icons/tab-right-icon.png');
+}
+
+.active-joiner {
+  background-image: url('/etc.clientlibs/icicibank/clientlibs/clientlib-base/resources/images/icons/tab-right-active-icon.png');
+}
+
+.tab-list-item {
+  background: #f5f5f5;
+  padding: 18px 40px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #212121;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  position: relative;
+}
+
+.tab-list-item.first {
+  background: #ea7114;
+  color: white;
+}
+
+.tab-list-item.first:hover {
+  color: white; /* No hover color change for first tab */
+}
+
+.tab-item:hover {
+  color: #ea7114;
+}
