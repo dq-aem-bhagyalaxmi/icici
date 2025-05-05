@@ -210,7 +210,9 @@
                     jcr:title="Page Root"
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:ICICI Project - Content,/apps/icici/components/form/container,group:ICICI Project - Structure]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        jcr:mixinTypes="[]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575024218483
@@ -240,7 +242,9 @@
                     jcr:title="Page Content"
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="[group:ICICI Project - Content,/apps/icici/components/form/container]">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        jcr:mixinTypes="[]"
+                        jcr:primaryType="nt:unstructured"/>
                     <cq:authoring jcr:primaryType="nt:unstructured">
                         <assetToComponentMapping jcr:primaryType="nt:unstructured">
                             <mapping_1575030255082
@@ -335,7 +339,9 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     clientlibs="[icici.dependencies,icici.site]"
                     clientlibsJsHead="icici.dependencies">
-                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <jcr:content
+                        jcr:mixinTypes="[]"
+                        jcr:primaryType="nt:unstructured"/>
                 </policy>
             </page>
         </components>

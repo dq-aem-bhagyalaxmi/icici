@@ -1,104 +1,24 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='icici.savings.header.herobanner'}"/>
+
 <sly data-sly-use.model="com.aem.icici.core.models.SavingsHeaderHeroBannerModel"/>
 
 <div class="offer-cards-container">
-
     <h2>${model.title}</h2>
     <p>${model.description}</p>
 
     <div class="cards-wrapper">
-        <sly data-sly-list.card="${model.cards}">
-            <div class="card">
-                <img src="${card.image @ context='uri'}" alt="${card.cardTitle}" />
-                <h3>${card.cardTitle}</h3>
-            </div>
-        </sly>
+        <div class="cards-container">
+            <sly data-sly-list.card="${model.cards}">
+                <div class="card" data-index="${cardList.index}">
+                    <img src="${card.image @ context='uri'}" alt="${card.cardTitle}" />
+                    <h3>${card.cardTitle}</h3>
+                </div>
+            </sly>
+        </div>
     </div>
 
     <div class="apply-now-button">
         <button>${model.buttonText}</button>
     </div>
-
 </div>
-
-
-<style>
-    .offer-cards-container {
-    background-color: #fff5ec;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.offer-cards-container h2 {
-    font-size: 36px;
-    font-weight: 700;
-    color: #2c2c2c;
-    margin-bottom: 12px;
-}
-
-.offer-cards-container p {
-    font-size: 20px;
-    color: #666666;
-    margin-bottom: 40px;
-}
-
-.cards-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-}
-
-.card {
-    background: #ffffff;
-    width: 240px;
-    padding: 30px 20px;
-    border-radius: 16px;
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.card img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #333333;
-    margin: 0;
-}
-
-.apply-now-button {
-    margin-top: 50px;
-}
-
-.apply-now-button button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 14px 40px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.apply-now-button button:hover {
-    background-color: #e65c00;
-    transform: translateY(-2px);
-}
-
-</style>

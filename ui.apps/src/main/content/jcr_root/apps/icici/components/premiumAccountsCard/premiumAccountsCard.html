@@ -16,13 +16,13 @@
                     <img src="${model.iconImageReference}" alt="Icon" />
                 </div>
                 <div class="premium-account-card__icon-description">
-                    <p>${model.iconText @context='html'}</p>
+                    <div>${model.iconText @context='html'}</div>
                 </div>
             </div>
 
             <div class="premium-account-body-section">
                 <div class="premium-account-description">
-                    <p class="premium-account-card__description">${model.description @context='html'}</p>
+                    <div class="premium-account-card__description">${model.description @context='html'}</div>
 
                     <div class="premium-account-card__buttons">
                         <ul class="premium-account-card__button-list" data-sly-list.item="${model.buttonItems}">
