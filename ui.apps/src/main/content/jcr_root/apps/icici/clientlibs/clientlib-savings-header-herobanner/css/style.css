@@ -79,7 +79,6 @@
   color: #ffffff; /* White text inside orange cards */
 }
 
-/* Position cards manually for nice deep curve */
 .offer-cards-container .card[data-index="0"] {
   transform: translate(-360px, -50px) rotate(-12deg);
 }
@@ -113,12 +112,14 @@
   transform: translate(370px, -50px) rotate(12deg);
 }
 
-/* Button */
+/* Button Section */
 .offer-cards-container .apply-now-button {
   margin-top: 10px;
 }
 
-.offer-cards-container .apply-now-button button {
+/* Updated: Anchor tag styled like button */
+.offer-cards-container .apply-now-button .apply-now-link {
+  display: inline-block;
   background-color: #ff7a00;
   color: #ffffff;
   font-size: 18px;
@@ -127,9 +128,10 @@
   padding: 10px 40px;
   border-radius: 40px;
   cursor: pointer;
+  text-decoration: none; /* remove underline */
   transition: background-color 0.3s ease;
 }
 
-.offer-cards-container .apply-now-button button:hover {
+.offer-cards-container .apply-now-button .apply-now-link:hover {
   background-color: #e56a00;
 }
