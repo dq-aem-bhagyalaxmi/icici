@@ -2,7 +2,6 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
-    <sample-template/>
     <rep:policy/>
     <page-content/>
     <xf-web-variation/>
@@ -10,5 +9,5 @@
     <common-feature-page-template/>
     <my-template/>
     <icici-bank-/>
-    <screen-two-template/>
+    <testing-template/>
 </jcr:root>
