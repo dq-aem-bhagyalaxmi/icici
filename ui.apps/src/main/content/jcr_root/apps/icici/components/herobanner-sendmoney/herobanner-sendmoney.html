@@ -1,0 +1,44 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.sendmoney'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.Herobanner_sendmoneyModel"/>
+<div class="sendmoney-container">
+    <div>
+        <p class="header-text1"><span class="header-text"></span>${model.text1}</p>
+        <h1 class="header-title">${model.title}</h1>
+        <p class="sendmoney-description">
+            <img src="${model.imageicon}" alt="icon"/>
+            ${model.text2}
+        </p>
+        <a href="${model.link}">
+            <button>${model.text3}</button>
+        </a>
+    </div>
+
+    <div id="rotating-image">
+        <sly data-sly-list.imagelist="${model.imagelists}">
+            <img src="${imagelist.image}" class="rotating-img" style="${imagelistList.index == 0 ? 'display:block;' : 'display:none;'}"/>
+        </sly>
+    </div>
+</div>
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll("#rotating-image .rotating-img");
+
+
+    let current = 0;
+    if (images.length > 1) {
+        setInterval(() => {
+            images[current].style.display = "none";
+            current = (current + 1) % images.length;
+            images[current].style.display = "block";
+        }, 1000);
+    }
+});
+</script>
