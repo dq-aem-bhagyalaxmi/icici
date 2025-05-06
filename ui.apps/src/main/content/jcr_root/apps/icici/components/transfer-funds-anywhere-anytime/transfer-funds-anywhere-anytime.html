@@ -26,7 +26,7 @@
 
     <div class="image-rotator" id="imageRotator">
         <sly data-sly-list.item="${model.imagebutton}">
-            <img src="${item.image @ context='uri'}" class="rotating-img" style="${itemList.index == 0 ? 'display:block' : 'display:none'}" />
+            <img src="${item.image @ context='uri'}" class="rotating-img" style="${itemList.index == 0 ? 'display:block;' : 'display:none;' @ context='styleString'}" />
         </sly>
     </div>
 </div>
