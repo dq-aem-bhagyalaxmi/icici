@@ -6,29 +6,23 @@
 
 <div class="hero-banner-tabs">
     <ul class="tab-list" data-sly-list.tab="${model.tabs}">
-        
-        <!-- Left curve before first tab -->
+
         <sly data-sly-test="${tabList.first}">
-            <li class="left-curve"></li>
+            <li class="curve-left"></li> <!-- Left curve only before first -->
         </sly>
 
-        <!-- Each tab -->
-        <li class="tab-list-item${tabList.first ? ' first' : ''}${tabList.last ? ' last' : ''}">
-            <a href="${tab.tabLink}" class="tab-item${tab.isActive ? ' active' : ''}">${tab.tabTitle}</a>
+        <li class="tab-list-item ${tabList.first ? 'first' : ''}">
+            <a href="${tab.tabLink}" class="tab-item ${tab.isActive ? 'active' : ''}">
+                ${tab.tabTitle}
+                <sly data-sly-test="${!tabList.last}">
+                    <span class="tab-joiner"></span> <!-- Joiner inside tab -->
+                </sly>
+            </a>
         </li>
 
-        <!-- Joiner after each tab except after last -->
-        <sly data-sly-test="${!tabList.last}">
-            <li class="${tab.isActive ? 'tab-joiner active-joiner' : 'tab-joiner'}"></li>
-        </sly>
-
-        <!-- Right curve after last tab -->
-        <sly data-sly-test="${tabList.last}">
-            <li class="right-curve"></li>
+        <sly data-sly-test="${tabList.index == 0}">
+            <li class="curve-right"></li> <!-- Right curve only after first tab -->
         </sly>
 
     </ul>
 </div>
-
-
-
