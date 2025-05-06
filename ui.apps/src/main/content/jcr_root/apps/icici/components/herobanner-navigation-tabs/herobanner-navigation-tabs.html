@@ -12,7 +12,7 @@
         </sly>
 
         <li class="tab-list-item ${tabList.first ? 'first' : ''}">
-            <a href="${tab.tabLink}" class="tab-item ${tab.isActive ? 'active' : ''}">
+            <a href="${tab.tabLink}.html" class="tab-item ${tab.isActive ? 'active' : ''}">
                 ${tab.tabTitle}
                 <sly data-sly-test="${!tabList.last}">
                     <span class="tab-joiner"></span> <!-- Joiner inside tab -->

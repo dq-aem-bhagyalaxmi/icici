@@ -4,10 +4,9 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2025-05-05T16:17:14.567+05:30"
+        cq:lastModified="{Date}2025-05-06T11:17:21.998+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
-        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         jcr:title="savings-account"
         sling:resourceType="icici/components/page">
@@ -19,13 +18,23 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/container"
                 layout="responsiveGrid">
+                <herobanner_navigatio
+                    jcr:created="{Date}2025-05-06T09:34:50.938+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-05-06T09:37:13.807+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/herobanner-navigation-tabs"
+                    tabLink="[/content/campaigns,/content/catalogs,/content/community,/content/core-components-examples,/content/community-components]"
+                    tabTitle="[SAVINGS ACCOUNT,INTEREST RATE,SAVINGS ACCOUNT INTEREST CALCULATOR,INSURANCE COVER,DOCUMENTS REQIORED]"/>
                 <savings_page_head_ba
                     jcr:created="{Date}2025-05-05T16:02:05.891+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-05-05T16:03:10.462+05:30"
+                    jcr:lastModified="{Date}2025-05-06T11:17:21.988+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/savings-page-head-banner"
+                    buttonLink="/content/we-retail/ca/en/about-us"
                     buttonText="Apply Now"
                     description="3-in-1 Account&#xd;&#xa;(Savings + Demat + Trading) "
                     title="India's Most Comprehensive">
