@@ -1,0 +1,28 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='icici.herobanner.navtabs'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.herobannernavigationtabs.HeroBannerNavTabsModel"/>
+
+<div class="hero-banner-tabs">
+    <ul class="tab-list" data-sly-list.tab="${model.tabs}">
+
+        <sly data-sly-test="${tabList.first}">
+            <li class="curve-left"></li> <!-- Left curve only before first -->
+        </sly>
+
+        <li class="tab-list-item ${tabList.first ? 'first' : ''}">
+            <a href="${tab.tabLink}" class="tab-item ${tab.isActive ? 'active' : ''}">
+                ${tab.tabTitle}
+                <sly data-sly-test="${!tabList.last}">
+                    <span class="tab-joiner"></span> <!-- Joiner inside tab -->
+                </sly>
+            </a>
+        </li>
+
+        <sly data-sly-test="${tabList.index == 0}">
+            <li class="curve-right"></li> <!-- Right curve only after first tab -->
+        </sly>
+
+    </ul>
+</div>
