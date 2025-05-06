@@ -4,6 +4,7 @@
     margin: 0;
     position: relative;
     overflow: visible;
+    padding-left: 80px;
 }
 
 .tab-list {
@@ -36,10 +37,12 @@
 }
 
 .tab-list-item.first {
-    background: #ef6c23; /* exact orange */
+    background: #f87c24; /* exact orange */
     color: white;
     /* ❌ No box-shadow */
     border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .tab-item {
@@ -51,6 +54,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    padding-right: 24px;
+    padding-left: 0px;
 }
 
 /* Hover only for non-first tabs */
@@ -72,7 +77,6 @@
     right: -9px;
     top: 0;
     z-index: 3;
-    /* ❌ No shadow */
     border: none;
 }
 
@@ -85,7 +89,6 @@
     margin-right: -8px;
     position: relative;
     z-index: 2;
-    /* ❌ No shadow */
     border: none;
 }
 
@@ -98,6 +101,5 @@
     margin-left: -8px;
     position: relative;
     z-index: 2;
-    /* ❌ No shadow */
     border: none;
 }

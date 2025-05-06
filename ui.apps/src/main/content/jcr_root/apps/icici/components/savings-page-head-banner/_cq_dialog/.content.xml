@@ -51,6 +51,13 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Button Text"
                         name="./buttonText"/>
+                    <buttonLink
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        allowExternalPaths="{Boolean}true"
+                        fieldLabel="Button Link"
+                        name="./buttonLink"
+                        rootPath="/content"/>
                 </items>
             </mainTab>
         </items>
