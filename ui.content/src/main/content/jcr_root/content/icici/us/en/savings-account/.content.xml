@@ -2,12 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-05-03T16:08:04.772+05:30"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2025-05-05T16:17:14.567+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
         jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Savings Account Page"
+        jcr:title="savings-account"
         sling:resourceType="icici/components/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -17,27 +19,39 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/container"
                 layout="responsiveGrid">
-                <savings_eligibility_
-                    jcr:created="{Date}2025-04-28T14:11:15.313+05:30"
+                <savings_page_head_ba
+                    jcr:created="{Date}2025-05-05T16:02:05.891+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-28T14:11:15.313+05:30"
+                    jcr:lastModified="{Date}2025-05-05T16:03:10.462+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="icici/components/savings-eligibility-accordion">
-                    <cq:responsive jcr:primaryType="nt:unstructured">
-                        <default
+                    sling:resourceType="icici/components/savings-page-head-banner"
+                    buttonText="Apply Now"
+                    description="3-in-1 Account&#xd;&#xa;(Savings + Demat + Trading) "
+                    title="India's Most Comprehensive">
+                    <cards jcr:primaryType="nt:unstructured">
+                        <item0
                             jcr:primaryType="nt:unstructured"
-                            offset="1"
-                            width="10"/>
-                    </cq:responsive>
-                </savings_eligibility_>
-                <savingspage_faq_sect
-                    jcr:created="{Date}2025-04-30T10:20:47.242+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-04-30T10:20:56.707+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="icici/components/savingspage-faq-section-accordion"/>
+                            cardTitle="Be investment ready with Savings, Demat &amp; Trading Account"
+                            image="/content/dam/icici/savings-header-herobanner/Hero image_1.png"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            cardTitle="Live your dreams with a exclusive Loan and instant disbursal"
+                            image="/content/dam/icici/savings-header-herobanner/sav-img3.png"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            cardTitle="Instant payment &amp; fund transfer solutions at your fingertips"
+                            image="/content/dam/icici/savings-header-herobanner/sav-img1-new.png"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            cardTitle="Spending just got easier with ICICI Bank Credit Card"
+                            image="/content/dam/icici/savings-header-herobanner/sav-img4.png"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            cardTitle="Explore offers of your choice"
+                            image="/content/dam/icici/savings-header-herobanner/save-img5-new.png"/>
+                    </cards>
+                </savings_page_head_ba>
                 <carousel_copy
                     jcr:created="{Date}2025-04-30T17:17:16.072+05:30"
                     jcr:createdBy="admin"
@@ -272,6 +286,20 @@
                             image="/content/dam/icici/footer-images/google-play.png"/>
                     </uploadimg>
                 </digitalbankingsoluti>
+                <savings_eligibility_
+                    jcr:created="{Date}2025-04-28T14:11:15.313+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-04-28T14:11:15.313+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/savings-eligibility-accordion">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
+                </savings_eligibility_>
                 <customcarousel
                     jcr:created="{Date}2025-04-30T16:09:45.400+05:30"
                     jcr:createdBy="admin"
@@ -374,8 +402,8 @@
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default
                                 jcr:primaryType="nt:unstructured"
-                                offset="1"
-                                width="10"/>
+                                offset="0"
+                                width="11"/>
                         </cq:responsive>
                         <container
                             cq:panelTitle="What is a Savings Account?"
@@ -438,41 +466,20 @@
                                 textIsRich="true"/>
                         </item_1746013392597>
                     </savingspage_faq_sect>
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="1"
+                            width="10"/>
+                    </cq:responsive>
                 </container>
-                <savings_page_head_ba
-                    jcr:created="{Date}2025-05-03T16:06:05.879+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-05-03T16:08:04.764+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="icici/components/savings-page-head-banner"
-                    buttonText="Apply Now"
-                    description="t"
-                    title="India's Most Comprehensive">
-                    <cards jcr:primaryType="nt:unstructured">
-                        <item0
-                            jcr:primaryType="nt:unstructured"
-                            cardTitle="Be investment ready with Savings, Demat &amp; Trading Account"
-                            image="/content/dam/icici/savings-header-herobanner/Hero image_1.png"/>
-                        <item1
-                            jcr:primaryType="nt:unstructured"
-                            cardTitle="Live your dreams with a exclusive Loan and instant disbursal"
-                            image="/content/dam/icici/savings-header-herobanner/sav-img3.png"/>
-                        <item2
-                            jcr:primaryType="nt:unstructured"
-                            cardTitle="Instant payment &amp; fund transfer solutions at your fingertips"
-                            image="/content/dam/icici/savings-header-herobanner/sav-img1-new.png"/>
-                        <item3
-                            jcr:primaryType="nt:unstructured"
-                            cardTitle="Spending just got easier with ICICI Bank Credit Card"
-                            image="/content/dam/icici/savings-header-herobanner/save-img5-new.png"/>
-                        <item4
-                            jcr:primaryType="nt:unstructured"
-                            cardTitle="Explore offers of your choice"
-                            image="/content/dam/icici/savings-header-herobanner/sav-img4.png"/>
-                    </cards>
-                </savings_page_head_ba>
             </container>
         </root>
+        <cq:featuredimage
+            jcr:lastModified="{Date}2025-05-05T16:17:14.559+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="core/wcm/components/image/v3/image"
+            altValueFromDAM="false"/>
     </jcr:content>
 </jcr:root>

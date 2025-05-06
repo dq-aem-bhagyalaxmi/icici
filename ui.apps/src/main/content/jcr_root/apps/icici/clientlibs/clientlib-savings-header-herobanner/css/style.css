@@ -79,6 +79,7 @@
   color: #ffffff; /* White text inside orange cards */
 }
 
+/* Position cards manually */
 .offer-cards-container .card[data-index="0"] {
   transform: translate(-360px, -50px) rotate(-12deg);
 }
