@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-05-03T15:30:45.300+05:30"
+        cq:lastModified="{Date}2025-05-06T14:26:38.085+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/testing-template"
         jcr:primaryType="cq:PageContent"
@@ -16,17 +16,80 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="icici/components/container"
                 layout="responsiveGrid">
-                <herobanner_sendmoney
-                    jcr:created="{Date}2025-05-03T15:26:55.260+05:30"
+                <transfer_funds_anywh
+                    jcr:created="{Date}2025-05-05T16:59:43.095+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2025-05-03T15:30:45.297+05:30"
+                    jcr:lastModified="{Date}2025-05-06T14:02:17.120+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/transfer-funds-anywhere-anytime"
+                    link="https://www.icicibank.com/digital-banking/retail-digital-banking"
+                    text="Explore Digital Banking "
+                    title="Transfer funds                                                 anywhere, anytime.">
+                    <imagebutton jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/icici/anywhere-anytime/mobile-banking.jpg"
+                            text1="Mobile Banking"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/icici/anywhere-anytime/net-banking.jpg"
+                            text1="Digital Banking"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/icici/anywhere-anytime/whatsApp-banking.jpg"
+                            text1="What's up Banking "/>
+                    </imagebutton>
+                </transfer_funds_anywh>
+                <fundtransfer_steps
+                    jcr:created="{Date}2025-05-06T14:05:01.024+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-05-06T14:06:20.190+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="icici/components/fundtransfer-steps"
+                    image="/content/dam/icici/transfer-funds-steps/steps-d.jpg"
+                    title="Steps for Fund Transfer">
+                    <steps jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Select payee from list of registered payees"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Enter the required details like transaction amount"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Select transfer type/payment method"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            featureText="Successful Fund Transfer"/>
+                    </steps>
+                </fundtransfer_steps>
+                <herobanner_sendmoney
+                    jcr:created="{Date}2025-05-06T14:06:36.264+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2025-05-06T14:26:38.081+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="icici/components/herobanner-sendmoney"
+                    imageicon="/content/dam/icici/herobanner-sendmoney/antivirus.jpg"
+                    link="https://infinity.icicibank.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&amp;__START_TRAN_FLAG__=Y&amp;FG_BUTTONS__=LOAD&amp;ACTION.LOAD=Y&amp;AuthenticationFG.LOGIN_FLAG=1&amp;BANK_ID=ICI&amp;CTA_FLAG=MYPAYEESFTRVMP&amp;source_caller=ui&amp;af_dp=https%3A%2F%2Fmobile.icicibank.com%2Ffundtransfer&amp;shortlink=nyp8ne2v&amp;c=RTGS%20&amp;pid=Webpage&amp;deep_link_value=fundtransfer&amp;af_xp=custom"
                     text1="FUNDS TRANSFER"
                     text2="Experience secure and smooth online Fund Transfers through ICICI Bank, anywhere and anytime."
-                    text3="TRANSFER FUNDS"
-                    title="Funds Transfer - Send Money Online"/>
+                    text3="TRANSFER FUNDS NOW"
+                    title="Funds Transfer - Send Money Online">
+                    <imagelists jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/icici/herobanner-sendmoney/fund-transfer-1-d.jpg"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/icici/herobanner-sendmoney/fund-transfer-2-d.jpg"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/icici/herobanner-sendmoney/fund-transfer-3-d.jpg"/>
+                    </imagelists>
+                </herobanner_sendmoney>
             </container>
         </root>
     </jcr:content>
