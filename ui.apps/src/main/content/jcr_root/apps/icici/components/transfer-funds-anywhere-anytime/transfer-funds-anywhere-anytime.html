@@ -1,0 +1,36 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='icici.anywhere-anytime'}"/>
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.TransferFundsAnywhere_anytimeModel"/>
+
+
+<div class="transfer-funds">
+    <div class="text-content">
+        <h1>${model.title}</h1>
+
+        <div class="button-group" id="optionButtons">
+            <sly data-sly-list.item="${model.imagebutton}">
+  				<button class="option-button" data-index="${itemList.index}">
+    				<span class="circle-border"><span class="circle-solid"></span></span>
+                		${item.text1}
+              	</button>
+			</sly>
+
+        </div>
+
+        <div class="cta-button">
+            <a href="${model.link}">${model.text}</a>
+        </div>
+    </div>
+
+    <div class="image-rotator" id="imageRotator">
+        <sly data-sly-list.item="${model.imagebutton}">
+            <img src="${item.image @ context='uri'}" class="rotating-img" style="${itemList.index == 0 ? 'display:block' : 'display:none'}" />
+        </sly>
+    </div>
+</div>
+
+
+
+

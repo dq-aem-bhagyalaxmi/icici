@@ -1,0 +1,153 @@
+.transfer-funds {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:90px;
+    background-color: #f6f8fa;
+    padding: 40px;
+   
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.transfer-funds h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #0a2540;
+    max-width: 400px;
+}
+
+.text-content {
+    max-width: 400px; 
+    width: 100%;
+    flex: 1;
+}
+
+.image-rotator {
+    max-width: 500px; 
+    width: 100%;
+    flex: 1;
+}
+
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-bottom: 32px;
+}
+
+.button-item{
+	 position: relative;
+   	 padding-left: 30px;
+   	 margin-bottom: 30px;
+}
+
+
+
+.option-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 50px 5px 36px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ff5a00;
+    background-color: transparent;
+    border: 1px solid #ff5a00;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: rgba(255, 90, 0, 0.05);
+}
+
+
+.option-button.active {
+    background-color: #ffffff;
+    color: #b2b7bf;
+    border-color: #b2b7bf;
+}
+
+
+
+.circle-border {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    border: 2px solid transparent; 
+    border-radius: 50%;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+
+}
+
+.circle-solid{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff5a00;
+    transition: background-color 0.3s ease;
+
+}
+
+
+.option-button.active .dot {
+    border-color: #ff5a00;
+}
+
+.option-button.active .c2 {
+    background-color: #ffffff;    
+}
+
+
+.option-button:not(.active) .dot {
+    border-color: transparent;
+}
+
+.option-button:not(.active) .c2 {
+    background-color: #ff5a00;
+}
+
+
+.cta-button a {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:#ff5a00;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button a:hover {
+    background-color: #ffffff;
+	color:  #ff5a00;
+    border: 2px solid #ff5a00;
+}
+
+
+.rotating-img{
+    padding-top:40px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+
