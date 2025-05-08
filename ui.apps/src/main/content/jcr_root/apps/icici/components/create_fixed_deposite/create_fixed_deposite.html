@@ -1,0 +1,43 @@
+ <sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='icici.create-fixed-deposite'}"/>
+</sly>
+
+
+<div class="deposit-container" data-sly-use.model="com.aem.icici.core.models.Create_fixedDepositeModel">
+    <h1 class="deposit-main-title">${model.title}</h1>
+
+    <div class="deposit-sub-container">
+        <div>
+            <video controls>
+                <source src="${model.videoURL  @ context='uri'}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="deposit-right-container">
+
+                <div>
+                    <ol id="features-tab1" class="features-list" data-sly-list.feature="${model.featuresTab}">
+                        <div class="vertical-line"></div>
+                        <li class="feature-item">
+                            <div class="dot">
+                                <span class="c2"></span>
+                            </div>
+                            <span class="feature-text">${feature.featureText}</span>
+                        </li>
+                    </ol>
+                </div>
+
+
+
+			<div class="deposit-button-container">
+                <a href="${model.link1}">
+                    <button class="deposit-button primary">${model.buttontext1}</button>
+                </a>
+                <a href="${model.link2}">
+                    <button class="deposit-button secondary">${model.buttontext2}</button>
+                </a>
+			</div>
+
+        </div>    
+	</div>
+</div>
