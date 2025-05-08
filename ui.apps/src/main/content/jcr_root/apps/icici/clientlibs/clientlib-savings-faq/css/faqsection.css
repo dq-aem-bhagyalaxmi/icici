@@ -38,11 +38,11 @@
 /* Overall accordion container */
 .cmp-accordion {
   background-color: #fff;
-  border-radius: 10px;
-  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;  border: 1px solid #ccc;
   font-family: Arial, sans-serif;
   overflow: hidden;
   width: 100%;
+  border-top: none;
 }
 
 /* Each accordion item */
@@ -103,4 +103,16 @@
   max-height: 500px;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Links inside accordion panel (rich text content) */
+.cmp-accordion__panel a {
+  color: #ff6f00; /* ICICI/Orange color */
+  text-decoration: none; /* No underline */
+}
+
+/* On hover - optional: slightly darker orange */
+.cmp-accordion__panel a:hover {
+  color: #e25e24;
+  text-decoration: underline; /* Optional: underline only on hover */
 }

@@ -1,0 +1,33 @@
+/* Main container */
+.icici-heading-with-content {
+    padding: 30px 120px; /* Top-bottom 30px, Left-right 120px */
+    background-color: #ffffff; /* White background */
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding does not overflow width */
+}
+
+/* Heading styling */
+.icici-heading-with-content .icici-title {
+    color: #e25e24; /* ICICI softer orange */
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Muli', 'Helvetica', sans-serif;
+    text-align: left;
+}
+
+/* Details styling */
+.icici-heading-with-content .icici-details {
+    color: #555555; /* Soft gray */
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Muli', 'Helvetica', sans-serif;
+    text-align: left;
+}
+
+/* Separator line */
+.icici-heading-with-content .icici-separator {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
