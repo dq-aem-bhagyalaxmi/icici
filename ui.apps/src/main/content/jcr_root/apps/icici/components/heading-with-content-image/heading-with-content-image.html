@@ -1,0 +1,31 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientlib.all @ categories=['icici.headingwithdetails', 'icici.headingwithcontentimage']}" />
+
+<div class="heading-content-image-wrapper">
+
+    <!-- Image Rendering First -->
+    <sly data-sly-test.hasFileReference="${properties.fileReference}">
+        <div class="heading-image">
+            <img src="${hasFileReference}" alt="Image" class="custom-image-style" />
+        </div>
+    </sly>
+
+    <sly data-sly-test.hasLocalFile="${!properties.fileReference && properties.file}">
+        <div class="heading-image">
+            <img src="${resource.path}.file.img.jpg" alt="Image" class="custom-image-style" />
+        </div>
+    </sly>
+
+    <sly data-sly-test.noImage="${!properties.fileReference && !properties.file}">
+        <div class="heading-image">
+            <img src="/content/dam/icici/default-placeholder.png" alt="Default Image" class="custom-image-style" />
+        </div>
+    </sly>
+
+    <!-- Then Heading + Details -->
+    <div class="heading-content">
+        <h2 class="icici-title">${properties.heading}</h2>
+        <p class="icici-details">${properties.details @ context='html'}</p>
+    </div>
+
+</div>
