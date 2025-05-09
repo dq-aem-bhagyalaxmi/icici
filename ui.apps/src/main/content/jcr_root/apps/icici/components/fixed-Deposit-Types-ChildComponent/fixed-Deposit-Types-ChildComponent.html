@@ -1,0 +1,26 @@
+
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='icici.fixedDepositTypesChildComponent'}"/>
+
+<sly data-sly-use.model="com.aem.icici.core.models.FixedDepositTypesChildComponentModel" />
+
+<div class="fd-child-wrapper">
+    <div class="body-section">
+        <!-- Description -->
+        <div class="fd-child-description">
+            <div class="fd-child-text">
+                <p>${model.description @context="html"}</p>
+            </div>
+            <!-- Button(s) -->
+            <div class="fd-child-buttons" data-sly-list.button="${model.buttonItems}">
+                <a href="${button.buttonLink}" class="fd-btn">${button.buttonText @context="html"}</a>
+            </div>
+        </div>
+
+        <!-- Icon/Image -->
+        <div class="fd-child-image">
+            <img src="${model.imageReference}" alt="Fixed Deposit Icon" />
+        </div>
+    </div>
+</div>
