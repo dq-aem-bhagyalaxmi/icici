@@ -2,26 +2,26 @@
     <sly data-sly-call="${clientlib.all @ categories='icici.herobanner.navtabs'}"/>
 </sly>
 
-<sly data-sly-use.model="com.aem.icici.core.models.herobannernavigationtabs.HeroBannerNavTabsModel"/>
+<sly data-sly-use.model="com.aem.icici.core.models.HeroBannerNavTabsModel"/>
 
 <div class="hero-banner-tabs">
-    <ul class="tab-list" data-sly-list.tab="${model.tabs}">
+    <ul class="tab-list" data-sly-list.tab="${model.links}">
 
         <sly data-sly-test="${tabList.first}">
-            <li class="curve-left"></li> <!-- Left curve only before first -->
+            <li class="curve-left"></li> <!-- Left curve before first tab -->
         </sly>
 
         <li class="tab-list-item ${tabList.first ? 'first' : ''}">
-            <a href="${tab.tabLink}" class="tab-item ${tab.isActive ? 'active' : ''}">
-                ${tab.tabTitle}
+            <a href="${tab.linkPath}.html" class="tab-item">
+                ${tab.label}
                 <sly data-sly-test="${!tabList.last}">
-                    <span class="tab-joiner"></span> <!-- Joiner inside tab -->
+                    <span class="tab-joiner"></span> <!-- Add joiner if not last tab -->
                 </sly>
             </a>
         </li>
 
         <sly data-sly-test="${tabList.index == 0}">
-            <li class="curve-right"></li> <!-- Right curve only after first tab -->
+            <li class="curve-right"></li> <!-- Right curve after first tab -->
         </sly>
 
     </ul>
