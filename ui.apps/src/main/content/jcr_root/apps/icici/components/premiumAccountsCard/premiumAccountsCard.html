@@ -1,8 +1,5 @@
-
-
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
 <sly data-sly-call="${clientlib.all @ categories='icici.premiumAccountsCard'}"/>
-
 <sly data-sly-use.model="com.aem.icici.core.models.PremiumAccountsCardModel" />
 <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
 
@@ -16,13 +13,13 @@
                     <img src="${model.iconImageReference}" alt="Icon" />
                 </div>
                 <div class="premium-account-card__icon-description">
-                    <p>${model.iconText @context='html'}</p>
+                    <div>${model.iconText @context='html'}</div>
                 </div>
             </div>
 
             <div class="premium-account-body-section">
                 <div class="premium-account-description">
-                    <p class="premium-account-card__description">${model.description @context='html'}</p>
+                    <div class="premium-account-card__description">${model.description @context='html'}</div>
 
                     <div class="premium-account-card__buttons">
                         <ul class="premium-account-card__button-list" data-sly-list.item="${model.buttonItems}">
