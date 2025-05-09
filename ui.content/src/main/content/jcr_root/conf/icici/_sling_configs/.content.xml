@@ -4,11 +4,9 @@
     jcr:primaryType="nt:unstructured">
     <rep:policy/>
     <com.adobe.cq.wcm.core.components.internal.DataLayerConfig
-        jcr:mixinTypes="[]"
         jcr:primaryType="nt:unstructured"
         enabled="{Boolean}true"/>
     <com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig
-        jcr:mixinTypes="[]"
         jcr:primaryType="nt:unstructured"
         clientId="28b07c6be4d544f188dc2f36e33b196b"
         reportSuiteId=""/>
