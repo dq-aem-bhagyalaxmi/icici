@@ -1,0 +1,82 @@
+.icici_tab {
+    display: flex;
+    flex-direction: column; /* Change to vertical layout */
+    gap: 1rem; /* Space between each tab item */
+}
+
+.icici_tab .tab-item {
+    display: flex;
+    align-items: center; /* Align icon and content horizontally */
+    gap: 1rem; /* Space between icon and tab content */
+}
+.main-title {
+    color:#333;
+
+    font-weight: 800;
+	font-family: 'Muli', sans-serif;
+    margin: 0;
+    font-size: 34px;
+    line-height: 46px;
+    background-color: #ffffff;
+    text-align: center; /* Center the title */
+    padding: 10px 0; /* O
+
+
+
+}
+
+
+.icici_tab .tab-icon img {
+    width: 40px; /* Adjust size based on original site */
+    height: auto;
+}
+
+.icici_tab .cmp-tabs {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.icici_tab .cmp-tabs__tablist {
+    display: flex;
+    justify-content: center; /* Center the tabs themselves */
+    align-items: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    width: auto;
+    font-family: 'Muli', sans-serif;
+}
+
+.icici_tab .cmp-tabs__tab {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #b2b5b8;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding-bottom: 23px;
+    width: 150px;
+}
+
+.icici_tab .cmp-tabs__tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.icici_tab .cmp-tabs__tab--active {
+    color: #f37e20;
+    font-weight: 300;
+    padding-bottom: 23px;
+    width: 150px;
+}
+
+.icici_tab .cmp-tabs__tab--active::after {
+    background-color: #f37e20;
+    height: 1px;
+}

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2025-04-25T10:41:26.673+05:30"
+        cq:lastModified="{Date}2025-04-29T11:52:37.793+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/footer-template"
         jcr:primaryType="cq:PageContent"
