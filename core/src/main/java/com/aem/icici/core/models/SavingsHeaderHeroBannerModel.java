@@ -26,6 +26,9 @@ public class SavingsHeaderHeroBannerModel implements ComponentExporter {
     @ValueMapValue
     private String buttonText;
 
+    @ValueMapValue
+    private String buttonLink;
+
     @ChildResource(name = "cards")
     private List<SavingsHeaderCardDetailsModel> cards;
 
@@ -45,6 +48,9 @@ public class SavingsHeaderHeroBannerModel implements ComponentExporter {
         return cards;
     }
 
+    public String getButtonLink() {
+        return buttonLink;
+    }
     @Override
     public String getExportedType() {
         return "icici/components/savings-page-head-banner";

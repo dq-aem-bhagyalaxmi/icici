@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Digital Banking Solutions Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <mainTab
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Digital Banking Solutions"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Main Title"
+                                name="./title"/>
+                            <videoUpload
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/fileupload"
+                                allowUpload="true"
+                                autoStart="true"
+                                class="cq-videoupload"
+                                fileNameParameter="./videoFileName"
+                                fileReferenceParameter="./videoURL"
+                                mimeTypes="[video/mp4,video/webm,video/ogg]"
+                                multiple="false"
+                                name="./videoFile"
+                                sizeLimit="104857600"
+                                text="Upload or Select a Video"
+                                title="Upload Video"
+                                uploadUrl="${suffix.path}"/>
+                            <featuresTab1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Features List ">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./featuresTab">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <featureText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Feature Text"
+                                            name="./featureText"/>
+                                    </items>
+                                </field>
+                            </featuresTab1>
+                            <link1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                fieldDescription="Link to a content page, external URL or page anchor."
+                                fieldLabel="Link"
+                                name="./link1"/>
+                            <text1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Button Text"
+                                name="./buttontext1"/>
+                            <link2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                fieldDescription="Link to a content page, external URL or page anchor."
+                                fieldLabel="Link"
+                                name="./link2"/>
+                            <text2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Button Text"
+                                name="./buttontext2"/>
+                        </items>
+                    </mainTab>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

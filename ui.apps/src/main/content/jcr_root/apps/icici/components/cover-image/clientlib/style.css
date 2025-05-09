@@ -1,0 +1,13 @@
+/* Inner wrapper to control width and centering */
+.custom-image-wrapper {
+    text-align: center; /* Center the image inside */
+    padding: 0 5%;
+    background-color: #ffffff; /* White background */
+}
+
+/* Image styling */
+.custom-image-style {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}

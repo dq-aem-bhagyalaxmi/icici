@@ -10,8 +10,7 @@ import java.util.List;
 
 @Model(
         adaptables = Resource.class,
-        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
-)
+        defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class AccountSectionModel {
 
     @ValueMapValue
