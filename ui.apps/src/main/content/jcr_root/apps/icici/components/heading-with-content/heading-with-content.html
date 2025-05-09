@@ -1,0 +1,8 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.headingwithdetails'}"/>
+
+<div class="icici-heading-with-content">
+    <h2 class="icici-title">${properties.heading}</h2>
+    <p class="icici-details">${properties.details @ context='html'}</p>
+    <hr class="icici-separator"/>
+</div>

@@ -1,0 +1,35 @@
+.heading-content-image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ffffff; /* white background */
+    padding: 20px 120px;
+    gap: 24px; /* gap between image and text */
+    flex-wrap: wrap;
+}
+
+.heading-image img {
+    width: 120px; /* smaller compact image */
+    height: auto;
+    border: 1px solid #e36414; /* ICICI orange thin border */
+    border-radius: 8px;
+    object-fit: cover; /* nicely fits image inside */
+}
+
+.heading-content {
+    flex: 1;
+}
+
+.icici-title {
+    font-size: 22px; /* slightly smaller font */
+    color: #e36414; /* ICICI orange */
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.icici-details {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+}

@@ -1,0 +1,18 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.cover.image'}"/>
+
+<sly data-sly-test.hasFileReference="${properties.fileReference}">
+
+        <div class="custom-image-wrapper">
+            <img src="${properties.fileReference}" alt="${properties.alt}" class="custom-image-style" width="100%"/>
+        </div>
+    </div>
+</sly>
+
+<sly data-sly-test.noFileReference="${!properties.fileReference}">
+    <div class="outer-background-wrapper">
+        <div class="custom-image-wrapper">
+            <img src="${resource.path}/file.img.jpg" alt="${properties.alt}" class="custom-image-style" />
+        </div>
+    </div>
+</sly>
