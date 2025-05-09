@@ -1,0 +1,110 @@
+
+/* Wrapper */
+.fd-child-wrapper {
+    background-color: #ffffff;
+    padding:10px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Body Section */
+.body-section {
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+    margin: 0 auto;
+    padding: 0px 40px;
+    flex-wrap: wrap;
+}
+
+
+
+/* Description Section */
+.fd-child-description {
+    flex: 1 1 50%;
+    font-family: 'Muli', sans-serif;
+	display: flex;
+    flex-direction: column;
+    max-width:430px;
+
+
+}
+.fd-child-text {
+    flex-grow: 1; /* This fills the height */
+}
+
+.fd-child-description h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.fd-child-description p {
+    font-size: 14px;
+    color: #333333;
+
+}
+
+.fd-child-description ul {
+    padding-left: 20px;
+
+    color: #333333;
+     font-size: 14px;
+}
+
+.fd-child-buttons {
+    margin-top:0px;
+    display: flex;
+    gap: 12px; /* in case you have multiple buttons */
+}
+
+.fd-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 31px;
+    background-color: #F37E20;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    font-family: 'Muli', sans-serif;
+    line-height: 1.5px;
+    text-decoration: none;
+    margin-top:0px;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.fd-btn:hover {
+    background-color: #ffffff;
+    border: 1px solid #F37E20;
+    text-decoration: none ;
+}
+
+
+.fd-btn *,
+.fd-btn:hover *,
+.fd-btn:focus *,
+.fd-btn:active * {
+    color: inherit !important;
+}
+
+.fd-child-image {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: flex-end;
+    max-width:593px;
+    align-items: stretch; /* key change */
+
+}
+
+.fd-child-image img {
+    width: 100%;
+    height: 70%; /* key fix */
+    border-radius: 12px;
+    padding-top: 25px;
+}
+
+
+
