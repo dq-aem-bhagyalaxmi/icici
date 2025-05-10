@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="About Us Component"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <content
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the title text"
+                                fieldLabel="Title"
+                                name="./title"
+                                required="{Boolean}true"/>
+                            <paragraph
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="Enter the paragraph text"
+                                fieldLabel="Paragraph"
+                                name="./paragraph"/>
+                            <buttonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the button text"
+                                fieldLabel="Button Text"
+                                name="./buttonText"/>
+                            <buttonLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Select the button link target"
+                                fieldLabel="Button Link"
+                                name="./buttonLink"
+                                rootPath="/content"/>
+                            <backgroundColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldDescription="Select background color"
+                                fieldLabel="Background Color"
+                                name="./backgroundColor"/>
+                        </items>
+                    </content>
+                    <styles
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Styles"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <titleStylesHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                level="{Long}3"
+                                text="Title Styles"/>
+                            <titleSize
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldDescription="Select title font size"
+                                fieldLabel="Title Size"
+                                name="./titleSize">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <small
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Small"
+                                        value="small"/>
+                                    <medium
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Medium"
+                                        value="medium"/>
+                                    <large
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Large"
+                                        value="large"/>
+                                </items>
+                            </titleSize>
+                            <titleColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldDescription="Select title color"
+                                fieldLabel="Title Color"
+                                name="./titleColor"/>
+                            <paragraphStylesHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                level="{Long}3"
+                                text="Paragraph Styles"/>
+                            <paragraphSize
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldDescription="Select paragraph font size"
+                                fieldLabel="Paragraph Size"
+                                name="./paragraphSize">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <small
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Small"
+                                        value="small"/>
+                                    <medium
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Medium"
+                                        value="medium"/>
+                                    <large
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Large"
+                                        value="large"/>
+                                </items>
+                            </paragraphSize>
+                            <paragraphColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldDescription="Select paragraph color"
+                                fieldLabel="Paragraph Color"
+                                name="./paragraphColor"/>
+                            <buttonStylesHeading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                level="{Long}3"
+                                text="Button Styles"/>
+                            <buttonStyle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldDescription="Select button style"
+                                fieldLabel="Button Style"
+                                name="./buttonStyle">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <primary
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary"
+                                        value="primary"/>
+                                    <secondary
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Secondary"
+                                        value="secondary"/>
+                                    <tertiary
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Tertiary"
+                                        value="tertiary"/>
+                                </items>
+                            </buttonStyle>
+                            <buttonColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                fieldDescription="Select button color"
+                                fieldLabel="Button Color"
+                                name="./buttonColor"/>
+                        </items>
+                    </styles>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
