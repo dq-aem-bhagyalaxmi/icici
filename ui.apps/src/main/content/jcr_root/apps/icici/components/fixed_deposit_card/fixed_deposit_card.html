@@ -1,0 +1,105 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.fixed_deposit_card'}"/>
+
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+<sly data-sly-use.model="com.aem.icici.core.models.fixedDepositCard.FixedDepositCard" />
+
+
+<div class="fixed-deposit-card-container" >
+    <div class="fixed-deposit-card">
+        <!-- Badge Label -->
+        <div class="badge" data-sly-test="${model.badgeLabel}">
+            ${model.badgeLabel}
+        </div>
+        
+        <!-- Interest Rate Section -->
+        <div class="interest-rate-section">
+            <div class="interest-rate-title">
+                ${model.interestRateTitle || 'Interest Rate'}
+            </div>
+            <div class="interest-rate-value">
+                ${model.interestRateValue}
+            </div>
+            
+            <!-- Effective Yield Row -->
+            <div class="effective-yield-row">
+    <div class="effective-yield-label">
+        ${model.effectiveYieldLabel || 'Effective Yield'}
+        <span class="tooltip-icon">
+            i
+            <span class="tooltip-text">${properties.tooltipText}</span>
+        </span>
+    </div>
+    <div class="effective-yield-value">
+        ${model.effectiveYieldValue}
+    </div>
+</div>
+
+        
+        <!-- Financial Details Section -->
+        <div class="financial-details">
+            <!-- Maturity Amount Row -->
+            <div class="details-row">
+                <div class="details-label">
+                    ${model.maturityAmountLabel || 'Maturity Amount'}
+                </div>
+                <div class="details-value">
+                    ${model.maturityAmount}
+                </div>
+            </div>
+            
+            <!-- Total Interest Row -->
+            <div class="details-row">
+                <div class="details-label">
+                    ${model.totalInterestLabel || 'Total Interest'}
+                </div>
+                <div class="details-value">
+                    ${model.totalInterest}
+                </div>
+            </div>
+            
+            <!-- Duration Row -->
+            <div class="details-row">
+                <div class="details-label">
+                    ${model.durationLabel || 'Duration'}
+                </div>
+                <div class="details-value">
+                    ${model.duration}
+                </div>
+            </div>
+            
+            <!-- Maturity Date Row -->
+            <div class="details-row">
+                <div class="details-label">
+                    ${model.maturityDateLabel || 'Maturity Date'}
+                </div>
+                <div class="details-value">
+                    ${model.maturityDate}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Buttons Section -->
+        <div class="buttons-section">
+            <!-- Primary Button -->
+            <a href="${model.primaryButtonLink}" class="primary-button">
+                ${model.primaryButtonText || 'OPEN FIXED DEPOSIT'}
+            </a>
+            
+            <!-- Secondary Button -->
+            <a href="${model.secondaryButtonLink}" class="secondary-button">
+                ${model.secondaryButtonText || 'CHECK INTEREST RATES'}
+            </a>
+        </div>
+        
+        <!-- TDS Note Section -->
+        <div class="tds-note" data-sly-test="${model.tdsNote}">
+            <div class="image-text-wrapper">
+                <img src="/content/dam/icici/check.png" alt="check logo" class="icon" />
+                <div class="text">${model.tdsNote @ context='html'}</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</sly>

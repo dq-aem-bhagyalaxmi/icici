@@ -1,0 +1,109 @@
+.icici-about-us {
+  padding: 10px 15px;
+  margin: 20px 25px;
+  border-radius: 8px;
+  height: 13rem;
+  width: 33rem;
+}
+
+.icici-about-us__title {
+  margin-bottom: 5px;
+  font-family: inherit;
+}
+
+.icici-about-us__title.small {
+  font-size: 18px;
+}
+
+.icici-about-us__title.medium {
+  font-size: 24px;
+}
+
+.icici-about-us__title.large {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.icici-about-us__paragraph {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.icici-about-us__paragraph.small {
+  font-size: 14px;
+}
+
+.icici-about-us__paragraph.medium {
+  font-size: 16px;
+}
+
+.icici-about-us__paragraph.large {
+  font-size: 18px;
+}
+
+/* Button styles */
+.icici-about-us__button-wrapper {
+  margin-top: 20px;
+}
+
+.icici-about-us__button {
+  background-color: var(--button-bg-color, #0066cc);
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: small;
+  transition: all 0.3s ease;
+}
+
+/* Button variants */
+.icici-about-us__button.primary {
+    background-color: var(--button-bg-color, #fff);
+
+    color: white;
+    border: none;
+}
+
+.icici-about-us__button.primary:hover {
+   background-color: white;
+
+    color: orange;
+    border: 2px solid orange;
+
+}
+
+.icici-about-us__button.secondary {
+  background-color:#f0f0f0;
+  color: #333;
+  border: 2px solid #ddd;
+}
+
+.icici-about-us__button.secondary:hover {
+  background-color: #e0e0e0;
+}
+
+.icici-about-us__button.tertiary {
+  background-color: transparent;
+  color: #0066cc;
+  border: 1px solid #0066cc;
+}
+
+.icici-about-us__button.tertiary:hover {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .icici-about-us {
+      padding: 20px;
+  }
+  
+  .icici-about-us__title.large {
+      font-size: 28px;
+  }
+  
+  .icici-about-us__paragraph.large {
+      font-size: 16px;
+  }
+}

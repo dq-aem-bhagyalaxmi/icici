@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Fixed Deposit Card"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <general
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="General"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <badgeLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Badge Label"
+                                name="./badgeLabel"
+                                value="HIGHEST"/>
+                            <interestRateTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Interest Rate Title"
+                                name="./interestRateTitle"
+                                value="Interest Rate"/>
+                            <interestRateValue
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Interest Rate Value"
+                                name="./interestRateValue"
+                                step="0.01"
+                                value="7.05"/>
+                            <effectiveYieldLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Effective Yield Label"
+                                name="./effectiveYieldLabel"
+                                value="Effective Yield"/>
+                            <effectiveYieldValue
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldLabel="Effective Yield Value"
+                                name="./effectiveYieldValue"
+                                step="0.01"
+                                value="7.35"/>
+                            <tooltipText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="Tooltip Text for Effective Yield"
+                                name="./tooltipText"
+                                value="The actual annual return on your Fixed Deposit, including compounding                                             effects."/>
+                        </items>
+                    </general>
+                    <financialDetails
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Financial Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <maturityAmountLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Maturity Amount Label"
+                                name="./maturityAmountLabel"
+                                value="Maturity Amount"/>
+                            <maturityAmount
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Maturity Amount"
+                                name="./maturityAmount"
+                                value="₹11,10,52,057"/>
+                            <totalInterestLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Total Interest Label"
+                                name="./totalInterestLabel"
+                                value="Total Interest"/>
+                            <totalInterest
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Total Interest"
+                                name="./totalInterest"
+                                value="₹1,10,52,057"/>
+                            <durationLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Duration Label"
+                                name="./durationLabel"
+                                value="Duration"/>
+                            <duration
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Duration"
+                                name="./duration"
+                                value="18M"/>
+                            <maturityDateLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Maturity Date Label"
+                                name="./maturityDateLabel"
+                                value="Maturity Date"/>
+                            <maturityDate
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                fieldLabel="Maturity Date"
+                                name="./maturityDate"
+                                value="2026-11-06"/>
+                        </items>
+                    </financialDetails>
+                    <buttons
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Buttons"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <primaryButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Primary Button Text"
+                                name="./primaryButtonText"
+                                value="OPEN FIXED DEPOSIT"/>
+                            <primaryButtonLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Primary Button Link"
+                                name="./primaryButtonLink"
+                                rootPath="/content"/>
+                            <secondaryButtonText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Secondary Button Text"
+                                name="./secondaryButtonText"
+                                value="CHECK INTEREST RATES"/>
+                            <secondaryButtonLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Secondary Button Link"
+                                name="./secondaryButtonLink"
+                                rootPath="/content"/>
+                        </items>
+                    </buttons>
+                    <note
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Note"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tdsNote
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="TDS Note"
+                                name="./tdsNote"
+                                value="Note: The above calculation does not include TDS deductions. TDS is applicable as per the NRI FD type."/>
+                        </items>
+                    </note>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

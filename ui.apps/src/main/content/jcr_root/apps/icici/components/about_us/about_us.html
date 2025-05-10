@@ -1,0 +1,35 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.about_us'}"/>
+
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.aboutUsModel="com.aem.icici.core.models.aboutUs.AboutUsModel">
+
+
+     <div class="icici-about-us"
+     style="background-color: ${aboutUsModel.backgroundColor @ context='styleString'}">
+    	<div class="card-about">
+            <!-- Title with customizable size and color -->
+            <h2 class="icici-about-us__title ${aboutUsModel.titleSize}"
+                style="color: ${aboutUsModel.titleColor @ context='styleString'};">
+                ${aboutUsModel.title}
+                
+            </h2>
+            
+            <!-- Paragraph with customizable size and color -->
+            <div class="icici-about-us__paragraph ${aboutUsModel.paragraphSize}"
+                style="color: ${aboutUsModel.paragraphColor @ context='styleString'}">
+                ${aboutUsModel.paragraph @ context='html'}
+            </div>
+            
+            <!-- Button with customizable style and color -->
+            <div class="icici-about-us__button-wrapper" data-sly-test="${aboutUsModel.buttonText}">
+                <a href="${aboutUsModel.buttonLink}"
+                class="icici-about-us__button ${aboutUsModel.buttonStyle}"
+                style="--button-bg-color: ${aboutUsModel.buttonColor @ context='styleString'}">
+                    ${aboutUsModel.buttonText}
+                </a>
+            </div>
+         </div>
+    </div>
+
+</sly>

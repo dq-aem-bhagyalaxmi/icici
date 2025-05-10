@@ -1,0 +1,25 @@
+
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='icici.twofieldcard'}"/>
+
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.model="com.aem.icici.core.models.TwoFieldCardModel">
+
+
+<div class="twofieldcard">
+    <sly data-sly-list.card="${model.cards}">
+        <div class="card">
+     
+        
+            <img src="${card.image}" alt="Card Image">
+            <div class="text">${card.text @ context='html'} </div>
+        </div>
+    </sly>
+</div>
+ 
+
+
+
+</sly> 
+
+

@@ -1,0 +1,112 @@
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html">
+
+    <div class="about-container" style="background-color: ${properties.backgroundColor @ context='styleString'};">
+        <h2>
+            ${properties.title @ context='html'}
+            
+        </h2>
+
+        <div class="main-card">
+            <div class="row">
+                <div class="content1" data-sly-resource="${'content1' @ resourceType='icici/components/about_us'}"></div>
+                <div class="content1" data-sly-resource="${'content2' @ resourceType='icici/components/about_us'}"></div>
+            </div>
+            <div class="row">
+                <div class="content1" data-sly-resource="${'content3' @ resourceType='icici/components/about_us'}"></div>
+                <div class="content1" data-sly-resource="${'content4' @ resourceType='icici/components/about_us'}"></div>
+            </div> 
+            <div class="row">
+                <div class="content1" data-sly-resource="${'content5' @ resourceType='icici/components/about_us'}"></div>
+                <div class="content1" data-sly-resource="${'content6' @ resourceType='icici/components/about_us'}"></div>
+            </div> 
+			 <div class="row">
+                <div class="content1" data-sly-resource="${'content7' @ resourceType='icici/components/about_us'}"></div>
+                <div class="content1" data-sly-resource="${'content8' @ resourceType='icici/components/about_us'}"></div>
+            </div> 
+			 <div class="row">
+                <div class="content1" data-sly-resource="${'content9' @ resourceType='icici/components/about_us'}"></div>
+                <div class="content1">
+                	<div class="promo-card__image"><img src="/content/dam/icici/insurance-cs.jpg" alt="img" /> 
+							<div class="content" data-sly-resource="${'content10' @ resourceType='icici/components/about_us'}"></div>
+                    </div>
+
+                	<div class="promo-card__content"></div>
+				</div>
+            </div> 
+        </div>
+
+    </div>
+
+</sly>
+
+<style>
+    .about-container {
+        padding: 20px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #fff7eb;
+        
+    }
+
+    .about-container h2 {
+        color: #000;
+        font-size: 2rem;
+    }
+
+    .main-card {
+       margin: 8% 8% 2% 8%;
+       width: 100%;
+
+    }
+
+    .row{
+    	display: flex;
+
+
+    }
+
+    .content1{
+		width: 580px;
+        height: 250px;
+
+    }
+
+    .promo-card__image img{
+		position: relative;
+        transform: translateX(40px);
+        margin-top: 30px;
+        z-index: 1;
+        border-radius: 5%;
+        width: 200px;
+        height: 120px;
+	}
+
+	.promo-card__content .content{
+		transform: translateY(-195px);
+    }
+
+    .promo-card__content{
+		padding-left:20px;
+    }
+/* cssss. */
+    .promo-card__image {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 30px; */
+        background: white;
+        height: 226px;
+        margin: 20px 26px;
+        border-radius: 5px;
+        width: 35rem;
+	}
+
+    .content .icici-about-us {
+        width: 299px;
+        height: 200px;
+        transform: translateY(-18px);
+        padding-left: 40px;
+        
+	}
+
+
+</style>
