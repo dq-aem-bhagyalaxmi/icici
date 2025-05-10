@@ -1,155 +1,168 @@
-
-.premium-account-card {
+.premium-wrapper {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
     padding: 40px 20px;
+    height: auto;
+
+}
+
+/* Top Section: Icon + Text + Underline */
+.premium-top-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0px ;
+    border-bottom: 1px solid #f37e20;
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.premium-account-card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 40px;
-}
-
-.premium-account-card__title {
-    font-family: 'Muli', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    color: #333333;
-    margin: 10px 0 20px;
-    text-align: center;
-}
-
-.premium-account-card__icon-text {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #f37e20;
-    gap: 10px;
-}
-
-.premium-account-card__icon img {
+.premium-icon img {
     width: 30px;
     height: 30px;
+
 }
 
-.premium-account-card__icon-description p {
+.premium-icon-text {
     font-family: 'Muli', sans-serif;
     font-size: 14px;
-    color: #F37E20;
-    margin: 0;
-    width:150px;
+    color: #f37e20;
+    width:140px;
+}
+
+/* Body Section (copied from FD style) */
+.premium-body {
+    display: flex;
+    align-items: stretch;
+    gap: 100px;
+    margin: 20px auto 0px;
+    padding: 0px 40px;
+    flex-wrap: nowrap;
+    max-width: 1140px;
 
 }
 
-.premium-account-body-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 30px;
-    width: 100%;
-    margin-top: -20px;
-    padding: 0px 15px;
-}
-
-.premium-account-description {
-    text-align: left;
+.premium-description {
+    flex: 1;
     font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+	justify-content: flex-start;
+    align-items: flex-start;
     font-size: 14px;
-    color: #333333;
-    width: 450px;
+    padding:0px 0px 15px ;
 }
 
-.premium-account-card__description {
-    margin-bottom: 20px;
-    width: 100%;
-}
-
-.premium-account-description a {
+.premium-text a {
     color: #F37E20;
     text-decoration: none;
     font-weight: bold;
 }
 
-.premium-account-description a:hover {
+.premium-text a:hover {
     color: #d45f00;
     text-decoration: underline;
 }
 
-.premium-account-card__buttons {
-    margin-top: 20px;
-    padding-left: 30px;
+.premium-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0 auto 15px;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
 }
 
-.premium-account-card__button-list {
-    list-style: none;
+
+.premium-text {
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 0;
     padding: 0;
+}
+.premium-text p {
     margin: 0;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    padding: 0;
+    font-size:14px;
 }
 
-.premium-account-card__button-link {
-    display: inline-block;
-    padding: 6px 20px;
+
+.premium-buttons {
+    display: flex;
+    gap: 12px;
+    margin:20px 0px 0px;
+}
+
+.premium-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 14px 31px;
     background-color: #F37E20;
-    color: #ffffff !important;
+    color: #ffffff;
     font-size: 14px;
     font-weight: 600;
     border-radius: 30px;
+    font-family: 'Muli', sans-serif;
+    line-height: 20px;
     text-decoration: none;
-    transition: all 0.3s ease;
     border: 1px solid transparent;
-    line-height: 0.3;
+    transition: all 0.3s ease;
+
+
 }
 
-.premium-account-card__button-link:hover {
+.premium-btn:hover {
     background-color: #ffffff;
-    color: #F37E20 !important;
     border: 1px solid #F37E20;
-    text-decoration: none !important;
+    color: #F37E20;
 }
 
-.premium-account-card__image {
-    text-align: center;
-    margin: 0px;
+/* Image Section */
+.premium-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+	 overflow: hidden;
+	margin: 0;
+    padding: 0;
 }
-
-.premium-account-card__image img {
+.premium-image img {
+    display: block; /* Prevents inline spacing */
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    object-fit: contain;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
 }
 
-/* Responsive adjustments */
+
+/* Responsive */
 @media (max-width: 768px) {
-    .premium-account-body-section {
+    .premium-body {
         flex-direction: column;
         align-items: center;
     }
-    .premium-account-description,
-    .premium-account-card__image {
+
+    .premium-description,
+    .premium-image {
         flex: 0 0 100%;
         width: 100%;
         text-align: center;
     }
-}
 
-<!--Background-color-styling-->
-
-.component-family-360 {
-    background-color: #e0f7fa; /* Family 360° Banking */
-}
-
-.component-wealth-management {
-    background-color: #f0f4c3; /* Wealth Management Savings Account */
-}
-
-.component-private-banking {
-    background-color: #fff3e0; /* Private Banking Savings Account */
+    .premium-title {
+        text-align: center;
+    }
 }
 

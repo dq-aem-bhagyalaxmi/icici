@@ -13,7 +13,7 @@ public class TransferFundsAbroadModel {
     @ValueMapValue
     private String title;
 
-    @ChildResource(name = "CardItems")
+    @ChildResource(name = "cardItems")
     private List<CardItem> cardItems;
 
     public String getTitle() {
