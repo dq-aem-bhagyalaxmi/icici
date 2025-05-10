@@ -1,0 +1,51 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.complaints-level-1'}"/>
+</sly>
+
+
+<sly data-sly-use.model="com.aem.icici.core.models.ComplaintsLevel1Model" />
+
+	<div class="level1-container ">
+
+        <h1 class="level1-title">${model.title}</h1>
+        <p class="level1-para">${model.text}</p>
+            <ul class="level1-list" data-sly-repeat.buttonparalist="${model.buttonpara}">
+                <li>
+                    <p>${buttonparalist.text2 @context='html'}</p>
+                    <button class="level1-button" href="${buttonparalist.link}">${buttonparalist.text1}</button>
+                </li>
+            </ul>
+
+	</div>
+
+<style>
+.level1-container {
+
+}
+
+.level1-title{
+	color: #004080;
+}
+
+.level1-para{
+ color: #e65300;
+    font-size:18px;
+    font-family:italic;
+    font-weight:600;
+}  
+
+
+.level1-list{
+	list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+.level1-button{
+	border-radius:25px;
+    background-color:#e65300;
+    border:none;
+    padding:10px 20px;
+    color:#ffffff;
+}
+</style>
