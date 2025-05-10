@@ -6,6 +6,7 @@
         cq:lastModified="{Date}2025-04-25T12:07:50.793+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/icici/settings/wcm/templates/common-feature-page-template"
+        jcr:mixinTypes="[]"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="icici/components/page">
         <root
