@@ -1,0 +1,59 @@
+/* Default Styling */
+.complaints_tab{
+	 background: #ffffff;
+    font-family:italic;
+}
+
+.complaints_tab .cmp-tabs__tablist {
+    display: flex;
+    margin: 0px 0px;
+    padding:5px 0px 0px 0px;
+    justify-content: center;
+    background: #faf7f7;
+
+}
+.complaints_tab .cmp-tabs__tab {
+    position: relative;
+    padding:18px 50px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666666;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    border:none
+
+}
+
+.complaints_tab .cmp-tabs__tab::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    background-color:transperent;
+    transition: all 0.08s ease;
+}
+
+.complaints_tab .cmp-tabs__tab--active {
+    color: #e65300; /* orange text */
+}
+
+.complaints_tab .cmp-tabs__tab--active::after {
+    background-color: #e65300; /* orange underline */
+    height: 7px;
+    width: 50px;
+    border-radius: 10px 10px 0 0; 
+    left: 50%;
+    transform: translateX(-50%);            
+    
+}
+
+
+
+.complaints_sub_tab .cmp-tabs__tabpanel{
+	background-color: #ffffff;
+}
+
+#tab-container{
+margin: 50px 80px;
+}
+ 
