@@ -1,41 +1,34 @@
+
 <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
 <sly data-sly-call="${clientlib.all @ categories='icici.premiumAccountsCard'}"/>
 <sly data-sly-use.model="com.aem.icici.core.models.PremiumAccountsCardModel" />
 <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
 
-<div class="component-wrapper component-${model.componentType}" style="background-color: ${model.backgroundColor @context='html'}">
-    <div class="premium-account-card">
-        <div class="premium-account-card__content">
-            <h2 class="premium-account-card__title">${model.title}</h2>
+<div class="premium-wrapper" style="background-color: ${model.backgroundColor @context='html'}">
+ <h2 class="premium-title">${model.title}</h2>
+    <!-- Icon and Text Section -->
+    <div class="premium-top-section">
+        <div class="premium-icon">
+            <img src="${model.iconImageReference}" alt="Icon" />
+        </div>
+        <div class="premium-icon-text">${model.iconText @context='html'}</div>
+    </div>
 
-            <div class="premium-account-card__icon-text">
-                <div class="premium-account-card__icon">
-                    <img src="${model.iconImageReference}" alt="Icon" />
-                </div>
-                <div class="premium-account-card__icon-description">
-                    <div>${model.iconText @context='html'}</div>
-                </div>
+    <!-- Main Body Section -->
+    <div class="premium-body">
+        <!-- Description and Buttons -->
+        <div class="premium-description">
+
+            <div class="premium-text">${model.description @context='html'}</div>
+            <div class="premium-buttons" data-sly-list.button="${model.buttonItems}">
+                <a href="${button.buttonLink}" class="premium-btn">${button.buttonText @context='html'}</a>
             </div>
+        </div>
 
-            <div class="premium-account-body-section">
-                <div class="premium-account-description">
-                    <div class="premium-account-card__description">${model.description @context='html'}</div>
-
-                    <div class="premium-account-card__buttons">
-                        <ul class="premium-account-card__button-list" data-sly-list.item="${model.buttonItems}">
-                            <li>
-                                <a href="${item.buttonLink}" class="premium-account-card__button-link">
-                                    ${item.buttonText @context='html'}
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="premium-account-card__image">
-                    <img src="${model.imageReference}" alt="Family 360° Banking" />
-                </div>
-            </div>
+        <!-- Image Section -->
+        <div class="premium-image">
+            <img src="${model.imageReference}" alt="${model.title}" />
         </div>
     </div>
 </div>
+
