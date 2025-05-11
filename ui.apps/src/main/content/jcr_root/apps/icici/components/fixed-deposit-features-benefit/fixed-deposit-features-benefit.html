@@ -1,0 +1,83 @@
+<sly data-sly-use.model="com.aem.icici.core.models.FeaturesAndBenefitsModel">
+
+<div class="section-wrapper">
+  <section class="icici-nri-features">
+  <div class="features-wrapper">
+    <sly data-sly-list.item="${model.features}">
+      <div class="feature-card-horizontal">
+        <div class="icon-img">
+          <img src="${item.fileReference}" alt="${item.heading}" />
+        </div>
+        <div class="feature-text">
+          <h4 class="feature-title">${item.heading}</h4>
+          <div class="feature-desc" data-sly-unwrap>
+            ${item.details @ context='html'}
+          </div>
+        </div>
+      </div>
+    </sly>
+  </div>
+</section>
+</div>
+
+
+<style>
+.section-wrapper {
+  padding: 20px;
+  background-color: white;
+}
+
+.icici-nri-features {
+  background: linear-gradient(90deg, #c13128 0%, #f26a21 100%);
+  border-radius: 16px;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  color: #000;
+  padding: 0 20px;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.feature-card-horizontal {
+  display: flex;
+  align-items: center;
+  flex: 1 1 23%;
+  min-width: 240px;
+  gap: 16px;
+}
+
+.icon-img img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+  margin-top: -60px;}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.feature-desc {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+}
+
+</style>
