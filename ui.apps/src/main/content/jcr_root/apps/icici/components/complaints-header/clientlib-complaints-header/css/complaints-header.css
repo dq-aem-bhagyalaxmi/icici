@@ -1,0 +1,12 @@
+
+.header{
+    display:flex;
+        flex-direction:row;
+        gap:25px;
+
+}
+
+.header a{
+	text-decoration:none;
+    color:#e65300;
+}

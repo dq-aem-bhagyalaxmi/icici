@@ -1,0 +1,28 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.css @ categories='icici.complaints-header'}"/>
+</sly>
+<sly data-sly-use.model="com.aem.icici.core.models.ComplaintsHeaderModel" />
+
+<ul  class="header"data-sly-list.headerlists="${model.headerlist}">
+    <li>
+        <a href="${headerlists.link}">${headerlists.text @context='html'}</a>
+    </li>
+</ul>
+
+<style>
+
+.header{
+    display:flex;
+        flex-direction:row;
+        gap:25px;
+    background-color:#ffffff;
+
+ margin:0px;
+    padding:20px 450px 20px 318px;
+}
+
+.header a{
+	text-decoration:none;
+    color:#e65300;
+}
+</style>

@@ -1,0 +1,135 @@
+
+
+.complaints-container {
+   padding:0px 450px 0px 300px;
+}
+
+.complaints-sub-container{
+    margin-bottom:70px;
+
+}
+.complaints-title{
+	font-size:20px;
+    color:#004080;
+}
+
+.complaints-para{
+	font-size:15px;
+}
+
+
+.complaints_sub_tab .cmp-tabs {
+    display:flex;
+	flex-direction:row;
+}
+
+
+.complaints_sub_tab .cmp-tabs__tablist {
+  display: flex;
+  flex-direction: column;
+   align-items: flex-start;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+  background-color: #fcf5ef;
+  list-style: none; 
+  height:25%;  
+
+}
+
+.complaints_sub_tab .cmp-tabs__tab--active::after {
+    background-color: #e65300; /* orange underline */
+    left: 0px;
+    height: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+	border-radius:0 10px 10px 0;
+
+}
+
+
+/* Tabs (Individual buttons) */
+.complaints_sub_tab .cmp-tabs__tab {
+  padding: 20px 20px 20px 30px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+  text-align: left;
+    width:100%;
+}
+
+/* Tab label prefix (e.g., Level 1) */
+.complaints_sub_tab .cmp-tabs__tab::before {
+  content: "level 1";
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  color: #e65300;
+
+}
+
+
+/* Active tab */
+.complaints_sub_tab .cmp-tabs__tab--active {
+  color: #444;
+  font-weight: bold;
+  border: 1px solid #e65300;
+  font-size: 15px;   
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.09);
+
+}
+
+/* Right side tab content panel */
+.complaints_sub_tab .cmp-tabs__tabpanel {
+  flex:1;
+  background-color: #fff;
+  display: none;
+  padding: 30px;
+  font-size: 14px;  
+}
+
+/* Active panel (shown) */
+.complaints_sub_tab .cmp-tabs__tabpanel--active {
+  display: block;
+}
+
+.footer-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+.footer-left-side a{
+	display:block;
+    width:500px;
+	text-decoration:none;
+	color: #444;
+}
+
+.footer-right-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #004080; /* navy blue like in the image */
+    margin-bottom: 10px;
+}
+
+.footer-right-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    max-width: 300px;
+    gap: 5px 40px; /* vertical and horizontal spacing between items */
+    height: auto;
+   
+}
+
+.footer-right-side a {
+    width: 90px; /* control column width */
+    text-decoration: none;
+    color: #e64500; 
+    font-size: 14px;
+}
+
+

@@ -47,7 +47,6 @@
 
 .fd-child-description ul {
     padding-left: 20px;
-
     color: #333333;
      font-size: 14px;
 }
@@ -69,7 +68,7 @@
     font-weight: 600;
     border-radius: 30px;
     font-family: 'Muli', sans-serif;
-    line-height: 1.5px;
+    line-height: 20px;
     text-decoration: none;
     margin-top:0px;
     transition: all 0.3s ease;
