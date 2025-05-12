@@ -1,0 +1,44 @@
+.section-wrapper {
+  background-color: white;
+}
+
+.rd-highlight-section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rd-card {
+  border: 2px solid #ff6a00;
+  border-radius: 14px;
+  background-color: #fff;
+  padding: 30px 40px;
+  max-width: 1100px;
+  text-align: center;
+  padding: 10px 50px;
+}
+
+.rd-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.rd-heading .first-word {
+  color: #2e2e2e;
+  margin-right: 4px;
+}
+
+.rd-heading .rest-words {
+  color: #ff6a00;
+}
+
+.rd-details p{
+  display: block;
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-top: 0;
+  margin-bottom: 0;
+}

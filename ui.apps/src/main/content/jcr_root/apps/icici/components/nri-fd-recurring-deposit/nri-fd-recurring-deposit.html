@@ -1,0 +1,17 @@
+<sly data-sly-use.clientlib="core/wcm/components/commons/v1/templates/clientlib.html">
+  <sly data-sly-call="${clientlib.css @ categories='icici.recurring.deposit'}" />
+</sly>
+
+<sly data-sly-use.model="com.aem.icici.core.models.RecurringDepositModel"></sly>
+
+  <div class="section-wrapper">
+    <section class="rd-highlight-section">
+      <div class="rd-card">
+        <span class="rd-heading">
+          <span class="first-word">${model.headingFirstWord}</span>
+          <span class="rest-words">${model.headingRest}</span>
+        </span>
+        <span class="rd-details">${model.details @ context = 'html'}</span>
+      </div>
+    </section>
+  </div>
