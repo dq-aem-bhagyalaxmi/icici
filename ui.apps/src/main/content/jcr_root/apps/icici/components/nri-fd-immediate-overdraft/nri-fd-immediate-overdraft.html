@@ -1,0 +1,112 @@
+<sly data-sly-use.model="com.aem.icici.core.models.FixedDepositImmediateOverdraftModel" />
+
+<section class="fd-overdraft-section">
+  <div class="fd-overdraft-container">
+    <div class="fd-overdraft-text">
+      <h2 class="fd-title">${model.heading}</h2>
+      <p class="fd-subtitle">${model.details}</p>
+
+      <div class="fd-buttons">
+        <sly data-sly-list.button="${model.buttons}">
+          <a href="${button.linkPath}" class="fd-btn ${buttonList.index == 0 ? 'fd-btn-primary' : 'fd-btn-outline'}">
+            ${button.buttonLabel}
+          </a>
+        </sly>
+      </div>
+    </div>
+
+    <div class="fd-overdraft-image">
+      <img src="${model.imageReference}" alt="FD Overdraft Cover Image" />
+    </div>
+  </div>
+</section>
+
+
+<style>
+    .fd-overdraft-section {
+  background-color: #fefefe;
+  padding: 40px 20px;
+}
+
+.fd-overdraft-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fd-overdraft-text {
+  flex: 1 1 50%;
+  padding: 20px;
+}
+
+.fd-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2e2e2e;
+  margin-bottom: 20px;
+}
+
+.fd-subtitle {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 30px;
+}
+
+.fd-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.fd-btn {
+  padding: 14px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+/* Primary button (orange background) */
+.fd-btn-primary {
+  background-color: #ff6a00;
+  color: #fff;
+  border: 2px solid transparent;
+}
+
+.fd-btn-primary:hover {
+  background-color: #fff;
+  color: #ff6a00;
+  border: 2px solid #ff6a00;
+  box-shadow: 0 4px 10px rgba(255, 106, 0, 0.2);
+}
+
+/* Outline button (white background) */
+.fd-btn-outline {
+  background-color: transparent;
+  color: #ff6a00;
+  border: 2px solid #ff6a00;
+}
+
+.fd-btn-outline:hover {
+  background-color: #fff;
+  color: #ff6a00;
+  box-shadow: 0 4px 10px rgba(255, 106, 0, 0.15);
+}
+
+.fd-overdraft-image {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fd-overdraft-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+</style>
