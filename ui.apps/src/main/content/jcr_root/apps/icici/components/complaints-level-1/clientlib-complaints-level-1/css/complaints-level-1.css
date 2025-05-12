@@ -1,11 +1,26 @@
+
 .level1-title{
-	color: #3063d1;
+	color: #004080;
 }
 
 .level1-para{
  color: #e65300;
-}    
+    font-size:18px;
+    font-family:italic;
+    font-weight:600;
+}  
+
 
 .level1-list{
 	list-style:none;
+    margin:0px;
+    padding:0px;
+}
+
+.level1-button{
+	border-radius:25px;
+    background-color:#e65300;
+    border:none;
+    padding:10px 20px;
+    color:#ffffff;
 }

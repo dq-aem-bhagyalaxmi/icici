@@ -1,9 +1,10 @@
-
 .header{
     display:flex;
-        flex-direction:row;
-        gap:25px;
-
+    flex-direction:row;
+    gap:25px;
+    background-color:#ffffff;
+ 	margin:0px;
+    padding:20px 450px 20px 318px;
 }
 
 .header a{
