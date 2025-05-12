@@ -7,6 +7,22 @@
 
         <h1 class="level2-title">${model.title}</h1>
         <p class="level2-para">${model.text}</p>
+		<div class="form-container">
+            <p class="form-description">
+                Please enter your Account/ Application Number and previous Level 1 SR number to proceed.
+            </p>
+        	<div class="form-row">
+                <div class="form-field">
+                    <label for="account-number"><strong>Account/Application Number*</strong></label>
+                    <input type="text" id="account-number" name="account-number" />
+                </div>
+                <div class="form-field">
+                    <label for="sr-number"><strong>Enter Level 1 Reference Number*:</strong></label>
+                    <input type="text" id="sr-number" name="sr-number" value="SR" />
+                </div>
+       		</div>
+  		</div>
+
         <p>${model.text3 @context='html'}</p>
             <ul class="level2-list" data-sly-list.buttonparalist="${model.buttonpara}">
                 <li>
@@ -49,4 +65,40 @@
     padding:10px 20px;
     color:#ffffff;
 }
+
+.form-container {
+    width: 100%;
+    font-family: italic;
+}
+
+.form-description {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+	flex-direction: row;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.form-field label {
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+
+.form-field input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
 </style>

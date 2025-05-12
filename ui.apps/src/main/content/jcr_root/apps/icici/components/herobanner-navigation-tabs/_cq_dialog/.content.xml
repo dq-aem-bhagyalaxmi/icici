@@ -9,41 +9,45 @@
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-            <links
+            <tabs
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                composite="{Boolean}true">
-                <field
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/coral/foundation/container"
-                    name="./links">
-                    <layout
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/layouts/fixedcolumns"
-                        method="absolute"/>
-                    <items jcr:primaryType="nt:unstructured">
-                        <column
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/container">
-                            <items jcr:primaryType="nt:unstructured">
-                                <linkLabel
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tabsList
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Tabs List">
+                                <field
                                     jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                    fieldLabel="Link label"
-                                    name="./label"
-                                    required="{Boolean}true"/>
-                                <linkPath
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                    fieldLabel="Link path"
-                                    name="./linkPath"
-                                    required="{Boolean}true"
-                                    rootPath="/content"/>
-                            </items>
-                        </column>
-                    </items>
-                </field>
-            </links>
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/layout/fixedcolumns"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <tabTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Tab Title"
+                                            name="./tabTitle"/>
+                                        <tabLink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldLabel="Tab Link"
+                                            name="./tabLink"
+                                            rootPath="/content"/>
+                                    </items>
+                                </field>
+                            </tabsList>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
         </items>
     </content>
 </jcr:root>

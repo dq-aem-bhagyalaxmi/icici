@@ -25,7 +25,6 @@
                                 fieldLabel="Title"
                                 name="./title"
                                 required="{Boolean}true"/>
-                          
                             <backgroundColor
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
@@ -34,7 +33,6 @@
                                 name="./backgroundColor"/>
                         </items>
                     </content>
-                    
                 </items>
             </tabs>
         </items>
