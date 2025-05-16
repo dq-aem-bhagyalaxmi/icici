@@ -30,7 +30,7 @@
 
 }
 .fd-child-text {
-    flex-grow: 1; /* This fills the height */
+    flex-grow: 1; 
 }
 
 .fd-child-description h3 {
@@ -94,15 +94,16 @@
     display: flex;
     justify-content: flex-end;
     max-width:593px;
-    align-items: stretch; /* key change */
+    align-items: stretch; 
 
 }
 
 .fd-child-image img {
     width: 100%;
-    height: 70%; /* key fix */
+    height: 80%;
     border-radius: 12px;
     padding-top: 25px;
+
 }
 
 

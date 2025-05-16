@@ -1,0 +1,59 @@
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientlib.all @ categories='icici.creditCardSection'}"/>
+
+<sly data-sly-use.model="com.aem.icici.core.models.CrediCardSection" />
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="credit-card-section container">
+	<div class="card-container">
+		<div class="card-wrapper">
+                <!-- Section Header -->
+            <div class="section-header">
+                <h2 class="section-title">${model.sectionTitle}</h2>
+            </div>
+            <!-- Cards section -->
+			<div class="card-list">
+                <ul class="card-list-items">
+                  <sly data-sly-list.card="${model.cardItems}">
+                    <li class="card-list-item">			
+                      <div class="card-item">
+                        <a href="${card.cardImagePath}">
+                          <img src="${card.fileReference}" alt="${card.cardTitle}"/>
+                        </a>
+                        <div class="card-badge">
+                          <p class="card-label">${card.cardLabel}</p>
+                        </div>
+                      </div>
+                      <div class="card-content">
+                        <div class="card__text-inner card-title-row">	
+                          <a href="${card.cardTitleLink}" class="card-title">
+                            ${card.cardTitle}
+                            <span class="arrow-icon" aria-hidden="true">↗</span>
+                          </a>
+                          <div class="card-icons">
+                            <i class="fa-regular fa-heart icon-favorite" title="Add to favorites"></i>
+                          </div>
+                        </div>
+                        <div class="offer__wrap">
+                          <div class="card-badge-text"><p class="card-badge">${card.cardBadge}</p></div>
+                          <p class="card-title-text">${card.cardTitleText}</p>
+                          <p class="card-subtext">${card.cardSubText}<a href =" ">more</a></p>
+                        </div>
+                        <div class="cta-btn">
+                          <a>${card.ctaLinks @context='html'}</a>
+                        </div>
+                      </div>
+                    </li>
+                  </sly>
+                </ul>
+            </div>
+			<div class="view-all">
+ 				<a href="${model.leftLinkURL}" class="left-link">${model.leftText}</a>
+  				<div class="small-text">${model.rightText @context='html'}</div>
+			</div>
+		</div>
+	</div>
+</div>
+

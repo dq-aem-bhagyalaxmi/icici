@@ -9,7 +9,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import java.util.List;
 
 @Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class DomesticFundTransferModel {
+public class DomesticFundTransfer {
 
     @ValueMapValue
    private String sectionTitle;

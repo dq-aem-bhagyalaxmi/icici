@@ -12,7 +12,7 @@ import java.util.List;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
-public class ChooseYourCardModel {
+public class ChooseYourCard {
 
     @ValueMapValue
     private String sectionTitle;

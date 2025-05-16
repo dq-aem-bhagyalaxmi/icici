@@ -1,34 +1,39 @@
+
 .icici_tab {
     display: flex;
-    flex-direction: column; /* Change to vertical layout */
-    gap: 1rem; /* Space between each tab item */
+    flex-direction: column;
+    gap: 0; /* Space between each tab item */
 }
 
 .icici_tab .tab-item {
     display: flex;
-    align-items: center; /* Align icon and content horizontally */
-    gap: 1rem; /* Space between icon and tab content */
+    align-items: center;
+    gap: 0; /* Space between icon and tab content */
+    position: relative; /* Needed for the ::after to position correctly */
+    padding-bottom: 10px;
 }
-.main-title {
-    color:#333;
 
+.main-title {
+    color: #333;
     font-weight: 800;
-	font-family: 'Muli', sans-serif;
+    font-family: 'Muli', sans-serif;
     margin: 0;
     font-size: 34px;
     line-height: 46px;
     background-color: #ffffff;
-    text-align: center; /* Center the title */
-    padding: 10px 0; /* O
-
-
-
+    text-align: center;
+    padding: 10px 0px 25px ;
 }
 
+.icici_tab .tab-icon {
+    display: flex;
+    align-items: center;
+}
 
 .icici_tab .tab-icon img {
-    width: 40px; /* Adjust size based on original site */
+    width: 30px;
     height: auto;
+    margin-right:12px;
 }
 
 .icici_tab .cmp-tabs {
@@ -38,14 +43,15 @@
 
 .icici_tab .cmp-tabs__tablist {
     display: flex;
-    justify-content: center; /* Center the tabs themselves */
+    justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 0;
     margin: 0 auto;
     padding: 0;
     list-style: none;
     width: auto;
     font-family: 'Muli', sans-serif;
+    position:relative;
 }
 
 .icici_tab .cmp-tabs__tab {
@@ -56,27 +62,52 @@
     background: none;
     cursor: pointer;
     border: none;
-    padding-bottom: 23px;
-    width: 150px;
+    width: 200px;
+	padding-bottom: 15px;
+     padding: 0 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* Remove the ::after from the .cmp-tabs__tab, so no underline is shown globally */
 .icici_tab .cmp-tabs__tab::after {
+    content: none;  /* Remove previous underline */
+}
+
+/* Apply underline only under the tab-item (icon + title) when the tab is active */
+.icici_tab .cmp-tabs__tab--active .tab-item::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
-    height: 2px;
+    height: 1px;
     width: 100%;
+    background-color: #f37e20;
+   	display:block;
 }
 
+
+/* Ensure the active state styling is visible */
 .icici_tab .cmp-tabs__tab--active {
     color: #f37e20;
     font-weight: 300;
-    padding-bottom: 23px;
-    width: 150px;
+    width: 200px;
 }
 
-.icici_tab .cmp-tabs__tab--active::after {
-    background-color: #f37e20;
-    height: 1px;
+/* Title styling */
+.icici_tab .tab-title {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 21px;
+    width: 120px;
+	margin:0;
+}
+
+.icici_tab .cmp-tabs__tab + .cmp-tabs__tab::before {
+    position: absolute;
+    left: 0;
+    top: 7px;
+    height: 21px;
+    border-left: 1px solid #b2b5b8;
 }
