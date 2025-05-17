@@ -58,8 +58,11 @@ public class CarouselModel {
     }
 
     public List<Slide> getSlideList() {
+      
         return slideList;
     }
+
+    
 
     public static class Slide {
         private final String slideImage;
@@ -101,5 +104,6 @@ public class CarouselModel {
             slideList = List.of(); // Initialize as an empty list to avoid null pointer exceptions
             logger.info("No slides found for the carousel.");
         }
+        System.out.println("slideList: " + slideList);
     }
 }

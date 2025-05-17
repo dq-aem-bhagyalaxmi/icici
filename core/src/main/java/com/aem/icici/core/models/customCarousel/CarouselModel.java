@@ -61,12 +61,14 @@ public class CarouselModel {
         return slideList;
     }
 
+    @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
     public static class Slide {
         private final String slideImage;
         private final String slideTitle;
         private final String slideText;
         private final String socialIcon;
 
+        
         public Slide(Resource resource) {
             this.slideImage = resource.getValueMap().get("slideImage", String.class);
             this.slideTitle = resource.getValueMap().get("slideTitle", String.class);

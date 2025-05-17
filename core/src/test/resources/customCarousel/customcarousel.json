@@ -1,0 +1,69 @@
+{
+    "carousaldata": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "admin",
+        "jcr:lastModifiedBy": "admin",
+        "autoplaySpeed": "3000",
+        "showDots": "true",
+        "jcr:created": "Fri May 02 2025 12:36:20 GMT+0530",
+        "jcr:lastModified": "Sat May 03 2025 09:23:44 GMT+0530",
+        "sling:resourceType": "icici/components/customcarousel",
+        "carouselTitle": "Related Fund Transfer Videos",
+        "showNav": "true",
+        "autoplay": "true",
+        
+        "cq:responsive": {
+            "jcr:primaryType": "nt:unstructured",
+            "default": {
+                "jcr:primaryType": "nt:unstructured",
+                "offset": "0",
+                "width": "12"
+            }
+        },
+        "slides": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+                "jcr:primaryType": "nt:unstructured",
+                "socialIcon": "/content/dam/icici/sprint-2/third_carousel/share.jpeg",
+                "slideText": "1 year ago",
+                "slideImage": "/content/dam/icici/sprint-2/second_carousel/cycle-payment.jpeg",
+                "slideTitle": "Fake Numbers. Real Dangers!"
+            },
+            "item1": {
+                "jcr:primaryType": "nt:unstructured",
+                "socialIcon": "/content/dam/icici/sprint-2/second_carousel/share.jpeg",
+                "slideText": "1 year ago",
+                "slideImage": "/content/dam/icici/sprint-2/second_carousel/fake-numbers.jpeg",
+                "slideTitle": "Pay to any mobile number"
+            },
+            "item2": {
+                "jcr:primaryType": "nt:unstructured",
+                "socialIcon": "/content/dam/icici/sprint-2/second_carousel/share.jpeg",
+                "slideText": "1 year ago",
+                "slideImage": "/content/dam/icici/sprint-2/second_carousel/imobile-pay-hero.jpeg",
+                "slideTitle": "Scan and pay any QR code"
+            },
+            "item3": {
+                "jcr:primaryType": "nt:unstructured",
+                "socialIcon": "/content/dam/icici/sprint-2/second_carousel/share.jpeg",
+                "slideText": "1 year ago",
+                "slideImage": "/content/dam/icici/sprint-2/second_carousel/imobile-pay.jpeg",
+                "slideTitle": "Pay other Bank credit card bill using iMobile App"
+            },
+            "item4": {
+                "jcr:primaryType": "nt:unstructured",
+                "socialIcon": "/content/dam/icici/sprint-2/second_carousel/share.jpeg",
+                "slideText": "1 year ago",
+                "slideImage": "/content/dam/icici/sprint-2/second_carousel/pre-approved.jpeg",
+                "slideTitle": "How to avail a Exclusive Personal Loan with iMobile App"
+            }
+        },
+
+        "slide":{
+            "item":{
+                "slideImage":"/content/dam/icici/sprint-2/second_carousel/pre-approved.jpeg"
+            }
+            }
+
+        }
+    }

@@ -1,0 +1,17 @@
+{
+  "title" : "Test Title",
+  "title1": "Title 1",
+  "link1" : "icici/home/homepage",
+  "links" : {
+    "item0" : {
+      "text" : "Sample1",
+      "link": "icici/home/homepage",
+      "icon": "image.jpg"
+    },
+    "item1" : {
+      "text" : "Sample Link Name 1",
+      "link": "icici/home/homepage",
+      "icon": "image1.jpg"
+    }
+  }
+}

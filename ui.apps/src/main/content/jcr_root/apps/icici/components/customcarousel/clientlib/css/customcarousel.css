@@ -74,7 +74,7 @@
     color: #d1d1d1;
   }
     .share-button {
-    background: transparent url('share-bg.svg') no-repeat center center;
+    /*background: transparent url('/content/dam/icici/sprint-2/third_carousel/share.jpeg') no-repeat center center;*/
     background-size: contain;
     border: none;
     cursor: pointer;

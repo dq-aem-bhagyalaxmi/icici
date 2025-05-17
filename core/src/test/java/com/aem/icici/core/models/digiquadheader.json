@@ -1,0 +1,74 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:created": "Fri Apr 25 2025 12:04:39 GMT+0530",
+  "logo": "/content/dam/icici/header-images/icici_header_logo.png",
+  "login": "https://www.google.com",
+  "contactNumber": "18001080",
+  "jcr:lastModified": "Tue May 13 2025 15:52:41 GMT+0530",
+  "sling:resourceType": "icici/components/digiquad",
+  "mainNav": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "Personal",
+      "linkPath": "https://www.google.com"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "NRI",
+      "linkPath": "https://www.adobe.com"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "Business",
+      "linkPath": "https://www.google.com"
+    }
+  },
+  "secondNav": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "Resources",
+      "linkPath": "https://www.google.com"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "About",
+      "linkPath": "https://www.ford.com"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "Help",
+      "linkPath": "https://www.google.com"
+    },
+    "item3": {
+      "jcr:primaryType": "nt:unstructured",
+      "target": "_self",
+      "label": "Complaints",
+      "linkPath": "https://www.google.com"
+    }
+  },
+  "links": {
+    "jcr:primaryType": "nt:unstructured",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "logotitle": "India",
+      "file": "/content/dam/icici/header-images/India-flag.svg",
+      "logopath": "/content/icici/us/en/icici-home-page"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "logotitle": "USA",
+      "file": "/content/dam/icici/header-images/states-flag.svg",
+      "logopath": "https://www.google.com"
+    }
+  }
+}
