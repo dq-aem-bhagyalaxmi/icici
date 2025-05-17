@@ -8,7 +8,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import java.util.List;
 
 @Model(adaptables = Resource.class, defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
-public class SavingsAccountsTypesSectionModel {
+public class SavingsAccountsTypesSection{
 
     @ValueMapValue
     private String sectionTitle;
